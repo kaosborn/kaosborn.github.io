@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+	<channel>
+		<title>Kasey O.</title>
+		<link>/</link>
+		<description>A Blog on .NET Systems Programming</description>
+		<copyright>2017</copyright>
+		<pubDate>Mon, 22 May 2017 01:59:14 GMT</pubDate>
+		<lastBuildDate>Mon, 22 May 2017 01:59:14 GMT</lastBuildDate>
+		<item>
+			<title>GitHub Pages abandoning Jekyll</title>
+			<link>/posts/170519%2520-%2520GitHub%2520Pages</link>
+			<description>A Blog on .NET Systems Programming</description>
+			<guid isPermaLink="false">/posts/170519%2520-%2520GitHub%2520Pages</guid>
+			<pubDate>Fri, 19 May 2017 00:00:00 GMT</pubDate>
+		</item>
+	</channel>
+</rss>
