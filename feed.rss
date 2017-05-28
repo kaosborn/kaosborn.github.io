@@ -5,8 +5,15 @@
 		<link>/</link>
 		<description>A Blog on .NET Systems Programming</description>
 		<copyright>2017</copyright>
-		<pubDate>Tue, 23 May 2017 01:21:58 GMT</pubDate>
-		<lastBuildDate>Tue, 23 May 2017 01:21:58 GMT</lastBuildDate>
+		<pubDate>Sun, 28 May 2017 00:20:14 GMT</pubDate>
+		<lastBuildDate>Sun, 28 May 2017 00:20:14 GMT</lastBuildDate>
+		<item>
+			<title>Publishing a NuGet package locally</title>
+			<link>/posts/170526%2520-%2520Publishing%2520a%2520NuGet%2520package%2520locally</link>
+			<description>A Blog on .NET Systems Programming</description>
+			<guid isPermaLink="false">/posts/170526%2520-%2520Publishing%2520a%2520NuGet%2520package%2520locally</guid>
+			<pubDate>Sat, 27 May 2017 00:00:00 GMT</pubDate>
+		</item>
 		<item>
 			<title>GitHub Pages abandoning Jekyll</title>
 			<link>/posts/170519%2520-%2520GitHub%2520Pages</link>
