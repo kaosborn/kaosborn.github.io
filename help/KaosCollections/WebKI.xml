@@ -91,12 +91,12 @@
     <HelpKINode Title="methods" Url="html/0316d027-5d1d-d0ad-fac5-3317eb29b386.htm" />
     <HelpKINode Title="methods" Url="html/61db9200-476f-4f3a-4999-1b74746de7fe.htm" />
     <HelpKINode Title="methods" Url="html/1f94e5d5-2618-d820-44bd-da54ab5f5727.htm" />
-    <HelpKINode Title="methods" Url="html/88e6d707-fb52-37af-6e0c-2eec5ba0e579.htm" />
     <HelpKINode Title="methods" Url="html/8fe18be9-133f-25af-3225-ca4d43f5408c.htm" />
-    <HelpKINode Title="properties" Url="html/da7c7d0d-508b-cddf-bb85-09dc67265d51.htm" />
+    <HelpKINode Title="methods" Url="html/88e6d707-fb52-37af-6e0c-2eec5ba0e579.htm" />
     <HelpKINode Title="properties" Url="html/7ef92623-a276-9f2a-79a6-9f929887e815.htm" />
-    <HelpKINode Title="properties" Url="html/109aaf11-b46e-9de3-5e7e-270eb9a1a903.htm" />
+    <HelpKINode Title="properties" Url="html/da7c7d0d-508b-cddf-bb85-09dc67265d51.htm" />
     <HelpKINode Title="properties" Url="html/1f99f9ef-3891-890c-7972-d325b9bb3cbf.htm" />
+    <HelpKINode Title="properties" Url="html/109aaf11-b46e-9de3-5e7e-270eb9a1a903.htm" />
     <HelpKINode Title="properties" Url="html/7c99b705-f5cb-0233-33f0-3b79343dff18.htm" />
   </HelpKINode>
   <HelpKINode Title="ExceptWith method" Url="html/8ed13ef7-d786-fb71-cb38-cea4ff563212.htm" />
@@ -324,6 +324,7 @@
   <HelpKINode Title="RankedBag(Of T).RankedBag constructor" Url="html/1781e794-053a-bfae-8009-65d4cb7e8e80.htm" />
   <HelpKINode Title="RankedBag(Of T).Remove method" Url="html/eb03b52a-3768-77b6-9a6b-bc9f8b73d5bf.htm" />
   <HelpKINode Title="RankedBag(Of T).RemoveAll method" Url="html/2a4365eb-eee0-020b-1129-e8f127f9988c.htm" />
+  <HelpKINode Title="RankedBag(Of T).RemoveAt method" Url="html/83ac3711-1b8b-a4b9-7504-b181e0abf0cb.htm" />
   <HelpKINode Title="RankedBag(Of T).RemoveWhere method" Url="html/15b2abad-be8f-b652-0c05-c15bd0c7f5bd.htm" />
   <HelpKINode Title="RankedBag(Of T).RetainAll method" Url="html/6ec9c7ce-d5d6-c9a0-1727-2047995493ae.htm" />
   <HelpKINode Title="RankedBag(Of T).Reverse method" Url="html/d09e1e64-5ade-2f0f-ed19-059499bfaef1.htm" />
@@ -367,6 +368,7 @@
   <HelpKINode Title="RankedBag&lt;T&gt;.RankedBag constructor" Url="html/1781e794-053a-bfae-8009-65d4cb7e8e80.htm" />
   <HelpKINode Title="RankedBag&lt;T&gt;.Remove method" Url="html/eb03b52a-3768-77b6-9a6b-bc9f8b73d5bf.htm" />
   <HelpKINode Title="RankedBag&lt;T&gt;.RemoveAll method" Url="html/2a4365eb-eee0-020b-1129-e8f127f9988c.htm" />
+  <HelpKINode Title="RankedBag&lt;T&gt;.RemoveAt method" Url="html/83ac3711-1b8b-a4b9-7504-b181e0abf0cb.htm" />
   <HelpKINode Title="RankedBag&lt;T&gt;.RemoveWhere method" Url="html/15b2abad-be8f-b652-0c05-c15bd0c7f5bd.htm" />
   <HelpKINode Title="RankedBag&lt;T&gt;.RetainAll method" Url="html/6ec9c7ce-d5d6-c9a0-1727-2047995493ae.htm" />
   <HelpKINode Title="RankedBag&lt;T&gt;.Reverse method" Url="html/d09e1e64-5ade-2f0f-ed19-059499bfaef1.htm" />
@@ -713,6 +715,7 @@
   </HelpKINode>
   <HelpKINode Title="RemoveAll method" Url="html/2a4365eb-eee0-020b-1129-e8f127f9988c.htm" />
   <HelpKINode Title="RemoveAt method">
+    <HelpKINode Title="RankedBag(T).RemoveAt Method " Url="html/83ac3711-1b8b-a4b9-7504-b181e0abf0cb.htm" />
     <HelpKINode Title="RankedDictionary(TKey, TValue).RemoveAt Method " Url="html/ecc3dfa3-d060-3b25-0b2f-767df95122b5.htm" />
     <HelpKINode Title="RankedSet(T).RemoveAt Method " Url="html/29d810eb-6dcc-8857-6ea0-fd085fbf766d.htm" />
   </HelpKINode>
