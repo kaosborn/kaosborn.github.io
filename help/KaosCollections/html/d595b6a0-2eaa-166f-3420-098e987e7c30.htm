@@ -62,12 +62,12 @@
 
             <span class="highlight-keyword">var</span> comp = RankedSet&lt;<span class="highlight-keyword">string</span>&gt;.CreateSetComparer();
 
-            HashSet&lt;RankedSet&lt;<span class="highlight-keyword">string</span>&gt;&gt; bag = <span class="highlight-keyword">new</span> HashSet&lt;RankedSet&lt;<span class="highlight-keyword">string</span>&gt;&gt; (comp);
-            bag.Add (musicians);
-            bag.Add (painters);
+            HashSet&lt;RankedSet&lt;<span class="highlight-keyword">string</span>&gt;&gt; setOfSets = <span class="highlight-keyword">new</span> HashSet&lt;RankedSet&lt;<span class="highlight-keyword">string</span>&gt;&gt; (comp);
+            setOfSets.Add (musicians);
+            setOfSets.Add (painters);
 
-            Console.WriteLine (<span class="highlight-literal">"\nAll sets in bag:"</span>);
-            <span class="highlight-keyword">foreach</span> (<span class="highlight-keyword">var</span> <span class="highlight-keyword">set</span> <span class="highlight-keyword">in</span> bag)
+            Console.WriteLine (<span class="highlight-literal">"\nAll sets in hash set:"</span>);
+            <span class="highlight-keyword">foreach</span> (<span class="highlight-keyword">var</span> <span class="highlight-keyword">set</span> <span class="highlight-keyword">in</span> setOfSets)
             {
                 Console.WriteLine (<span class="highlight-literal">"  "</span> + <span class="highlight-keyword">set</span>.Count + <span class="highlight-literal">" items:"</span>);
                 <span class="highlight-keyword">foreach</span> (<span class="highlight-keyword">var</span> item <span class="highlight-keyword">in</span> <span class="highlight-keyword">set</span>)
