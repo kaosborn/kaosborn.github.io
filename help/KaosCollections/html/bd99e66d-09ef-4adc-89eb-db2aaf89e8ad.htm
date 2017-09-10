@@ -23,13 +23,13 @@
           The APIs of <span class="code">RankedDictionary</span> and <span class="code">RankedSet</span> closely adhere to Microsoft's related generic classes with a few exceptions:
         </p><ul><li><p><span class="code">RankedDictionary</span> is enhanced with properties borrowed from <span class="code">SortedSet</span>:
             </p><ul><li><p>
-                  Adds <span class="code">Min</span> that returns the minimum key in the dictionary.
+                  Adds <span class="code">MinKey</span> that returns the minimum key in the dictionary.
                 </p></li><li><p>
-                  Adds <span class="code">Max</span> that returns the maximum key in the dictionary.
+                  Adds <span class="code">MaxKey</span> that returns the maximum key in the dictionary.
                 </p></li><li><p>
                   Adds <span class="code">Reverse()</span> that returns an enumerator of elements from maximum to minimum.
                 </p></li><li><p>
-                  Adds <span class="code">RemoveWhere()</span> that removes all elements that meet a supplied condition.
+                  Adds <span class="code">RemoveWhere(predicate)</span> that removes all elements that meet a supplied condition.
                 </p></li></ul></li><li><p><span class="code">RankedDictionary</span> is enhanced with methods borrowed from <span class="code">SortedList</span>:</p><ul><li><p>Adds <span class="code">IndexOfKey(key)</span> that returns the position of the element with the supplied key.</p></li><li><p>Adds <span class="code">IndexOfValue(value)</span> that returns the position of the first element with the supplied value.</p></li><li><p>Adds <span class="code">RemoveAt(index)</span> that deletes the element at the supplied position.</p></li></ul></li><li><p><span class="code">RankedDictionary</span> and <span class="code">RankedSet</span> directly implement <span class="code">IEnumerable&lt;T&gt;</span> methods to improve performance:</p><ul><li><p>Implements <span class="code">ElementAt(index)</span> that returns the element at the supplied position.</p></li><li><p>Implements <span class="code">ElementAtOrDefault(index)</span> that returns the element at the supplied position or the default if past the end of the collection.</p></li><li><p>Implements <span class="code">Last()</span> that returns the element at the last position.</p></li></ul></li><li><p><span class="code">RankedDictionary</span> and <span class="code">RankedSet</span> add enumerators for range query support:</p><ul><li><p>
                   Adds <span class="code">ElementsBetween(lower,upper)</span> for elements beginning and ending at the supplied values.
                 </p></li><li><p>
@@ -41,6 +41,8 @@
                   Adds the method <span class="code">RemoveAt(item)</span> that deletes the item at the supplied position.
                 </p></li></ul></li><li><p><span class="code">RankedDictionary</span> adds the method <span class="code">TryGetValueAndIndex(key,value,index)</span> that
               retrieves the key's associated value and index in one call.
+            </p></li><li><p><span class="code">RankedDictionary</span> implements the <span class="code">ISerializable</span> interface
+              where <span class="code">SortedDictionary</span> does not follow this convention due to legacy constraints.
             </p></li><li><p>
               The <span class="code">SortedSet</span> method
               <a href="http://msdn2.microsoft.com/en-us/library/dd381801" target="_blank">GetViewBetween</a>
@@ -55,12 +57,13 @@
         </p><ul><li><p>Select(<em>i</em>) — find the <em>i</em>'th smallest element in the tree (i.e. retrieve key by index).</p></li><li><p>
               Rank(<em>x</em>) – find the rank of item <em>x</em> in the tree (i.e. retrieve index by key).
               The names of the classes in the KaosCollections library are derived from this operation.
-            </p></li></ul><p><span class="code">RankedDictionary</span> and <span class="code">RankedSet</span> store all elements in leaves at the same depth.
+            </p></li></ul><p>
+          As a B+ tree, all elements are stored in leaf nodes at the same depth.
           The leaf level is a sorted doubly linked list with head and tail pointers.
           The first key of every leaf (except the leftmost) is copied to one branch for subdividing.
           A tree with no elements is represented as an empty leaf.
         </p><p>
-          This structure differs from a typical B+ tree in three ways:
+          This structure differs from a common B+ tree in three ways:
         </p><ul><li><p>
               While the root may contain as few as two children, other rightmost branches may contain as few as one child.
               This variation optimizes for time and space when bulk loading of presorted data
@@ -71,7 +74,7 @@
               Again, this variation optimizes the structure for bulk loading of presorted data.
               All other leaves maintain at least 50% capacity usage following every add and remove operation.
             </p></li><li><p>
-              Every branch tracks the number of elements (weight) in all of its descendent leaves.
+              Every branch stores the number of elements (weight) in all of its descendent leaves.
               For example, the weight of the root is the total number of elements in every leaf.
             </p></li></ul></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Distribution</span></div><div id="ID2RBSection" class="collapsibleSection"><p>
           This library is built as a .NET Standard project with multi-targeting.
