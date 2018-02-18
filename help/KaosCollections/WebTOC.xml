@@ -4,22 +4,22 @@
   <HelpTOCNode Title="Welcome to KaosCollections" Url="html/bd99e66d-09ef-4adc-89eb-db2aaf89e8ad.htm" />
   <HelpTOCNode Title="Internal Structure" Url="html/60a5899d-5be3-4389-8ab8-71ba6c2d00ac.htm" />
   <HelpTOCNode Title="Version History" Url="html/90402bce-1f31-45f8-b0ea-0a73408bd45a.htm" />
-  <HelpTOCNode Id="57dd3e92-2087-41c4-a217-106eb4e4bfe9" Title="Kaos.Collections" Url="html/ea382f9d-d870-8b02-657d-aa381c4ea035.htm">
-    <HelpTOCNode Id="238db86d-4512-4af9-ae59-9df9a798734f" Title="Btree(T) Class" Url="html/caf80b30-da1c-36da-0236-7fb8de17e9c0.htm">
-      <HelpTOCNode Id="38ab2fee-42e3-41b3-b55c-7350566c3303" Title="Btree(T) Properties" Url="html/7bde303d-1102-e221-161a-875be81e826d.htm">
+  <HelpTOCNode Id="69867090-751d-4225-8037-02bb3b02af58" Title="Kaos.Collections" Url="html/ea382f9d-d870-8b02-657d-aa381c4ea035.htm">
+    <HelpTOCNode Id="ebc84cce-540e-4e74-928e-b594251a35f2" Title="Btree(T) Class" Url="html/caf80b30-da1c-36da-0236-7fb8de17e9c0.htm">
+      <HelpTOCNode Id="9362726b-33f6-4869-9ce1-6f845fddeae5" Title="Btree(T) Properties" Url="html/7bde303d-1102-e221-161a-875be81e826d.htm">
         <HelpTOCNode Title="Capacity Property " Url="html/bd8c3fe3-a1f5-38c2-a1bf-d7229e88c644.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="Btree(T) Methods" Url="html/4b7cbd18-ee5c-7b48-c9d2-0857b0f76d84.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="cf5d477c-f032-4ffc-a08d-a48e16bc41cc" Title="RankedBag(T) Class" Url="html/56d08dd3-2262-d471-02b1-a532f7e84cfe.htm">
-      <HelpTOCNode Id="6731598b-d4da-49ad-9223-43849bb61b21" Title="RankedBag(T) Constructor " Url="html/1781e794-053a-bfae-8009-65d4cb7e8e80.htm">
+    <HelpTOCNode Id="2dbec406-12aa-4b30-8f82-f75b44353851" Title="RankedBag(T) Class" Url="html/56d08dd3-2262-d471-02b1-a532f7e84cfe.htm">
+      <HelpTOCNode Id="cde7b4a1-e338-46f6-8336-3dea743fb9eb" Title="RankedBag(T) Constructor " Url="html/1781e794-053a-bfae-8009-65d4cb7e8e80.htm">
         <HelpTOCNode Title="RankedBag(T) Constructor " Url="html/39487b34-3d18-8092-39eb-6960158ca068.htm" />
         <HelpTOCNode Title="RankedBag(T) Constructor (IComparer(T))" Url="html/8188928a-d8f0-06db-b6ef-25dc16cbba52.htm" />
         <HelpTOCNode Title="RankedBag(T) Constructor (IEnumerable(T))" Url="html/2db133d6-f9f0-96f9-d537-58643c7216d7.htm" />
         <HelpTOCNode Title="RankedBag(T) Constructor (IEnumerable(T), IComparer(T))" Url="html/c5df0ef9-0bc1-76d0-8cff-23b9a4123f8c.htm" />
         <HelpTOCNode Title="RankedBag(T) Constructor (SerializationInfo, StreamingContext)" Url="html/8da3080b-f9f1-6b87-7cda-6afb2936e4b5.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="312ea103-1463-4581-ab0e-352e4daeb559" Title="RankedBag(T) Properties" Url="html/c3f7db7a-9869-4e0f-43ab-3cdd5be6d4e7.htm">
+      <HelpTOCNode Id="72a44dc2-970e-4a2f-8d66-12b186c5d365" Title="RankedBag(T) Properties" Url="html/c3f7db7a-9869-4e0f-43ab-3cdd5be6d4e7.htm">
         <HelpTOCNode Title="ICollection(T).IsReadOnly Property " Url="html/cb65ae1b-c79d-e20b-e918-ff7a820a0ad1.htm" />
         <HelpTOCNode Title="ICollection.IsSynchronized Property " Url="html/d2cf9a5c-070e-053c-c832-df738a878d08.htm" />
         <HelpTOCNode Title="ICollection.SyncRoot Property " Url="html/fa1e5314-a5b9-f5b3-ef0d-26c4b8f25b19.htm" />
@@ -28,21 +28,21 @@
         <HelpTOCNode Title="Max Property " Url="html/e290de42-96ad-3e9e-c0d4-2fafbfcb4fc8.htm" />
         <HelpTOCNode Title="Min Property " Url="html/311e1120-af11-bb9e-c7f2-721ecb055643.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="b6cdb3b2-1f47-4594-a336-5cb15147b89c" Title="RankedBag(T) Methods" Url="html/a4aefbc0-fe7a-5a35-5a2a-98e31a3017d4.htm">
+      <HelpTOCNode Id="d3bbea33-aa4f-4033-814c-d2713009a28e" Title="RankedBag(T) Methods" Url="html/a4aefbc0-fe7a-5a35-5a2a-98e31a3017d4.htm">
         <HelpTOCNode Title="ICollection(T).Add Method " Url="html/934d7d3b-5e02-d089-907e-7cb11076e193.htm" />
         <HelpTOCNode Title="ICollection.CopyTo Method " Url="html/5cd3df73-8571-a8a2-19c4-275735d5667b.htm" />
         <HelpTOCNode Title="IEnumerable(T).GetEnumerator Method " Url="html/ac5b6a7f-d23e-cf27-0f9b-542604c3af4c.htm" />
         <HelpTOCNode Title="IEnumerable.GetEnumerator Method " Url="html/15f0f729-af42-ff07-7df5-5117a0d62cd8.htm" />
         <HelpTOCNode Title="ISerializable.GetObjectData Method " Url="html/35b8fde2-562a-5953-8af0-98c3737b9f17.htm" />
         <HelpTOCNode Title="IDeserializationCallback.OnDeserialization Method " Url="html/378f560d-1f04-4180-ec18-03fb4717ac4d.htm" />
-        <HelpTOCNode Id="a30370fa-4bc2-4c7a-b91d-f040b81ef137" Title="Add Method " Url="html/705f00e8-2662-02bf-9ae6-2959211b2806.htm">
+        <HelpTOCNode Id="3af28f75-7b3b-4813-a8b4-53011e0b79ad" Title="Add Method " Url="html/705f00e8-2662-02bf-9ae6-2959211b2806.htm">
           <HelpTOCNode Title="Add Method (T)" Url="html/feb89e84-9483-9d47-30f7-e599c7cc4396.htm" />
           <HelpTOCNode Title="Add Method (T, Int32)" Url="html/66aeb5ce-93a2-4f80-8034-dac36331c177.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="Clear Method " Url="html/67984047-43ab-b309-534d-acb63b371eed.htm" />
         <HelpTOCNode Title="Contains Method " Url="html/5fb65958-8faf-522f-9e25-ba8e514c14b7.htm" />
         <HelpTOCNode Title="ContainsAll Method " Url="html/8c069c3d-3b9c-fd08-a6b1-355c41d8220f.htm" />
-        <HelpTOCNode Id="272587a6-7502-4645-855a-c8b22d1de69e" Title="CopyTo Method " Url="html/f62302b9-97a9-2d32-fed9-bcea4e9cbbdf.htm">
+        <HelpTOCNode Id="d642819a-68dc-46a1-bf24-e7eb65180b34" Title="CopyTo Method " Url="html/f62302b9-97a9-2d32-fed9-bcea4e9cbbdf.htm">
           <HelpTOCNode Title="CopyTo Method (T[])" Url="html/5d5f10f4-3f43-e957-cef0-14a5560016ab.htm" />
           <HelpTOCNode Title="CopyTo Method (T[], Int32)" Url="html/94d15d30-645c-7c78-9b2d-aaccd3c1c3b4.htm" />
           <HelpTOCNode Title="CopyTo Method (T[], Int32, Int32)" Url="html/3f029ca2-2f98-ff35-e8c6-4d5935ff4ed7.htm" />
@@ -61,7 +61,7 @@
         <HelpTOCNode Title="IndexOf Method " Url="html/d2f3e0a4-442e-be48-b170-54168a81eda8.htm" />
         <HelpTOCNode Title="Last Method " Url="html/fc393c6a-f6c4-6fe7-e1ba-f25c56a404f9.htm" />
         <HelpTOCNode Title="OnDeserialization Method " Url="html/69c5a6c0-0d5c-19b6-d357-7835f272fe18.htm" />
-        <HelpTOCNode Id="e1537a8d-991d-40db-87ad-e3cdd01f9def" Title="Remove Method " Url="html/eb03b52a-3768-77b6-9a6b-bc9f8b73d5bf.htm">
+        <HelpTOCNode Id="91a3711a-0de8-47b0-85fa-9cd0e97d885d" Title="Remove Method " Url="html/eb03b52a-3768-77b6-9a6b-bc9f8b73d5bf.htm">
           <HelpTOCNode Title="Remove Method (T)" Url="html/943ecdd3-6fbb-ad7b-d6ae-5363495c95a5.htm" />
           <HelpTOCNode Title="Remove Method (T, Int32)" Url="html/43f0a76f-3059-d19b-90f0-c83db991d3fa.htm" />
         </HelpTOCNode>
@@ -78,26 +78,26 @@
         <HelpTOCNode Title="TryGetLessThanOrEqual Method " Url="html/70eebebb-3280-cb60-64b9-e4c64b361d7b.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="97535f17-01f6-458c-bc07-36dcc0154c60" Title="RankedBag(T).Enumerator Class" Url="html/dc069bcb-4671-0447-b116-e587e51ec6fd.htm">
-      <HelpTOCNode Id="8f5dcc10-e6b4-45a9-abcd-66cd1079237b" Title="Enumerator Properties" Url="html/1f99f9ef-3891-890c-7972-d325b9bb3cbf.htm">
+    <HelpTOCNode Id="9495b7eb-5e41-4e48-b2bb-2c58565c1eee" Title="RankedBag(T).Enumerator Class" Url="html/dc069bcb-4671-0447-b116-e587e51ec6fd.htm">
+      <HelpTOCNode Id="89917b48-ad2a-46a1-8dcc-5bc0e843b0b4" Title="Enumerator Properties" Url="html/1f99f9ef-3891-890c-7972-d325b9bb3cbf.htm">
         <HelpTOCNode Title="IEnumerator.Current Property " Url="html/e4243d59-072d-c49d-588a-100b4f270e8b.htm" />
         <HelpTOCNode Title="Current Property " Url="html/7aa354cd-c624-49d0-c862-f71d07afb522.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="87b479f9-1427-417c-849d-860c2fad2a1e" Title="Enumerator Methods" Url="html/88e6d707-fb52-37af-6e0c-2eec5ba0e579.htm">
+      <HelpTOCNode Id="eb7ff829-dde4-4551-b2d2-771b377b1612" Title="Enumerator Methods" Url="html/88e6d707-fb52-37af-6e0c-2eec5ba0e579.htm">
         <HelpTOCNode Title="IEnumerator.Reset Method " Url="html/2b4d0353-2daa-05f1-fb83-4705e53e0e3d.htm" />
         <HelpTOCNode Title="Dispose Method " Url="html/15f19c34-d5b4-e977-6b65-46db3c9c5b3c.htm" />
         <HelpTOCNode Title="MoveNext Method " Url="html/23c39064-91d8-cc74-7e73-cd21a2d48c26.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="5eeee8d3-5465-422a-bfb5-1938d2fe7f4e" Title="RankedDictionary(TKey, TValue) Class" Url="html/b25600ae-c427-957a-65ba-831d18b0c003.htm">
-      <HelpTOCNode Id="50562f76-b850-42f4-8b29-30919ee09534" Title="RankedDictionary(TKey, TValue) Constructor " Url="html/da2f8d10-00a6-be1d-6998-50a6b05e067d.htm">
+    <HelpTOCNode Id="b157650e-8481-48c0-844f-221bd987004d" Title="RankedDictionary(TKey, TValue) Class" Url="html/b25600ae-c427-957a-65ba-831d18b0c003.htm">
+      <HelpTOCNode Id="e4faf887-9f10-4b64-9ccd-688834a6a1ee" Title="RankedDictionary(TKey, TValue) Constructor " Url="html/da2f8d10-00a6-be1d-6998-50a6b05e067d.htm">
         <HelpTOCNode Title="RankedDictionary(TKey, TValue) Constructor " Url="html/a97b8d0a-cfc9-5de1-dafd-22e3f0769df0.htm" />
         <HelpTOCNode Title="RankedDictionary(TKey, TValue) Constructor (IComparer(TKey))" Url="html/0ec317e1-1075-1df3-80b2-75640ffdb013.htm" />
         <HelpTOCNode Title="RankedDictionary(TKey, TValue) Constructor (IDictionary(TKey, TValue))" Url="html/7628171f-e9b7-6907-5bfa-180da1c3a630.htm" />
         <HelpTOCNode Title="RankedDictionary(TKey, TValue) Constructor (IDictionary(TKey, TValue), IComparer(TKey))" Url="html/9108dbc0-ddb7-5977-15a1-9343f9867f2b.htm" />
         <HelpTOCNode Title="RankedDictionary(TKey, TValue) Constructor (SerializationInfo, StreamingContext)" Url="html/f8357fd3-4bb9-d6e6-41cb-4e12bba29b5c.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="023caeca-af67-4a3b-8895-b46bd65c373a" Title="RankedDictionary(TKey, TValue) Properties" Url="html/03a3371a-bdc3-2ca0-a074-ed5df2b9fa17.htm">
+      <HelpTOCNode Id="588ec78e-1496-4798-850f-e64b3d27aefa" Title="RankedDictionary(TKey, TValue) Properties" Url="html/03a3371a-bdc3-2ca0-a074-ed5df2b9fa17.htm">
         <HelpTOCNode Title="IDictionary.IsFixedSize Property " Url="html/82df3999-812b-9e6f-c33d-41abb743ad90.htm" />
         <HelpTOCNode Title="ICollection(KeyValuePair(TKey, TValue)).IsReadOnly Property " Url="html/f3164da5-1c8d-1778-885b-2095f9e75791.htm" />
         <HelpTOCNode Title="IDictionary.IsReadOnly Property " Url="html/d4ef3192-73b7-161d-9523-ec3c986c8476.htm" />
@@ -118,7 +118,7 @@
         <HelpTOCNode Title="MinKey Property " Url="html/c6e4394c-0c9b-53d5-1b71-7071e77782a0.htm" />
         <HelpTOCNode Title="Values Property " Url="html/8a65d9a8-d61c-8c7c-387d-50f19fbede39.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="70d89b8d-25a4-422d-9807-3499e32142ec" Title="RankedDictionary(TKey, TValue) Methods" Url="html/04db2ef0-4e97-6ce4-4bd3-67c543be1ce7.htm">
+      <HelpTOCNode Id="33886e1d-6bb0-4fc3-819b-a6b8763680dd" Title="RankedDictionary(TKey, TValue) Methods" Url="html/04db2ef0-4e97-6ce4-4bd3-67c543be1ce7.htm">
         <HelpTOCNode Title="ICollection(KeyValuePair(TKey, TValue)).Add Method " Url="html/2e99c382-c807-509e-b1e5-24083454166f.htm" />
         <HelpTOCNode Title="IDictionary.Add Method " Url="html/aa32fb4e-7576-d08b-3502-7d0921d25c13.htm" />
         <HelpTOCNode Title="ICollection(KeyValuePair(TKey, TValue)).Contains Method " Url="html/ce401abf-c6b0-99e9-ccfb-69c995312ea3.htm" />
@@ -163,30 +163,30 @@
         <HelpTOCNode Title="TryGetValueAndIndex Method " Url="html/55a6227f-c14f-e62c-f081-676d2f4efafb.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="b10ad4d3-a187-4eb4-b099-ebcce07a2ddf" Title="RankedDictionary(TKey, TValue).Enumerator Class" Url="html/fb9bc93a-662b-689d-c202-aa53a7075cdc.htm">
-      <HelpTOCNode Id="60117504-6297-49a0-90da-038fa258a873" Title="Enumerator Properties" Url="html/109aaf11-b46e-9de3-5e7e-270eb9a1a903.htm">
+    <HelpTOCNode Id="9c5499c6-e9c6-4153-b017-f5f3637d2271" Title="RankedDictionary(TKey, TValue).Enumerator Class" Url="html/fb9bc93a-662b-689d-c202-aa53a7075cdc.htm">
+      <HelpTOCNode Id="053fd475-7bf2-4b1b-9aec-b33822d43399" Title="Enumerator Properties" Url="html/109aaf11-b46e-9de3-5e7e-270eb9a1a903.htm">
         <HelpTOCNode Title="IEnumerator.Current Property " Url="html/3ed8ef5b-4cbb-0274-64de-f9fce1e4af9d.htm" />
         <HelpTOCNode Title="IDictionaryEnumerator.Entry Property " Url="html/7a3055e5-1946-b6fd-055b-3fee8d8edaef.htm" />
         <HelpTOCNode Title="IDictionaryEnumerator.Key Property " Url="html/d7a2427a-d949-59b7-e8f9-7342197b87ed.htm" />
         <HelpTOCNode Title="IDictionaryEnumerator.Value Property " Url="html/801fcdf6-717c-3d9d-035f-890084c1ed69.htm" />
         <HelpTOCNode Title="Current Property " Url="html/4d7d2980-6ab4-6dc4-432a-de69f67cfe3d.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="feb552d7-783c-401e-99ca-c35383e762aa" Title="Enumerator Methods" Url="html/8fe18be9-133f-25af-3225-ca4d43f5408c.htm">
+      <HelpTOCNode Id="34d0c10b-5acd-4244-8958-b2cf898f03be" Title="Enumerator Methods" Url="html/8fe18be9-133f-25af-3225-ca4d43f5408c.htm">
         <HelpTOCNode Title="IEnumerator.Reset Method " Url="html/9db0a9c4-831e-09ad-eeea-6a1951d154b4.htm" />
         <HelpTOCNode Title="Dispose Method " Url="html/ef6f79f7-8ebf-85a7-dc95-292e42ed8a57.htm" />
         <HelpTOCNode Title="MoveNext Method " Url="html/62b6318a-ec2b-b568-ffc7-df7db953bdf7.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="18ffac19-ed6e-4d88-92d9-062bc930c020" Title="RankedDictionary(TKey, TValue).KeyCollection Class" Url="html/850674f2-9e44-5bd2-4bea-f61ffb6727c4.htm">
+    <HelpTOCNode Id="b76cfb28-e82c-443e-a841-02ed70e8b970" Title="RankedDictionary(TKey, TValue).KeyCollection Class" Url="html/850674f2-9e44-5bd2-4bea-f61ffb6727c4.htm">
       <HelpTOCNode Title="RankedDictionary(TKey, TValue).KeyCollection Constructor " Url="html/8b417df3-8140-e78d-0f46-a3ac7d8746a5.htm" />
-      <HelpTOCNode Id="daea263f-8008-4bd6-9d37-65a666f469e5" Title="KeyCollection Properties" Url="html/607bf2f8-2dc6-6473-94e1-0c67162b3582.htm">
+      <HelpTOCNode Id="fc912841-0931-4f16-bf69-7aa0df43002f" Title="KeyCollection Properties" Url="html/607bf2f8-2dc6-6473-94e1-0c67162b3582.htm">
         <HelpTOCNode Title="ICollection(TKey).IsReadOnly Property " Url="html/14305d13-0144-0d74-57bc-71aa0a9cdd07.htm" />
         <HelpTOCNode Title="ICollection.IsSynchronized Property " Url="html/2488d836-3875-7806-9668-71a262b8ee7c.htm" />
         <HelpTOCNode Title="ICollection.SyncRoot Property " Url="html/cb822353-1baf-63de-7a16-bd77325f643a.htm" />
         <HelpTOCNode Title="Count Property " Url="html/78cd3c77-bda2-b54e-a0d6-ee97e6a476a9.htm" />
         <HelpTOCNode Title="Item Property " Url="html/4a49ee9e-15e8-127b-9008-e24d7332421d.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="5e2671e0-4e9b-467c-935d-77dd91433890" Title="KeyCollection Methods" Url="html/db1f5846-d198-9ddf-6cf7-6218517531b0.htm">
+      <HelpTOCNode Id="40696ebe-5818-402f-8bd6-3b56f6dddcf0" Title="KeyCollection Methods" Url="html/db1f5846-d198-9ddf-6cf7-6218517531b0.htm">
         <HelpTOCNode Title="ICollection(TKey).Add Method " Url="html/1cd5c66f-251d-a62b-645b-e948ad99b9b3.htm" />
         <HelpTOCNode Title="ICollection(TKey).Clear Method " Url="html/e92ed9fb-3e3c-9cdb-171f-f03b2e5b2c6e.htm" />
         <HelpTOCNode Title="ICollection(TKey).Contains Method " Url="html/60a51128-d0ff-2cb6-8944-2cc70ddae024.htm" />
@@ -210,27 +210,27 @@
         <HelpTOCNode Title="TryGetLessThanOrEqual Method " Url="html/ae1725e1-f204-0f04-0e1e-8e6b637e0a7a.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="d42331f3-1abe-41a1-b390-9f4a1dddee1a" Title="RankedDictionary(TKey, TValue).KeyCollection.Enumerator Class" Url="html/e701f3c5-2001-67f9-e772-79dcaba29cb3.htm">
-      <HelpTOCNode Id="f0304cd4-0227-4f17-9fdc-7715adf6acac" Title="Enumerator Properties" Url="html/da7c7d0d-508b-cddf-bb85-09dc67265d51.htm">
+    <HelpTOCNode Id="a152a7cb-7070-4abf-b101-631d34abc107" Title="RankedDictionary(TKey, TValue).KeyCollection.Enumerator Class" Url="html/e701f3c5-2001-67f9-e772-79dcaba29cb3.htm">
+      <HelpTOCNode Id="68c0cb3e-0703-4f2c-85b1-3147d8fd27de" Title="Enumerator Properties" Url="html/da7c7d0d-508b-cddf-bb85-09dc67265d51.htm">
         <HelpTOCNode Title="IEnumerator.Current Property " Url="html/d91c3446-cdde-3658-cfef-e4b933a2e78c.htm" />
         <HelpTOCNode Title="Current Property " Url="html/0d855bd8-8a7a-0ff4-0840-cd0f9434072f.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="e331e655-63c5-4fb0-89a0-4d99940d4b4d" Title="Enumerator Methods" Url="html/1f94e5d5-2618-d820-44bd-da54ab5f5727.htm">
+      <HelpTOCNode Id="6a062ee7-0542-4d8c-bde2-edb11e4d8f6a" Title="Enumerator Methods" Url="html/1f94e5d5-2618-d820-44bd-da54ab5f5727.htm">
         <HelpTOCNode Title="IEnumerator.Reset Method " Url="html/714c0c43-43d0-ae25-5eef-edbcadc5a3ac.htm" />
         <HelpTOCNode Title="Dispose Method " Url="html/82814b43-2292-2b1c-64d8-29c5f7a3bea5.htm" />
         <HelpTOCNode Title="MoveNext Method " Url="html/6217982d-a9a9-ae39-6044-18679b1634d3.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="1f550f8c-d9fe-46de-85d4-f081eec0ef35" Title="RankedDictionary(TKey, TValue).ValueCollection Class" Url="html/d6cbafc4-eda4-af05-d237-c20a79335c03.htm">
+    <HelpTOCNode Id="1061a727-708f-4f0b-8b13-6863da4abc13" Title="RankedDictionary(TKey, TValue).ValueCollection Class" Url="html/d6cbafc4-eda4-af05-d237-c20a79335c03.htm">
       <HelpTOCNode Title="RankedDictionary(TKey, TValue).ValueCollection Constructor " Url="html/d9aeb349-8afe-af6b-8220-c6685d1d7c61.htm" />
-      <HelpTOCNode Id="ab12ecff-6448-4836-8434-4b1f75f1e6d4" Title="ValueCollection Properties" Url="html/4eaf3294-d090-8d33-ef22-1fd401a6887e.htm">
+      <HelpTOCNode Id="a54f8167-387e-4b76-a761-6129f0ea40d4" Title="ValueCollection Properties" Url="html/4eaf3294-d090-8d33-ef22-1fd401a6887e.htm">
         <HelpTOCNode Title="ICollection(TValue).IsReadOnly Property " Url="html/74ba2819-0177-da3a-c623-b9dd091e9f55.htm" />
         <HelpTOCNode Title="ICollection.IsSynchronized Property " Url="html/ad2972f8-cc25-4f26-f50a-88378d0e8e77.htm" />
         <HelpTOCNode Title="ICollection.SyncRoot Property " Url="html/db582a1b-bc38-6814-d28e-0458eff4cbe0.htm" />
         <HelpTOCNode Title="Count Property " Url="html/6156cdb7-2da9-ea00-1b74-8cf72963d1a6.htm" />
         <HelpTOCNode Title="Item Property " Url="html/6e2ed8e0-005c-8b19-be27-111e34b7e9d3.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="afe39286-bc56-4912-835b-49b360f8f213" Title="ValueCollection Methods" Url="html/0a97b228-d1df-de18-0026-8ef7065a7492.htm">
+      <HelpTOCNode Id="b96cbec7-cf09-430c-a658-6cd17a0c0400" Title="ValueCollection Methods" Url="html/0a97b228-d1df-de18-0026-8ef7065a7492.htm">
         <HelpTOCNode Title="ICollection(TValue).Add Method " Url="html/0a6d623f-9871-1806-74a1-dd29928f9f4c.htm" />
         <HelpTOCNode Title="ICollection(TValue).Clear Method " Url="html/c39c16b4-793c-58c4-d778-5479d9f5f9c7.htm" />
         <HelpTOCNode Title="ICollection(TValue).Contains Method " Url="html/38f999cf-2766-d5f5-c3f9-2b8403d747a3.htm" />
@@ -248,26 +248,26 @@
         <HelpTOCNode Title="Reverse Method " Url="html/b57a9865-43d4-4027-9a0b-dde45f179efe.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="8799e86f-0874-4d70-b56f-2ecb5b119270" Title="RankedDictionary(TKey, TValue).ValueCollection.Enumerator Class" Url="html/8201cfd5-9722-aa73-9c21-5dff0ff0a8b7.htm">
-      <HelpTOCNode Id="a4088613-40b2-4c50-ac38-aa45903814b9" Title="Enumerator Properties" Url="html/7c99b705-f5cb-0233-33f0-3b79343dff18.htm">
+    <HelpTOCNode Id="5b74dc7a-e93a-4b20-83b0-12f55a06646d" Title="RankedDictionary(TKey, TValue).ValueCollection.Enumerator Class" Url="html/8201cfd5-9722-aa73-9c21-5dff0ff0a8b7.htm">
+      <HelpTOCNode Id="5b226a8b-053a-444f-9907-2a0e35a21786" Title="Enumerator Properties" Url="html/7c99b705-f5cb-0233-33f0-3b79343dff18.htm">
         <HelpTOCNode Title="IEnumerator.Current Property " Url="html/a5d7510e-3ff8-6b5f-321f-2eee9853438a.htm" />
         <HelpTOCNode Title="Current Property " Url="html/08d13ee1-7273-ad55-9a13-1f539870bd84.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="3e1975a2-cbc2-4953-8310-fd564b6630e3" Title="Enumerator Methods" Url="html/0316d027-5d1d-d0ad-fac5-3317eb29b386.htm">
+      <HelpTOCNode Id="78dc50cc-fc1e-424f-8fda-84f713234cad" Title="Enumerator Methods" Url="html/0316d027-5d1d-d0ad-fac5-3317eb29b386.htm">
         <HelpTOCNode Title="IEnumerator.Reset Method " Url="html/f9b584c0-1317-3bef-1eb3-85d2ac2b0d9b.htm" />
         <HelpTOCNode Title="Dispose Method " Url="html/22eabee4-415c-ab13-30a5-312f8c792849.htm" />
         <HelpTOCNode Title="MoveNext Method " Url="html/e013c6d2-3ae9-c328-fe7f-de6cd030a92f.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="9564b61f-0892-49f4-8ac0-e4207300a031" Title="RankedMap(TKey, TValue) Class" Url="html/0945f4a6-ca33-1964-cebc-e31a4907cb0c.htm">
-      <HelpTOCNode Id="0dac9207-2351-4c01-8157-6032f87ea02e" Title="RankedMap(TKey, TValue) Constructor " Url="html/260e134b-cfaa-f0f1-fae1-a4a7f96a16b6.htm">
+    <HelpTOCNode Id="10d7c626-929c-4812-b50e-86572ea7c1ff" Title="RankedMap(TKey, TValue) Class" Url="html/0945f4a6-ca33-1964-cebc-e31a4907cb0c.htm">
+      <HelpTOCNode Id="cf6f770e-63b4-408e-b1a8-181807ad9945" Title="RankedMap(TKey, TValue) Constructor " Url="html/260e134b-cfaa-f0f1-fae1-a4a7f96a16b6.htm">
         <HelpTOCNode Title="RankedMap(TKey, TValue) Constructor " Url="html/7b243158-9283-384a-9804-cdf00d028b46.htm" />
         <HelpTOCNode Title="RankedMap(TKey, TValue) Constructor (ICollection(KeyValuePair(TKey, TValue)))" Url="html/f5bca1e8-7ce7-1d20-fb9a-a76dd73d2524.htm" />
         <HelpTOCNode Title="RankedMap(TKey, TValue) Constructor (IComparer(TKey))" Url="html/1b4ef9e4-3720-7fa6-7b49-8901880ba402.htm" />
         <HelpTOCNode Title="RankedMap(TKey, TValue) Constructor (ICollection(KeyValuePair(TKey, TValue)), IComparer(TKey))" Url="html/0d9a30b2-ea98-4483-c50a-8d6de8ee73eb.htm" />
         <HelpTOCNode Title="RankedMap(TKey, TValue) Constructor (SerializationInfo, StreamingContext)" Url="html/b816dc50-2c41-8415-bc15-6fa2f1dfa85a.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="833ef07a-4f6a-4a7d-af48-9f04c0dffd4b" Title="RankedMap(TKey, TValue) Properties" Url="html/82f9e700-7386-d604-ec81-1a4c9dfc0044.htm">
+      <HelpTOCNode Id="138df8d2-f9df-4d4e-9d24-3d634887490f" Title="RankedMap(TKey, TValue) Properties" Url="html/82f9e700-7386-d604-ec81-1a4c9dfc0044.htm">
         <HelpTOCNode Title="ICollection(KeyValuePair(TKey, TValue)).IsReadOnly Property " Url="html/250dcbf2-2e46-4512-7efe-0f439adf8e0f.htm" />
         <HelpTOCNode Title="ICollection.IsSynchronized Property " Url="html/f27cb673-28a1-b942-54f6-996e0ed8dd1b.htm" />
         <HelpTOCNode Title="ICollection.SyncRoot Property " Url="html/aee0ce1d-417a-5d4b-2b15-104256d49b6d.htm" />
@@ -278,7 +278,7 @@
         <HelpTOCNode Title="MinKey Property " Url="html/942170f3-f2e1-cab8-f4f0-5239fb83c616.htm" />
         <HelpTOCNode Title="Values Property " Url="html/48ad95a0-c871-2ba6-0cc8-0b083236831a.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="35a20cf0-6efe-4e69-9a72-f4e7cab0b9f7" Title="RankedMap(TKey, TValue) Methods" Url="html/06634072-62bb-48f0-ea66-666deccd7f73.htm">
+      <HelpTOCNode Id="ebd247f2-3391-48a4-ad99-722384b0c7f2" Title="RankedMap(TKey, TValue) Methods" Url="html/06634072-62bb-48f0-ea66-666deccd7f73.htm">
         <HelpTOCNode Title="ICollection(KeyValuePair(TKey, TValue)).Add Method " Url="html/2f0342b5-7b6a-924a-5c18-bb7d004b0653.htm" />
         <HelpTOCNode Title="ICollection(KeyValuePair(TKey, TValue)).Contains Method " Url="html/00eeef57-6c4f-88e9-e3f6-1fada8df120e.htm" />
         <HelpTOCNode Title="ICollection.CopyTo Method " Url="html/bd771a35-d3b3-4109-d187-00301d0fd170.htm" />
@@ -304,7 +304,7 @@
         <HelpTOCNode Title="IndexOfValue Method " Url="html/22a23f03-4640-497d-efaf-7bb8a3967d5c.htm" />
         <HelpTOCNode Title="Last Method " Url="html/80eb94ad-5dc3-1660-ef83-214b8badc760.htm" />
         <HelpTOCNode Title="OnDeserialization Method " Url="html/08ac2b58-8c9b-2637-8d5e-4893bf98c00b.htm" />
-        <HelpTOCNode Id="7ab5a0ea-4813-4969-b8e1-3c40073fe4b9" Title="Remove Method " Url="html/6d4e8719-ab50-9074-405b-1c0d19cc134e.htm">
+        <HelpTOCNode Id="bc8da8cf-809f-4d4d-b441-6f7167daf12b" Title="Remove Method " Url="html/6d4e8719-ab50-9074-405b-1c0d19cc134e.htm">
           <HelpTOCNode Title="Remove Method (TKey)" Url="html/e499a311-2600-4bde-4015-0c7263a936e1.htm" />
           <HelpTOCNode Title="Remove Method (TKey, Int32)" Url="html/7e0d3e0c-aabe-48db-8630-192e3292553f.htm" />
         </HelpTOCNode>
@@ -320,27 +320,27 @@
         <HelpTOCNode Title="TryGetLessThanOrEqual Method " Url="html/bf5420ab-bb58-56bd-2314-f397b6cc8749.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="8fb69031-c55f-49e3-8aea-f7d3b2858a3e" Title="RankedMap(TKey, TValue).Enumerator Class" Url="html/0fd0914b-b650-dda1-9a6c-255079fd2990.htm">
-      <HelpTOCNode Id="52d67ea9-2f2a-44b1-8f02-6aaa43bd16ac" Title="Enumerator Properties" Url="html/8616826d-3426-25bf-0b91-d53ec549326d.htm">
+    <HelpTOCNode Id="532eed86-da28-41fe-9b53-f069ef02798e" Title="RankedMap(TKey, TValue).Enumerator Class" Url="html/0fd0914b-b650-dda1-9a6c-255079fd2990.htm">
+      <HelpTOCNode Id="d3e55a5c-c724-43ad-a8d9-c7f319b4a874" Title="Enumerator Properties" Url="html/8616826d-3426-25bf-0b91-d53ec549326d.htm">
         <HelpTOCNode Title="IEnumerator.Current Property " Url="html/5d1cd470-800b-8347-76a7-029d4530bdf7.htm" />
         <HelpTOCNode Title="Current Property " Url="html/50111b98-4be0-fa37-de21-6bc826560d88.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="f720e242-6086-476a-a8e3-de667ff1ee67" Title="Enumerator Methods" Url="html/419d80bc-e4fe-cbc1-e649-1fa9fcc6b791.htm">
+      <HelpTOCNode Id="aa1a3334-685e-46b0-a848-b587c2c62991" Title="Enumerator Methods" Url="html/419d80bc-e4fe-cbc1-e649-1fa9fcc6b791.htm">
         <HelpTOCNode Title="IEnumerator.Reset Method " Url="html/3065a527-e240-dd22-39ee-4a97146e9d9f.htm" />
         <HelpTOCNode Title="Dispose Method " Url="html/3b368711-3896-4021-228d-351c40b8d202.htm" />
         <HelpTOCNode Title="MoveNext Method " Url="html/a51f1158-2824-ffd9-dd29-f6e3969d0862.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="f59d8a0b-3b17-4d16-8288-51d21123aa48" Title="RankedMap(TKey, TValue).KeyCollection Class" Url="html/3495e550-d7f5-0929-d9d5-8854e203f8a1.htm">
+    <HelpTOCNode Id="6071b0d1-39b9-40c5-8092-c6a8cf36b83b" Title="RankedMap(TKey, TValue).KeyCollection Class" Url="html/3495e550-d7f5-0929-d9d5-8854e203f8a1.htm">
       <HelpTOCNode Title="RankedMap(TKey, TValue).KeyCollection Constructor " Url="html/c43713a8-b5cf-d150-bd3e-bc944f9afb4a.htm" />
-      <HelpTOCNode Id="72214616-cc73-44e2-96ce-2f2ea033328b" Title="KeyCollection Properties" Url="html/96dc04cb-5a5e-3a42-d705-aefdb1941b9b.htm">
+      <HelpTOCNode Id="e6293937-e1b6-4193-ae13-7c9b2ea3616b" Title="KeyCollection Properties" Url="html/96dc04cb-5a5e-3a42-d705-aefdb1941b9b.htm">
         <HelpTOCNode Title="ICollection(TKey).IsReadOnly Property " Url="html/1ef794c4-1827-2f39-c13f-3c515dcdcaaa.htm" />
         <HelpTOCNode Title="ICollection.IsSynchronized Property " Url="html/92bb3e29-a9f4-e537-ab7e-261e5f7cfaf5.htm" />
         <HelpTOCNode Title="ICollection.SyncRoot Property " Url="html/93564e00-5aed-6215-3241-b3f5269d76e0.htm" />
         <HelpTOCNode Title="Count Property " Url="html/f3c57c15-2fb8-fd15-2c63-85038c2d8b8a.htm" />
         <HelpTOCNode Title="Item Property " Url="html/4d600921-0ca7-f822-86d2-e343d505f871.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="134db3bc-42cc-4e9c-9ce2-adf3ad4d9c35" Title="KeyCollection Methods" Url="html/cb0cb5ce-f5de-e735-81fb-a1bffb6519cc.htm">
+      <HelpTOCNode Id="2d188d19-7569-4dca-86b6-afd5a90b4527" Title="KeyCollection Methods" Url="html/cb0cb5ce-f5de-e735-81fb-a1bffb6519cc.htm">
         <HelpTOCNode Title="ICollection(TKey).Add Method " Url="html/a3662fd9-f739-3205-e707-bf1df5950e0e.htm" />
         <HelpTOCNode Title="ICollection(TKey).Clear Method " Url="html/016fefad-36a1-4a75-3016-46b1ecaccd7f.htm" />
         <HelpTOCNode Title="ICollection(TKey).Contains Method " Url="html/186e3dc0-e489-e0ee-31ba-be4935c18abc.htm" />
@@ -366,27 +366,27 @@
         <HelpTOCNode Title="TryGetLessThanOrEqual Method " Url="html/1efcccee-f3e3-f88c-c206-27e578e3a17d.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="46c2df02-c799-4dfa-a775-8e64c3c76a03" Title="RankedMap(TKey, TValue).KeyCollection.Enumerator Class" Url="html/c372a052-58cc-1cdb-30d2-6c5aa1cdab36.htm">
-      <HelpTOCNode Id="a1e436cf-47db-4ce3-b19d-81422796324d" Title="Enumerator Properties" Url="html/8e27a1a5-257a-da98-2fc4-141013063ebf.htm">
+    <HelpTOCNode Id="e23140f9-8de4-4b3d-829e-14811d8b7ec8" Title="RankedMap(TKey, TValue).KeyCollection.Enumerator Class" Url="html/c372a052-58cc-1cdb-30d2-6c5aa1cdab36.htm">
+      <HelpTOCNode Id="38185806-0da0-4ebf-8b8e-edc5e5567b54" Title="Enumerator Properties" Url="html/8e27a1a5-257a-da98-2fc4-141013063ebf.htm">
         <HelpTOCNode Title="IEnumerator.Current Property " Url="html/44e7b650-2837-7970-5dd4-5cda1d5e3052.htm" />
         <HelpTOCNode Title="Current Property " Url="html/3a5a3d74-8e3a-d2ec-624d-58501fa2652c.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="65af3bf9-433f-4c83-b282-2b3f744025f8" Title="Enumerator Methods" Url="html/9d757684-9d8e-adc7-db6d-14afd9fb2479.htm">
+      <HelpTOCNode Id="224d49f5-a794-484a-824e-a586a8fd1032" Title="Enumerator Methods" Url="html/9d757684-9d8e-adc7-db6d-14afd9fb2479.htm">
         <HelpTOCNode Title="IEnumerator.Reset Method " Url="html/2b2fa581-619a-724b-21a7-74a63188c307.htm" />
         <HelpTOCNode Title="Dispose Method " Url="html/1f0c85fe-b7c7-5761-f131-1477c5f7b56c.htm" />
         <HelpTOCNode Title="MoveNext Method " Url="html/66bc4ccb-a54b-7117-f5c2-ac8860069e20.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="f1c3c36f-6854-46bb-9229-e00fbf39ba6e" Title="RankedMap(TKey, TValue).ValueCollection Class" Url="html/acd38b6a-394e-0a8d-c2de-0692a0bc21f1.htm">
+    <HelpTOCNode Id="8643732d-2585-4145-9425-bc9319ebb770" Title="RankedMap(TKey, TValue).ValueCollection Class" Url="html/acd38b6a-394e-0a8d-c2de-0692a0bc21f1.htm">
       <HelpTOCNode Title="RankedMap(TKey, TValue).ValueCollection Constructor " Url="html/9bc66190-abc6-75db-4865-bc24fadb350c.htm" />
-      <HelpTOCNode Id="d75098f0-1f22-43b4-9b64-083ba6baf7da" Title="ValueCollection Properties" Url="html/ff69ab36-38b3-4d26-4a0c-ab899e059341.htm">
+      <HelpTOCNode Id="ed79aa99-0fc4-4512-a00f-b19bac126250" Title="ValueCollection Properties" Url="html/ff69ab36-38b3-4d26-4a0c-ab899e059341.htm">
         <HelpTOCNode Title="ICollection(TValue).IsReadOnly Property " Url="html/4c38edbe-f03a-5e20-4c67-068c13ceff56.htm" />
         <HelpTOCNode Title="ICollection.IsSynchronized Property " Url="html/c0352d6c-8d01-b390-ba8d-a9164694466a.htm" />
         <HelpTOCNode Title="ICollection.SyncRoot Property " Url="html/0d379057-74c8-9891-4aba-6b55239703b1.htm" />
         <HelpTOCNode Title="Count Property " Url="html/e6465213-5d57-d300-f946-9c02bedd2a51.htm" />
         <HelpTOCNode Title="Item Property " Url="html/f09e80f1-220d-e39d-8da5-436653439875.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="2366b7e6-6d65-47b9-836e-d0f48a78960a" Title="ValueCollection Methods" Url="html/7d4c08c4-4830-c5d6-7e05-3be1bef62e09.htm">
+      <HelpTOCNode Id="b84b98bd-e5aa-4973-af5f-1585ed4ca705" Title="ValueCollection Methods" Url="html/7d4c08c4-4830-c5d6-7e05-3be1bef62e09.htm">
         <HelpTOCNode Title="ICollection(TValue).Add Method " Url="html/e9fcf0f8-a132-165f-9f7c-dbd804d83c6b.htm" />
         <HelpTOCNode Title="ICollection(TValue).Clear Method " Url="html/b06fc454-4be2-6c46-d949-f1593693052e.htm" />
         <HelpTOCNode Title="ICollection(TValue).Contains Method " Url="html/c4e0456d-09fa-9a08-4e22-eb46e0575b48.htm" />
@@ -404,26 +404,26 @@
         <HelpTOCNode Title="Reverse Method " Url="html/ea386144-271a-3fc6-812f-a77957f422c0.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="8c33fe33-f84e-4777-9160-19349808ee55" Title="RankedMap(TKey, TValue).ValueCollection.Enumerator Class" Url="html/0fa6cc9e-60af-a9c4-bd08-421e77a1ccad.htm">
-      <HelpTOCNode Id="cab546ab-9910-4500-82f4-8b684620ef32" Title="Enumerator Properties" Url="html/f6259b05-c5cd-ab91-1855-b4b08b2ebc18.htm">
+    <HelpTOCNode Id="a94fa9b4-fdf0-4d89-ac2c-ff73a16576b3" Title="RankedMap(TKey, TValue).ValueCollection.Enumerator Class" Url="html/0fa6cc9e-60af-a9c4-bd08-421e77a1ccad.htm">
+      <HelpTOCNode Id="4979e0c7-ee7d-47fe-b45e-bc06c1cca056" Title="Enumerator Properties" Url="html/f6259b05-c5cd-ab91-1855-b4b08b2ebc18.htm">
         <HelpTOCNode Title="IEnumerator.Current Property " Url="html/5966bda6-36dd-23ab-d192-c9ee90fa0682.htm" />
         <HelpTOCNode Title="Current Property " Url="html/c140af9c-b497-6b3a-413c-90b2043de355.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="0c617a2b-b6a2-43a1-a9da-b62a467f24cf" Title="Enumerator Methods" Url="html/e35736b6-a5ec-b9ca-ef18-f548433bd3c5.htm">
+      <HelpTOCNode Id="336cc7be-c32b-463e-add5-f11e51a2b31e" Title="Enumerator Methods" Url="html/e35736b6-a5ec-b9ca-ef18-f548433bd3c5.htm">
         <HelpTOCNode Title="IEnumerator.Reset Method " Url="html/5cdd2c3c-5cb5-7990-fbe6-597673b48cff.htm" />
         <HelpTOCNode Title="Dispose Method " Url="html/7847f980-3d26-cacc-765e-f79d41999349.htm" />
         <HelpTOCNode Title="MoveNext Method " Url="html/4ffc57d2-afaa-d0dc-52a4-74c8dace3b88.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="a0a8ab12-804e-40db-9edf-b4d7168391e3" Title="RankedSet(T) Class" Url="html/d595b6a0-2eaa-166f-3420-098e987e7c30.htm">
-      <HelpTOCNode Id="95e25949-0843-4b73-bf16-0c399cd40782" Title="RankedSet(T) Constructor " Url="html/6f065074-d484-ffdc-cfb4-c37ac5faec63.htm">
+    <HelpTOCNode Id="f87c9a64-504a-4579-8aed-65f6c3c83386" Title="RankedSet(T) Class" Url="html/d595b6a0-2eaa-166f-3420-098e987e7c30.htm">
+      <HelpTOCNode Id="ff78b893-4360-435c-ac8a-b4448dfeaf30" Title="RankedSet(T) Constructor " Url="html/6f065074-d484-ffdc-cfb4-c37ac5faec63.htm">
         <HelpTOCNode Title="RankedSet(T) Constructor " Url="html/0016b7fc-30fe-9dfc-b87d-4705b7fdc06b.htm" />
         <HelpTOCNode Title="RankedSet(T) Constructor (IComparer(T))" Url="html/4de022d4-2dbb-f23b-234d-01b60a85d371.htm" />
         <HelpTOCNode Title="RankedSet(T) Constructor (IEnumerable(T))" Url="html/7ec3e181-a35f-4082-fad2-7cb3328360f6.htm" />
         <HelpTOCNode Title="RankedSet(T) Constructor (IEnumerable(T), IComparer(T))" Url="html/7e97b2eb-e689-9b84-d4dc-c5a822386201.htm" />
         <HelpTOCNode Title="RankedSet(T) Constructor (SerializationInfo, StreamingContext)" Url="html/ebc7b356-6593-036a-346a-a8d5ede45a01.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="9f1adc21-adcf-43a9-86a3-aa5cae848b69" Title="RankedSet(T) Properties" Url="html/5435baa1-45d2-8529-864b-8cf69713ec33.htm">
+      <HelpTOCNode Id="200113a5-f734-4c89-b540-5e588c3e52a3" Title="RankedSet(T) Properties" Url="html/5435baa1-45d2-8529-864b-8cf69713ec33.htm">
         <HelpTOCNode Title="ICollection(T).IsReadOnly Property " Url="html/580c4939-d406-3838-2a99-b8478b2a53c9.htm" />
         <HelpTOCNode Title="ICollection.IsSynchronized Property " Url="html/73298bf2-6b19-9115-4d8f-32410e48928e.htm" />
         <HelpTOCNode Title="ICollection.SyncRoot Property " Url="html/59387a95-6a7a-b4c9-b2fb-0922a01b9773.htm" />
@@ -432,7 +432,7 @@
         <HelpTOCNode Title="Max Property " Url="html/34e1ae43-d35c-9279-2cba-f3928a86f1d6.htm" />
         <HelpTOCNode Title="Min Property " Url="html/fd602846-3918-30de-b916-e3e763df61a4.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="c39ab7e7-fcbb-4f6a-a897-6dcbed5f3df6" Title="RankedSet(T) Methods" Url="html/d4f7b95c-0068-8623-3a97-3d814f999b21.htm">
+      <HelpTOCNode Id="1acd45f4-12bc-4831-87a5-0b7dc06683ab" Title="RankedSet(T) Methods" Url="html/d4f7b95c-0068-8623-3a97-3d814f999b21.htm">
         <HelpTOCNode Title="ICollection(T).Add Method " Url="html/daa74ee4-f561-0066-2007-18f613302044.htm" />
         <HelpTOCNode Title="ICollection.CopyTo Method " Url="html/74b83c7f-b72c-deff-0ad5-f82e9f881212.htm" />
         <HelpTOCNode Title="IEnumerable(T).GetEnumerator Method " Url="html/08a827ec-fdb8-ba1d-d749-e80158c49f99.htm" />
@@ -442,12 +442,12 @@
         <HelpTOCNode Title="Add Method " Url="html/5e377548-39b3-183e-5475-72d2fd2add91.htm" />
         <HelpTOCNode Title="Clear Method " Url="html/012bb0ea-d36c-1c18-e863-38949e04c90d.htm" />
         <HelpTOCNode Title="Contains Method " Url="html/d344a227-1428-8dd8-46d3-858e6e8dae54.htm" />
-        <HelpTOCNode Id="df423c72-26d8-4584-bd0e-aac8deedc999" Title="CopyTo Method " Url="html/303b0e1b-5ee9-595c-fbc5-be15c04359fd.htm">
+        <HelpTOCNode Id="dbcbdb36-cc35-47db-9559-751f2be37cb4" Title="CopyTo Method " Url="html/303b0e1b-5ee9-595c-fbc5-be15c04359fd.htm">
           <HelpTOCNode Title="CopyTo Method (T[])" Url="html/f9bb9d6e-d9d2-58ed-c4e9-3984b5c50bf0.htm" />
           <HelpTOCNode Title="CopyTo Method (T[], Int32)" Url="html/0ab1e727-cb44-05e8-52d3-9e2a6a2d7c8c.htm" />
           <HelpTOCNode Title="CopyTo Method (T[], Int32, Int32)" Url="html/4e873fe9-a07b-c1a6-cffd-b810a96dfb2a.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="7d1fb75d-9017-442b-9acf-72dc84060d1e" Title="CreateSetComparer Method " Url="html/1f317165-cd9e-1a22-dada-87a57893fd5f.htm">
+        <HelpTOCNode Id="19b0b67d-f76c-4501-9367-3b74becd3dea" Title="CreateSetComparer Method " Url="html/1f317165-cd9e-1a22-dada-87a57893fd5f.htm">
           <HelpTOCNode Title="CreateSetComparer Method " Url="html/cf81b084-5889-9eca-3ef4-7d0a781e3755.htm" />
           <HelpTOCNode Title="CreateSetComparer Method (IEqualityComparer(T))" Url="html/4e600f6c-ca39-c4d5-c882-b72404de877e.htm" />
         </HelpTOCNode>
@@ -473,7 +473,7 @@
         <HelpTOCNode Title="RemoveAt Method " Url="html/29d810eb-6dcc-8857-6ea0-fd085fbf766d.htm" />
         <HelpTOCNode Title="RemoveRange Method " Url="html/23efd273-9e7b-3c5b-03af-30af76f2f98b.htm" />
         <HelpTOCNode Title="RemoveWhere Method " Url="html/c5d8625c-986b-2b56-e311-fdaaf15edaf6.htm" />
-        <HelpTOCNode Id="dbdf0f66-ed1b-4370-847d-bbea95b52b55" Title="Replace Method " Url="html/06d6d198-1805-074e-fed2-ec73efe1067c.htm">
+        <HelpTOCNode Id="f7d09960-6cdb-46c0-bb1b-24786e59522d" Title="Replace Method " Url="html/06d6d198-1805-074e-fed2-ec73efe1067c.htm">
           <HelpTOCNode Title="Replace Method (T)" Url="html/662b20dd-8811-577f-c392-382d859a917a.htm" />
           <HelpTOCNode Title="Replace Method (T, Boolean)" Url="html/6d75d5fe-0e6b-5646-0fed-e6749cc3eea6.htm" />
         </HelpTOCNode>
@@ -488,12 +488,12 @@
         <HelpTOCNode Title="UnionWith Method " Url="html/885e5625-cbcf-aeb1-5a34-6aba11f563c1.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="175f95f3-998c-4e5a-9111-df0aaeb1c66a" Title="RankedSet(T).Enumerator Class" Url="html/f21aa0a8-9a92-3264-9967-5f2b7d9a90fa.htm">
-      <HelpTOCNode Id="ebe2326c-ddec-4e02-8658-d7846d8d66de" Title="Enumerator Properties" Url="html/7ef92623-a276-9f2a-79a6-9f929887e815.htm">
+    <HelpTOCNode Id="856a086c-0ffd-47ac-bb54-405ba294d6a4" Title="RankedSet(T).Enumerator Class" Url="html/f21aa0a8-9a92-3264-9967-5f2b7d9a90fa.htm">
+      <HelpTOCNode Id="4a4d14c1-27ff-43ac-a23d-35ae23d84bb9" Title="Enumerator Properties" Url="html/7ef92623-a276-9f2a-79a6-9f929887e815.htm">
         <HelpTOCNode Title="IEnumerator.Current Property " Url="html/882dddd2-8a59-e8e9-9c46-300e3119a647.htm" />
         <HelpTOCNode Title="Current Property " Url="html/ac27a64d-f199-0bd3-dcae-b40812d85e5a.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="ec14183d-81a2-41fe-891f-a7378117ff5d" Title="Enumerator Methods" Url="html/61db9200-476f-4f3a-4999-1b74746de7fe.htm">
+      <HelpTOCNode Id="29858737-33ca-4053-bdd7-ef36cd1900ff" Title="Enumerator Methods" Url="html/61db9200-476f-4f3a-4999-1b74746de7fe.htm">
         <HelpTOCNode Title="IEnumerator.Reset Method " Url="html/fdceeae3-87bf-40cd-276a-3263d0dfd4d5.htm" />
         <HelpTOCNode Title="Dispose Method " Url="html/4685e547-0897-cade-9005-9f20e0e134f2.htm" />
         <HelpTOCNode Title="MoveNext Method " Url="html/505c6bdc-ffbf-ef13-25d6-15d7b39ac478.htm" />
