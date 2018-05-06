@@ -9,7 +9,6 @@
   </HelpKINode>
   <HelpKINode Title="Combination class">
     <HelpKINode Title="Combination Class" Url="html/ea7aeb63-8536-c09a-036f-2d8afe643a96.htm" />
-    <HelpKINode Title="about Combination class" Url="html/ea7aeb63-8536-c09a-036f-2d8afe643a96.htm" />
     <HelpKINode Title="constructor" Url="html/4bf5aa36-c793-8bf3-d95c-a7eadf5f4d99.htm" />
     <HelpKINode Title="methods" Url="html/2af2abf4-fd21-41f2-9a47-4d1f915a7486.htm" />
     <HelpKINode Title="operators" Url="html/5224da53-67bf-dbc0-d6c2-ffbb021f8bea.htm" />
@@ -39,7 +38,6 @@
   <HelpKINode Title="Combination.ToString method" Url="html/9586001e-64c1-5e4c-d9d7-5bf93aac1d1b.htm" />
   <HelpKINode Title="Combinatoric class">
     <HelpKINode Title="Combinatoric Class" Url="html/212db916-59f3-c91c-ea62-36f416eb8c7d.htm" />
-    <HelpKINode Title="about Combinatoric class" Url="html/212db916-59f3-c91c-ea62-36f416eb8c7d.htm" />
     <HelpKINode Title="methods" Url="html/30c60841-333e-831b-31e6-c37037278275.htm" />
   </HelpKINode>
   <HelpKINode Title="Combinatoric.BinomialCoefficient method" Url="html/3f3bf341-2b28-27f2-a767-ef6b6489e533.htm" />
@@ -139,7 +137,6 @@
   <HelpKINode Title="MaxChoices property" Url="html/7d8340a9-e9df-e3e1-5e5a-32a1788ae67f.htm" />
   <HelpKINode Title="Multicombination class">
     <HelpKINode Title="Multicombination Class" Url="html/72a8744f-e6b9-06a8-6bd9-bc9d132365da.htm" />
-    <HelpKINode Title="about Multicombination class" Url="html/72a8744f-e6b9-06a8-6bd9-bc9d132365da.htm" />
     <HelpKINode Title="constructor" Url="html/f2f8841f-6fff-b35e-fb07-da723dcc2af8.htm" />
     <HelpKINode Title="methods" Url="html/14f68c9f-de51-72bf-a45f-431c1eb1e695.htm" />
     <HelpKINode Title="operators" Url="html/f6f18b5d-6cbb-3644-26e9-3727b8a2c4eb.htm" />
@@ -169,7 +166,6 @@
   <HelpKINode Title="Multicombination.ToString method" Url="html/38a0c5ef-a36e-8afd-28ae-2547bcf6df48.htm" />
   <HelpKINode Title="Permutation class">
     <HelpKINode Title="Permutation Class" Url="html/bbaadc50-10fa-dfcf-a4db-8532baaef11e.htm" />
-    <HelpKINode Title="about Permutation class" Url="html/bbaadc50-10fa-dfcf-a4db-8532baaef11e.htm" />
     <HelpKINode Title="constructor" Url="html/c195dc27-eea2-b224-a4ea-9886a2c36b49.htm" />
     <HelpKINode Title="methods" Url="html/83d7a269-6cb7-4f2e-4706-cffb2e93c85c.htm" />
     <HelpKINode Title="operators" Url="html/ddf69fe2-2ffe-0be5-8e6a-70745e708df5.htm" />
@@ -223,7 +219,6 @@
   <HelpKINode Title="PlainRank property" Url="html/e6bc3f5f-beb3-fcce-171f-f65b41bc153b.htm" />
   <HelpKINode Title="Product class">
     <HelpKINode Title="Product Class" Url="html/bff6e165-81a6-534b-d46f-42782326a7cd.htm" />
-    <HelpKINode Title="about Product class" Url="html/bff6e165-81a6-534b-d46f-42782326a7cd.htm" />
     <HelpKINode Title="constructor" Url="html/7adbe74a-c438-d98f-6387-381c8bd82bdf.htm" />
     <HelpKINode Title="methods" Url="html/fd06c485-6c92-cf82-b5b7-73e95cc1cc31.htm" />
     <HelpKINode Title="operators" Url="html/4d497b59-3d9a-b36f-e727-e5665ca24bd6.htm" />
