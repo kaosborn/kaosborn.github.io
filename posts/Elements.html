@@ -1,0 +1,1012 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="github.com/kaosborn">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elements</title>
+  <style>
+    :root {
+      --lang:en;
+      --c-neutral:#c0c0c0;
+      --k0000:#f37c81; --k1789:#ffce00; --k1869:#fbf49c; --k1923:#d2e9c6;
+      --k1945:#a0caec; --k2000:#dfdfde; --k2012:#b99cca;
+      --c-pal1-0:#00dddd; --c-pal1-1:#00dd00; --c-pal1-2:#dddd00;
+      --c-pal1-3:#dd5500; --c-pal1-4:#ff69b4; --c-pal1-5:#dd00cc;
+    }
+    a { text-decoration: none; }
+    .toe {
+      table-layout:fixed;
+      align-content: center; border: 2px solid; border-spacing: 0px;
+      border-collapse: collapse;
+    }
+    #t32-id,
+    .nm,
+    .yAxis1,
+    .yPadSmall { display:none }
+    .yPadBig { width:61px; display:inline-block }
+    .catsleg { font-size: x-small; text-align: center; }
+    .maincap { font-size: xx-large; }
+    .sb { display: block; text-align: center; font-size: large; font-weight: bold; text-decoration: none; }
+    .an,.lanrange,.actrange { font-size: small; }
+    .lanrange,.actrange { text-align: center; }
+    .alkaliLeg,
+    .alkali    { background-color: #ff9d9d; }
+    .aearthLeg,
+    .aearth    { background-color: #ffdead; }
+    .lanrange,
+    .lanthanoidLeg,
+    .lanthanoid{ background-color: #ffbfff; }
+    .actrange,
+    .actinoidLeg,
+    .actinoid  { background-color: #ff99cc; }
+    .tmetalLeg,
+    .tmetal    { background-color: #ffc0c0; }
+    .ptmetalLeg,
+    .ptmetal   { background-color: #cccccc; }
+    .metaloidLeg,
+    .metaloid  { background-color: #cccc99; }
+    .nonmetalLeg,
+    .nonmetal  { background-color: #a0ffa0; }
+    .halogenLeg,
+    .halogen   { background-color: #ffff99; }
+    .nobleLeg,
+    .noblegas  { background-color: #c0ffff; }
+    .legBox {
+      width: 24px; height: 24px;
+      border: 1px solid #008;
+      margin-right: 1ch;
+    }
+    .legMinibox {
+      display: inline-block;
+      width: 10px; height: 10px;
+      margin-bottom: 5px;
+      border:1px solid #008;
+    }
+    .alkaliLeg,.aearthLeg,.lanthanoidLeg,.actinoidLeg,.tmetalLeg,.ptmetalLeg,.metaloidLeg,.nonmetalLeg,.halogenLeg,.nobleLeg
+    {
+      display: table-cell;
+      width: 52px; height: 35px;
+      border: 1px solid #008;
+    }
+    .tmetal,.nonmetal,.alkali,.aearth,.ptmetal,.metaloid,.lanrange,.lanthanoid,.actrange, .actinoid, .halogen,.noblegas
+    {
+      display: table-cell;
+      width: 28px; height: 37px;
+      vertical-align: bottom;
+      border: 1px solid #008;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { background-color:#c0a040 }
+    }
+    @media only screen and (min-width:720px) {
+      .tmetal, .nonmetal, .alkali,.aearth,.ptmetal,.metaloid,.lanrange,.lanthanoid,.actrange,.actinoid,.halogen,.noblegas
+      { width:32px; height:38px }
+      .yPadBig { width:69px }
+    }
+    @media only screen and (min-width:1210px) {
+      .nm { display:block; text-align:center; font-size:xx-small }
+      .tmetal,.nonmetal,.alkali,.aearth,.ptmetal,.metaloid,.lanrange,.lanthanoid,.actrange,.actinoid,.halogen,.noblegas
+      { width:54px; height:50px }
+      .yPadSmall,
+      .yPadBig { display:inline-block; width:185px }
+      .yAxis0 { width:73px }
+      .yAxis1 { display:table-cell; text-align:center; font-weight:bold }
+    }
+    @media only screen and (min-width:1920px)
+    {
+      .tmetal,.nonmetal,.alkali,.aearth,.ptmetal,.metaloid,.lanrange,.lanthanoid,.actrange,.actinoid,.halogen,.noblegas
+      { width:54px; height:50px }
+      #t18-id { display:none }
+      #t32-id { display:block }
+      .yPadSmall,
+      .yPadBig { width:74px }
+    }
+  </style>
+</head>
+<body>
+<div id="t32-id">
+  <table id="t32stan-id" class="toe">
+    <caption class="maincap textXL">
+      <span style="display:inline">Periodic Table of the Elements</span>
+      <span style="display:none" lang="de">Periodensystem der Elemente</span>
+      <span style="display:none" lang="es">Tabla periódica de los elementos</span>
+      <span style="display:none" lang="fr">Tableau périodique des éléments</span>
+      <span style="display:none" lang="it">Tavola periodica degli elementi</span>
+      <span style="display:none" lang="ru">Периодическая система химических элементов</span>
+    </caption>
+    <colgroup>
+      <col class="yAxis0">
+    </colgroup>
+    <thead>
+      <tr>
+        <th class="yAxis0"><span class="textXL"><span>Group&rarr;</span><span lang="de">Gruppe&rarr;</span><span lang="es">Grupo&rarr;</span><span lang="fr">Groupe&rarr;</span><span lang="it">Gruppo&rarr;</span><span lang="ru">Группа&rarr;</span></span></th>
+        <th>1</th><th>2</th><th colspan="14"></th><th>3</th><th>4</th><th>5</th><th>6</th>
+        <th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th>
+        <th>13</th><th>14</th><th>15</th><th>16</th><th>17</th><th>18</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="yAxis1"><span class="textXL"><span>Period&nbsp;&darr;</span><span lang="de">Periode&nbsp;&darr;</span><span lang="es">Periodo&nbsp;&darr;</span><span lang="fr">Période&nbsp;&darr;</span><span lang="it">Periodo&nbsp;&darr;</span><span lang="ru">Период&nbsp;&darr;</span></span><br/>1</td>
+        <td onclick="handleClick()">
+          <div class="nonmetal" style="--kb:var(--k1789)">
+            <div class="nm"><span style="display:none" lang="de">Wasserstoff</span><span style="display:none" lang="es">Hidrógeno</span><span style="display:none" lang="fr">Hydrogène</span><span style="display:none" lang="it">Idrogeno</span><span style="display:none" lang="ru">Водород</span></div>
+            <a class="sb">H</a>
+            <div class="an">1</div>
+          </div>
+        </td>
+        <td colspan="30"></td>
+        <td onclick="handleClick()"><div class="noblegas" style="--kb:var(--k1923)"><div class="nm"><span>Helium</span><span style="display:none" lang="es">Helio</span><span style="display:none" lang="fr">Hélium</span><span style="display:none" lang="it">Elio</span><span style="display:none" lang="ru">Гелий</span></div><a class="sb">He</a><div class="an">2</div></div></td>
+      </tr>
+      <tr>
+        <td class="yAxis1">2</td>
+        <td onclick="handleClick()"><div class="alkali" style="--kb:var(--k1869)"><div class="nm"><span>Lithium</span><span style="display:none" lang="es">Litio</span><span style="display:none" lang="it">Litio</span><span style="display:none" lang="ru">Литий</span></div><a><div class="sb">Li</div></a><div class="an">3</div></div></td>
+        <td onclick="handleClick()"><div class="aearth" style="--kb:var(--k1869)"><div class="nm"><span>Beryllium</span><span style="display:none" lang="es">Berilio</span><span style="display:none" lang="fr">Béryllium</span><span style="display:none" lang="it">Berillio</span><span style="display:none" lang="ru">Бериллий</span></div><a><div class="sb">Be</div></a><div class="an">4</div></div></td>
+        <td colspan="24"></td>
+        <td onclick="handleClick()"><div class="metaloid" style="--kb:var(--k1789)"><div class="nm"><span>Boron</span><span style="display:none" lang="de">Bor</span><span style="display:none" lang="es">Boro</span><span style="display:none" lang="fr">Bore</span><span style="display:none" lang="it">Boro</span><span style="display:none" lang="ru">Бор</span></div><a><div class="sb">B</div></a><div class="an">5</div></div></td>
+        <td onclick="handleClick()"><div class="nonmetal" style="--kb:var(--k0000)"><div class="nm"><span>Carbon</span><span style="display:none" lang="de">Kohlensto</span><span style="display:none" lang="es">Carbono</span><span style="display:none" lang="fr">Carbone</span><span style="display:none" lang="it">Carbonio</span><span style="display:none" lang="ru">Углерод</span></div><a><div class="sb">C</div></a><div class="an">6</div></div></td>
+        <td onclick="handleClick()"><div class="nonmetal" style="--kb:var(--k1789)"><div class="nm"><span>Nitrogen</span><span style="display:none" lang="de">Stickstoff</span><span style="display:none" lang="es">Nitrógeno</span><span style="display:none" lang="fr">Azote</span><span style="display:none" lang="it">Azoto</span><span style="display:none" lang="ru">Азот</span></div><a><div class="sb">N</div></a><div class="an">7</div></div></td>
+        <td onclick="handleClick()"><div class="nonmetal" style="--kb:var(--k1789)"><div class="nm"><span>Oxygen</span><span style="display:none" lang="de">Sauerstoff</span><span style="display:none" lang="es">Oxígeno</span><span style="display:none" lang="fr">Oxygène</span><span style="display:none" lang="it">Ossigeno</span><span style="display:none" lang="ru">Кислород</span></div><a><div class="sb">O</div></a><div class="an">8</div></div></td>
+        <td onclick="handleClick()"><div class="halogen" style="--kb:var(--k1869)"><div class="nm"><span>Fluorine</span><span style="display:none" lang="de">Fluor</span><span style="display:none" lang="es">Fluor</span><span style="display:none" lang="fr">Fluor</span><span style="display:none" lang="it">Fluoro</span><span style="display:none" lang="ru">Фтор</span></div><a><div class="sb">F</div></a><div class="an">9</div></div></td>
+        <td onclick="handleClick()"><div class="noblegas" style="--kb:var(--k1923)"><div class="nm"><span>Neon</span><span style="display:none" lang="es">Neón</span><span style="display:none" lang="fr">Néon</span><span style="display:none" lang="ru">Неон</span></div><a><div class="sb">Ne</div></a><div class="an">10</div></div></td>
+      </tr>
+      <tr>
+        <td class="yAxis1">3</td>
+        <td onclick="handleClick()"><div class="alkali" style="--kb:var(--k1869)"><div class="nm"><span>Sodium</span><span style="display:none" lang="de">Natrium</span><span style="display:none" lang="es">Sodio</span><span style="display:none" lang="it">Sodio</span><span style="display:none" lang="ru">Натрий</span></div><a><div class="sb">Na</div></a><div class="an">11</div></div></td>
+        <td onclick="handleClick()"><div class="aearth" style="--kb:var(--k1789)"><div class="nm"><span>Magnesium</span><span style="display:none" lang="es">Magnesio</span><span style="display:none" lang="fr">Magnésium</span><span style="display:none" lang="it">Magnesio</span><span style="display:none" lang="ru">Калий</span></div><a><div class="sb">Mg</div></a><div class="an">12</div></div></td>
+        <td colspan="24"></td>
+        <td onclick="handleClick()"><div class="ptmetal" style="--kb:var(--k1869)"><div class="nm"><span>Aluminium</span><span style="display:none" lang="en-us">Aluminum</span><span style="display:none" lang="es">Aluminio</span><span style="display:none" lang="it">Alluminio</span><span style="display:none" lang="ru">Алюминий</span></div><a><div class="sb">Al</div></a><div class="an">13</div></div></td>
+        <td onclick="handleClick()"><div class="metaloid" style="--kb:var(--k1869)"><div class="nm"><span>Silicon</span><span style="display:none" lang="de">Silicium</span><span style="display:none" lang="es">Silicio</span><span style="display:none" lang="fr">Silicium</span><span style="display:none" lang="it">Silicio</span><span style="display:none" lang="ru">Кремний</span></div><a><div class="sb">Si</div></a><div class="an">14</div></div></td>
+        <td onclick="handleClick()"><div class="nonmetal" style="--kb:var(--k1789)"><div class="nm"><span>Phosphorus</span><span style="display:none" lang="de">Phosphor</span><span style="display:none" lang="es">Fósforo</span><span style="display:none" lang="fr">Phosphore</span><span style="display:none" lang="it">Fosforo</span><span style="display:none" lang="ru">Фосфор</span></div><a><div class="sb">P</div></a><div class="an">15</div></div></td>
+        <td onclick="handleClick()"><div class="nonmetal" style="--kb:var(--k0000)"><div class="nm"><span>Sulfur</span><span style="display:none" lang="de">Schwefel</span><span style="display:none" lang="es">Azufre</span><span style="display:none" lang="en-gb">Sulphur</span><span style="display:none" lang="fr">Soufre</span><span style="display:none" lang="it">Zolfo</span><span style="display:none" lang="ru">Сера</span></div><a><div class="sb">S</div></a><div class="an">16</div></div></td>
+        <td onclick="handleClick()"><div class="halogen" style="--kb:var(--k1789)"><div class="nm"><span>Chlorine</span><span style="display:none" lang="de">Chlor</span><span style="display:none" lang="es">Cloro</span><span style="display:none" lang="fr">Chlore</span><span style="display:none" lang="it">Cloro</span><span style="display:none" lang="ru">Хлор</span></div><a><div class="sb">Cl</div></a><div class="an">17</div></div></td>
+        <td onclick="handleClick()"><div class="noblegas" style="--kb:var(--k1923)"><div class="nm"><span>Argon</span><span style="display:none" lang="es">Argón</span><span style="display:none" lang="ru">Аргон</span></div><a><div class="sb">Ar</div></a><div class="an">18</div></div></td>
+      </tr>
+      <tr>
+        <td class="yAxis1">4</td>
+        <td onclick="handleClick()"><div class="alkali" style="--kb:var(--k1869)"><div class="nm"><span>Potassium</span><span style="display:none" lang="de">Kalium</span><span style="display:none" lang="es">Potasio</span><span style="display:none" lang="it">Potassio</span><span style="display:none" lang="ru">Калий</span></div><a><div class="sb">K</div></a><div class="an">19</div></div></td>
+        <td onclick="handleClick()"><div class="aearth" style="--kb:var(--k1869)"><div class="nm"><span>Calcium</span><span style="display:none" lang="es">Calcio</span><span style="display:none" lang="it">Calcio</span><span style="display:none" lang="ru">Кальций</span></div><a><div class="sb">Ca</div></a><div class="an">20</div></div></td>
+        <td colspan="14"></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1923)"><div class="nm"><span>Scandium</span><span style="display:none" lang="es">Escandio</span><span style="display:none" lang="it">Scandio</span><span style="display:none" lang="ru">Скандий</span></div><a><div class="sb">Sc</div></a><div class="an">21</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1869)"><div class="nm"><span>Titanium</span><span style="display:none" lang="de">Titan</span><span style="display:none" lang="es">Titanio</span><span style="display:none" lang="fr">Titane</span><span style="display:none" lang="it">Titanio</span><span style="display:none" lang="ru">Титан</span></div><a><div class="sb">Ti</div></a><div class="an">22</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1869)"><div class="nm"><span>Vanadium</span><span style="display:none" lang="es">Vanadio</span><span style="display:none" lang="it">Vanadio</span><span style="display:none" lang="ru">Ванадий</span></div><a><div class="sb">V</div></a><div class="an">23</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1869)"><div class="nm"><span>Chromium</span><span style="display:none" lang="de">Chrom</span><span style="display:none" lang="es">Cromo</span><span style="display:none" lang="fr">Chrome</span><span style="display:none" lang="it">Cromo</span><span style="display:none" lang="ru">Хром</span></div><a><div class="sb">Ch</div></a><div class="an">24</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1789)"><div class="nm"><span>Manganese</span><span style="display:none" lang="de">Mangan</span><span style="display:none" lang="es">Manganeso</span><span style="display:none" lang="fr">Manganèse</span><span style="display:none" lang="ru">Марганец</span></div><a><div class="sb">Mn</div></a><div class="an">25</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k0000)"><div class="nm"><span>Iron</span><span style="display:none" lang="de">Eisen</span><span style="display:none" lang="es">Hierro</span><span style="display:none" lang="fr">Fer</span><span style="display:none" lang="it">Ferro</span><span style="display:none" lang="ru">Железо</span></div><a><div class="sb">Fe</div></a><div class="an">26</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1789)"><div class="nm"><span>Cobolt</span><span style="display:none" lang="es">Cobalto</span><span style="display:none" lang="it">Cobalto</span><span style="display:none" lang="ru">Кобальт</span></div><a><div class="sb">Co</div></a><div class="an">27</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1789)"><div class="nm"><span>Nickel</span><span style="display:none" lang="es">Niquel</span><span style="display:none" lang="it">Nichel</span><span style="display:none" lang="ru">Никель</span></div><a><div class="sb">Ni</div></a><div class="an">28</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k0000)"><div class="nm"><span>Copper</span><span style="display:none" lang="de">Kupfer</span><span style="display:none" lang="es">Cobre</span><span style="display:none" lang="fr">Cuivre</span><span style="display:none" lang="fr">Cuivre</span><span style="display:none" lang="it">Rame</span><span style="display:none" lang="ru">Медь</span></div><a><div class="sb">Cu</div></a><div class="an">29</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1789)"><div class="nm"><span>Zinc</span><span style="display:none" lang="de">Zink</span><span style="display:none" lang="it">Zinco</span><span style="display:none" lang="ru">Цинк</span></div><a><div class="sb">Zn</div></a><div class="an">30</div></div></td>
+        <td onclick="handleClick()"><div class="ptmetal" style="--kb:var(--k1923)"><div class="nm"><span>Gallium</span><span style="display:none" lang="es">Galio</span><span style="display:none" lang="it">Gallio</span><span style="display:none" lang="ru">Галлий</span></div><a><div class="sb">Ga</div></a><div class="an">31</div></div></td>
+        <td onclick="handleClick()"><div class="metaloid" style="--kb:var(--k1923)"><div class="nm"><span>Germanium</span><span style="display:none" lang="es">Germanio</span><span style="display:none" lang="it">Germanio</span><span style="display:none" lang="ru">Германий</span></div><a><div class="sb">Ge</div></a><div class="an">32</div></div></td>
+        <td onclick="handleClick()"><div class="metaloid" style="--kb:var(--k1923)"><div class="nm"><span>Arsenic</span><span style="display:none" lang="de">Arsen</span><span style="display:none" lang="es">Arsénico</span><span style="display:none" lang="it">Arsenico</span><span style="display:none" lang="ru">Мышьяк</span></div><a><div class="sb">As</div></a><div class="an">33</div></div></td>
+        <td onclick="handleClick()"><div class="nonmetal" style="--kb:var(--k1869)"><div class="nm"><span>Selenium</span><span style="display:none" lang="de">Selen</span><span style="display:none" lang="es">Selenio</span><span style="display:none" lang="fr">Sélénium</span><span style="display:none" lang="it">Selenio</span><span style="display:none" lang="ru">Селен</span></div><a><div class="sb">Se</div></a><div class="an">34</div></div></td>
+        <td onclick="handleClick()"><div class="halogen" style="--kb:var(--k1869)"><div class="nm"><span>Bromine</span><span style="display:none" lang="de">Brom</span><span style="display:none" lang="es">Bromo</span><span style="display:none" lang="fr">Brome</span><span style="display:none" lang="it">Bromo</span><span style="display:none" lang="ru">Бром</span></div><a><div class="sb">Br</div></a><div class="an">35</div></div></td>
+        <td onclick="handleClick()"><div class="noblegas" style="--kb:var(--k1923)"><div class="nm"><span>Krypton</span><span style="display:none" lang="es">Kriptón</span><span style="display:none" lang="it">Kripton</span><span style="display:none" lang="ru">Криптон</span></div><a><div class="sb">Kr</div></a><div class="an">36</div></div></td>
+      </tr>
+      <tr>
+        <td class="yAxis1">5</td>
+        <td onclick="handleClick()"><div class="alkali" style="--kb:var(--k1869)"><div class="nm"><span>Rubidium</span><span style="display:none" lang="es">Rubidoo</span><span style="display:none" lang="it">Rubidoo</span><span style="display:none" lang="ru">Рубидий</span></div><a><div class="sb">Rb</div></a><div class="an">37</div></div></td>
+        <td onclick="handleClick()"><div class="aearth" style="--kb:var(--k1789)"><div class="nm"><span>Strontium</span><span style="display:none" lang="es">Estronzio</span><span style="display:none" lang="it">Stronzio</span><span style="display:none" lang="ru">Стронций</span></div><a><div class="sb">Sr</div></a><div class="an">38</div></div></td>
+        <td colspan="14"></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1869)"><div class="nm"><span>Yttrium</span><span style="display:none" lang="es">Itrio</span><span style="display:none" lang="it">Ittrio</span><span style="display:none" lang="ru">Иттрий</span></div><a><div class="sb">Y</div></a><div class="an">39</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1869)"><div class="nm"><span>Zirconium</span><span style="display:none" lang="es">Zirconio</span><span style="display:none" lang="it">Zirconio</span><span style="display:none" lang="ru">Цирконий</span></div><a><div class="sb">Zr</div></a><div class="an">40</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1869)"><div class="nm"><span>Niobium</span><span style="display:none" lang="de">Niob</span><span style="display:none" lang="es">Niobo</span><span style="display:none" lang="it">Niobio</span><span style="display:none" lang="ru">Ниобий</span></div><a><div class="sb">Nb</div></a><div class="an">41</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1789)"><div class="nm"><span>Molybdenum</span><span style="display:none" lang="de">Molybdän</span><span style="display:none" lang="es">Molibdeno</span><span style="display:none" lang="fr">Molybdène</span><span style="display:none" lang="it">Molibdeno</span><span style="display:none" lang="ru">Молибден</span></div><a><div class="sb">Mo</div></a><div class="an">42</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1945)"><div class="nm"><span>Technetium</span><span style="display:none" lang="fr">Technétium</span><span style="display:none" lang="es">Tecnecio</span><span style="display:none" lang="it">Tecnezio</span><span style="display:none" lang="ru">Технеций</span></div><a><div class="sb">Tc</div></a><div class="an">43</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1869)"><div class="nm"><span>Ruthenium</span><span style="display:none" lang="fr">Ruthénium</span><span style="display:none" lang="es">Rutenio</span><span style="display:none" lang="it">Rutenio</span><span style="display:none" lang="ru">Рутений</span></div><a><div class="sb">Ru</div></a><div class="an">44</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1869)"><div class="nm"><span>Rhodium</span><span style="display:none" lang="es">Rodio</span><span style="display:none" lang="it">Rodio</span><span style="display:none" lang="ru">Родий</span></div><a><div class="sb">Rh</div></a><div class="an">45</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1869)"><div class="nm"><span>Palladium</span><span style="display:none" lang="es">Paladio</span><span style="display:none" lang="it">Palladio</span><span style="display:none" lang="ru">Палладий</span></div><a><div class="sb">Pd</div></a><div class="an">46</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k0000)"><div class="nm"><span>Silver</span><span style="display:none" lang="de">Silber</span><span style="display:none" lang="es">Plata</span><span style="display:none" lang="fr">Argent</span><span style="display:none" lang="it">Argento</span><span style="display:none" lang="ru">Серебро</span></div><a><div class="sb">Ag</div></a><div class="an">47</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1869)"><div class="nm"><span>Cadmium</span><span style="display:none" lang="es">Cadmio</span><span style="display:none" lang="it">Cadmio</span><span style="display:none" lang="ru">Кадмий</span></div><a><div class="sb">Cd</div></a><div class="an">48</div></div></td>
+        <td onclick="handleClick()"><div class="ptmetal" style="--kb:var(--k1869)"><div class="nm"><span>Indium</span><span style="display:none" lang="es">Indio</span><span style="display:none" lang="it">Indio</span><span style="display:none" lang="ru">Индий</span></div><a><div class="sb">In</div></a><div class="an">49</div></div></td>
+        <td onclick="handleClick()"><div class="ptmetal" style="--kb:var(--k0000)"><div class="nm"><span>Tin</span><span style="display:none" lang="de">Zinn</span><span style="display:none" lang="es">Estaño</span><span style="display:none" lang="fr">Etain</span><span style="display:none" lang="it">Stagno</span><span style="display:none" lang="ru">Олово</span></div><a><div class="sb">Sn</div></a><div class="an">50</div></div></td>
+        <td onclick="handleClick()"><div class="metaloid" style="--kb:var(--k0000)"><div class="nm"><span>Antimony</span><span style="display:none" lang="de">Antimon</span><span style="display:none" lang="es">Antimonio</span><span style="display:none" lang="fr">Antimoine</span><span style="display:none" lang="it">Antimonio</span><span style="display:none" lang="ru">Сурьма</span></div><a><div class="sb">Sb</div></a><div class="an">51</div></div></td>
+        <td onclick="handleClick()"><div class="metaloid" style="--kb:var(--k1789)"><div class="nm"><span>Tellurium</span><span style="display:none" lang="de">Tellur</span><span style="display:none" lang="es">Teluro</span><span style="display:none" lang="fr">Tellure</span><span style="display:none" lang="it">Tellurio</span><span style="display:none" lang="ru">Теллур</span></div><a><div class="sb">Te</div></a><div class="an">52</div></div></td>
+        <td onclick="handleClick()"><div class="halogen" style="--kb:var(--k1869)"><div class="nm"><span>Iodine</span><span style="display:none" lang="de">Iod</span><span style="display:none" lang="es">Yodo</span><span style="display:none" lang="fr">Iode</span><span style="display:none" lang="it">Iodio</span><span style="display:none" lang="ru">Иод</span></div><a><div class="sb">I</div></a><div class="an">53</div></div></td>
+        <td onclick="handleClick()"><div class="noblegas" style="--kb:var(--k1923)"><div class="nm"><span>Xenon</span><span style="display:none" lang="es">Xénon</span><span style="display:none" lang="fr">Xénon</span><span style="display:none" lang="ru">Ксенон</span></div><a><div class="sb">Xe</div></a><div class="an">54</div></div></td>
+      </tr>
+      <tr>
+        <td class="yAxis1">6</td>
+        <td onclick="handleClick()"><div class="alkali" style="--kb:var(--k1869)"><div class="nm"><span>Ceasium</span><span style="display:none" lang="en-us">Cesium</span><span style="display:none" lang="de">Cäsium</span><span style="display:none" lang="es">Cesio</span><span style="display:none" lang="fr">Césium</span><span style="display:none" lang="it">Cesio</span><span style="display:none" lang="ru">Цезий</span></div><a><div class="sb">Cs</div></a><div class="an">55</div></div></td>
+        <td onclick="handleClick()"><div class="aearth" style="--kb:var(--k1789)"><div class="nm"><span>Barium</span><span style="display:none" lang="es">Bario</span><span style="display:none" lang="fr">Baryum</span><span style="display:none" lang="it">Bario</span><span style="display:none" lang="ru">Барий</span></div><a><div class="sb">Ba</div></a><div class="an">56</div></div></td>
+        <td onclick="handleClick()"><div class="lanthanoid" style="--kb:var(--k1869)"><div class="nm"><span>Lanthanum</span><span style="display:none" lang="de">Lanthan</span><span style="display:none" lang="es">Lantano</span><span style="display:none" lang="fr";>Lanthane</span><span style="display:none" lang="it">Lantanio</span><span style="display:none" lang="ru">Лантан</span></div><a><div class="sb">La</div></a><div class="an">57</div></div></td>
+        <td onclick="handleClick()"><div class="lanthanoid" style="--kb:var(--k1869)"><div class="nm"><span>Cerium</span><span style="display:none" lang="de">Cer</span><span style="display:none" lang="es">Cerio</span><span style="display:none" lang="fr">Cérium</span><span style="display:none" lang="it">Cerio</span><span style="display:none" lang="ru">Церий</span></div><a><div class="sb">Ce</div></a><div class="an">58</div></div></td>
+        <td onclick="handleClick()"><div class="lanthanoid" style="--kb:var(--k1923)"><div class="nm"><span>Praseodymium</span><span style="display:none" lang="de">Praseodym</span><span style="display:none" lang="es">Praseodimio</span><span style="display:none" lang="fr">Raséodyme</span><span style="display:none" lang="it">Praseodimio</span><span style="display:none" lang="ru">Празеодим</span></div><a><div class="sb">Pr</div></a><div class="an">59</div></div></td>
+        <td onclick="handleClick()"><div class="lanthanoid" style="--kb:var(--k1923)"><div class="nm"><span>Neodymium</span><span style="display:none" lang="de">Neodym</span><span style="display:none" lang="es">Neodimio</span><span style="display:none" lang="fr">Néodyme</span><span style="display:none" lang="it">Neodimio</span><span style="display:none" lang="ru">Неодим</span></div><a><div class="sb">Nd</div></a><div class="an">60</div></div></td>
+        <td onclick="handleClick()"><div class="lanthanoid" style="--kb:var(--k1945)"><div class="nm"><span>Promethium</span><span style="display:none" lang="es">Prometio</span><span style="display:none" lang="fr">Prométhium</span><span style="display:none" lang="it">Promezio</span><span style="display:none" lang="ru">Прометий</span></div><a><div class="sb">Pm</div></a><div class="an">61</div></div></td>
+        <td onclick="handleClick()"><div class="lanthanoid" style="--kb:var(--k1923)"><div class="nm"><span>Samarium</span><span style="display:none" lang="es">Samario</span><span style="display:none" lang="it">Samario</span><span style="display:none" lang="ru">Самарий</span></div><a><div class="sb">Sm</div></a><div class="an">62</div></div></td>
+        <td onclick="handleClick()"><div class="lanthanoid" style="--kb:var(--k1923)"><div class="nm"><span>Europium</span><span style="display:none" lang="es">Europio</span><span style="display:none" lang="it">Europio</span><span style="display:none" lang="ru">Европий</span></div><a><div class="sb">Eu</div></a><div class="an">63</div></div></td>
+        <td onclick="handleClick()"><div class="lanthanoid" style="--kb:var(--k1923)"><div class="nm"><span>Gadolinium</span><span style="display:none" lang="es">Gadolinio</span><span style="display:none" lang="it">Gadolinio</span><span style="display:none" lang="ru">Гадолиний</span></div><a><div class="sb">Gd</div></a><div class="an">64</div></div></td>
+        <td onclick="handleClick()"><div class="lanthanoid" style="--kb:var(--k1869)"><div class="nm"><span>Terbium</span><span style="display:none" lang="es">Terbio</span><span style="display:none" lang="it">Terbio</span><span style="display:none" lang="ru">Тербий</span></div><a><div class="sb">Tb</div></a><div class="an">65</div></div></td>
+        <td onclick="handleClick()"><div class="lanthanoid" style="--kb:var(--k1923)"><div class="nm"><span>Dysprosium</span><span style="display:none" lang="es">Disprosio</span><span style="display:none" lang="it">Disprosio</span><span style="display:none" lang="ru">Диспрозий</span></div><a><div class="sb">Dy</div></a><div class="an">66</div></div></td>
+        <td onclick="handleClick()"><div class="lanthanoid" style="--kb:var(--k1923)"><div class="nm"><span>Holmium</span><span style="display:none" lang="es">Holmio</span><span style="display:none" lang="it">Olmio</span><span style="display:none" lang="ru">Гольмий</span></div><a><div class="sb">Ho</div></a><div class="an">67</div></div></td>
+        <td onclick="handleClick()"><div class="lanthanoid" style="--kb:var(--k1869)"><div class="nm"><span>Erbium</span><span style="display:none" lang="es">Erbio</span><span style="display:none" lang="it">Erbio</span><span style="display:none" lang="ru">Эрбий</span></div><a><div class="sb">Er</div></a><div class="an">68</div></div></td>
+        <td onclick="handleClick()"><div class="lanthanoid" style="--kb:var(--k1923)"><div class="nm"><span>Thulium</span><span style="display:none" lang="es">Tulio</span><span style="display:none" lang="it">Tulio</span><span style="display:none" lang="ru">Тулий</span></div><a><div class="sb">Tm</div></a><div class="an">69</div></div></td>
+        <td onclick="handleClick()"><div class="lanthanoid" style="--kb:var(--k1923)"><div class="nm"><span>Ytterbium</span><span style="display:none" lang="es">Iterbio</span><span style="display:none" lang="it">Itterbio</span><span style="display:none" lang="ru">Иттербий</span></div><a><div class="sb">Yb</div></a><div class="an">70</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1923)"><div class="nm"><span>Lutetium</span><span style="display:none" lang="es">Lutecio</span><span style="display:none" lang="fr">Lutétium</span><span style="display:none" lang="it">Lutezio</span><span style="display:none" lang="ru">Лютеций</span></div><a><div class="sb">Lu</div></a><div class="an">71</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1923)"><div class="nm"><span>Hafnium</span><span style="display:none" lang="es">Hafnio</span><span style="display:none" lang="it">Afnio</span><span style="display:none" lang="ru">Гафний</span></div><a><div class="sb">Hf</div></a><div class="an">72</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1869)"><div class="nm"><span>Tantalum</span><span style="display:none" lang="de">Tantal</span><span style="display:none" lang="es">Tantalio</span><span style="display:none" lang="fr">Tantale</span><span style="display:none" lang="it">Tantalio</span><span style="display:none" lang="ru">Тантал</span></div><a><div class="sb">Ta</div></a><div class="an">73</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1789)"><div class="nm"><span>Tungsten</span><span style="display:none" lang="de">Wolfram</span><span style="display:none" lang="es">Wolframio</span><span style="display:none" lang="fr">Tungstène</span><span style="display:none" lang="it">Tunsteno</span><span style="display:none" lang="ru">Вольфрам</span></div><a><div class="sb">W</div></a><div class="an">74</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1945)"><div class="nm"><span>Rhenium</span><span style="display:none" lang="de">Rhénium</span><span style="display:none" lang="es">Renio</span><span style="display:none" lang="it">Renio</span><span style="display:none" lang="ru">Рений</span></div><a><div class="sb">Re</div></a><div class="an">75</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1869)"><div class="nm"><span>Osmium</span><span style="display:none" lang="es">Osmio</span><span style="display:none" lang="it">Osmio</span><span style="display:none" lang="ru">Осмий</span></div><a><div class="sb">Os</div></a><div class="an">76</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1869)"><div class="nm"><span>Iridium</span><span style="display:none" lang="es">Iridio</span><span style="display:none" lang="it">Iridio</span><span style="display:none" lang="ru">Иридий</span></div><a><div class="sb">Ir</div></a><div class="an">77</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1789)"><div class="nm"><span>Platinum</span><span style="display:none" lang="de">Platin</span><span style="display:none" lang="es">Platino</span><span style="display:none" lang="fr">Platine</span><span style="display:none" lang="it">Platino</span><span style="display:none" lang="ru">Платина</span></div><a><div class="sb">Pt</div></a><div class="an">78</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k0000)"><div class="nm"><span>Gold</span><span style="display:none" lang="es">Oro</span><span style="display:none" lang="fr">Or</span><span style="display:none" lang="it">Oro</span><span style="display:none" lang="ru">Золото</span></div><a><div class="sb">Au</div></a><div class="an">79</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k0000)"><div class="nm"><span>Mercury</span><span style="display:none" lang="de">Quecksilber</span><span style="display:none" lang="es">Mercurio</span><span style="display:none" lang="fr">Mercure</span><span style="display:none" lang="it">Mercurio</span><span style="display:none" lang="ru">Ртуть</span></div><a><div class="sb">Hg</div></a><div class="an">80</div></div></td>
+        <td onclick="handleClick()"><div class="ptmetal" style="--kb:var(--k1869)"><div class="nm"><span>Thallium</span><span style="display:none" lang="es">Talio</span><span style="display:none" lang="it">Tallio</span><span style="display:none" lang="ru">Таллий</span></div><a><div class="sb">Tl</div></a><div class="an">81</div></div></td>
+        <td onclick="handleClick()"><div class="ptmetal" style="--kb:var(--k0000)"><div class="nm"><span>Lead</span><span style="display:none" lang="de">Blei</span><span style="display:none" lang="es">Plomo</span><span style="display:none" lang="fr">Plomb</span><span style="display:none" lang="it">Piombo</span><span style="display:none" lang="ru">Свинец</span></div><a><div class="sb">Pb</div></a><div class="an">82</div></div></td>
+        <td onclick="handleClick()"><div class="ptmetal" style="--kb:var(--k1789)"><div class="nm"><span>Bismuth</span><span style="display:none" lang="de">Bismut</span><span style="display:none" lang="es">Bismuto</span><span style="display:none" lang="it">Bismuto</span><span style="display:none" lang="ru">Висмут</span></div><a><div class="sb">Bi</div></a><div class="an">83</div></div></td>
+        <td onclick="handleClick()"><div class="ptmetal" style="--kb:var(--k1923)"><div class="nm"><span>Polonium</span><span style="display:none" lang="de">Polonium</span><span style="display:none" lang="es">Polono</span><span style="display:none" lang="it">Polonio</span><span style="display:none" lang="ru">Полоний</span></div><a><div class="sb">Po</div></a><div class="an">84</div></div></td>
+        <td onclick="handleClick()"><div class="halogen" style="--kb:var(--k1945)"><div class="nm"><span>Astatine</span><span style="display:none" lang="de">Astat</span><span style="display:none" lang="es">Astato</span><span style="display:none" lang="fr">Astate</span><span style="display:none" lang="it">Astato</span><span style="display:none" lang="ru">Астат</span></div><a><div class="sb">At</div></a><div class="an">85</div></div></td>
+        <td onclick="handleClick()"><div class="noblegas" style="--kb:var(--k1923)"><div class="nm"><span>Radon</span><span style="display:none" lang="es">Radón</span><span style="display:none" lang="ru">Радон</span></div><a><div class="sb">Rn</div></a><div class="an">86</div></div></td>
+      </tr>
+      <tr>
+        <td class="yAxis1">7</td>
+        <td onclick="handleClick()"><div class="alkali" style="--kb: var(--k1945)"><div class="nm"><span>Francium</span><span style="display:none" lang="es">Francio</span><span style="display:none" lang="it">Francio</span><span style="display:none" lang="ru">Франций</span></div><a><div class="sb">Fr</div></a><div class="an">87</div></div></td>
+        <td onclick="handleClick()"><div class="aearth" style="--kb: var(--k1923)"><div class="nm"><span>Radium</span><span style="display:none" lang="es">Radio</span><span style="display:none" lang="it">Radio</span><span style="display:none" lang="ru">Радий</span></div><a><div class="sb">Ra</div></a><div class="an">88</div></div></td>
+        <td onclick="handleClick()"><div class="actinoid" style="--kb:var(--k1923)"><div class="nm"><span>Actinium</span><span style="display:none" lang="es">Actinio</span><span style="display:none" lang="it">Attinio</span><span style="display:none" lang="ru">Актиний</span></div><a><div class="sb">Ac</div></a><div class="an">89</div></div></td>
+        <td onclick="handleClick()"><div class="actinoid" style="--kb:var(--k1869)"><div class="nm"><span>Thorium</span><span style="display:none" lang="es">Torio</span><span style="display:none" lang="it">Torio</span><span style="display:none" lang="ru">Торий</span></div><a><div class="sb">Th</div></a><div class="an">90</div></div></td>
+        <td onclick="handleClick()"><div class="actinoid" style="--kb:var(--k1923)"><div class="nm"><span>Protactinium</span><span style="display:none" lang="de">Protaktinium</span><span style="display:none" lang="es">Protactinio</span><span style="display:none" lang="it">Protoattinio</span><span style="display:none" lang="ru">Протактиний</span></div><a><div class="sb">Pa</div></a><div class="an">91</div></div></td>
+        <td onclick="handleClick()"><div class="actinoid" style="--kb:var(--k1789)"><div class="nm"><span>Uranium</span><span style="display:none" lang="de">Uran</span><span style="display:none" lang="es">Uranio</span><span style="display:none" lang="it">Uranio</span><span style="display:none" lang="ru">Уран</span></div><a><div class="sb">U</div></a><div class="an">92</div></div></td>
+        <td onclick="handleClick()"><div class="actinoid" style="--kb:var(--k1945)"><div class="nm"><span>Neptunium</span><span style="display:none" lang="es">Neptunio</span><span style="display:none" lang="it">Nettunio</span><span style="display:none" lang="ru">Нептуний</span></div><a><div class="sb">Np</div></a><div class="an">93</div></div></td>
+        <td onclick="handleClick()"><div class="actinoid" style="--kb:var(--k1945)"><div class="nm"><span>Plutonium</span><span style="display:none" lang="es">Plutonio</span><span style="display:none" lang="it">Plutonio</span><span style="display:none" lang="ru">Плутоний</span></div><a><div class="sb">Pu</div></a><div class="an">94</div></div></td>
+        <td onclick="handleClick()"><div class="actinoid" style="--kb:var(--k1945)"><div class="nm"><span>Americium</span><span style="display:none" lang="es">Americio</span><span style="display:none" lang="fr">Américium</span><span style="display:none" lang="it">Americio</span><span style="display:none" lang="ru">Америций</span></div><a><div class="sb">Am</div></a><div class="an">95</div></div></td>
+        <td onclick="handleClick()"><div class="actinoid" style="--kb:var(--k1945)"><div class="nm"><span>Curium</span><span style="display:none" lang="es">Curio</span><span style="display:none" lang="it">Curio</span><span style="display:none" lang="ru">Кюрий</span></div><a><div class="sb">Cm</div></a><div class="an">96</div></div></td>
+        <td onclick="handleClick()"><div class="actinoid" style="--kb:var(--k2000)"><div class="nm"><span>Berkelium</span><span style="display:none" lang="es">Berkelio</span><span style="display:none" lang="fr">Berkélium</span><span style="display:none" lang="it">Berkelio</span><span style="display:none" lang="ru">Берклий</span></div><a><div class="sb">Bk</div></a><div class="an">97</div></div></td>
+        <td onclick="handleClick()"><div class="actinoid" style="--kb:var(--k2000)"><div class="nm"><span>Californium</span><span style="display:none" lang="es">Californio</span><span style="display:none" lang="it">Californio</span><span style="display:none" lang="ru">Калифорний</span></div><a><div class="sb">Cf</div></a><div class="an">98</div></div></td>
+        <td onclick="handleClick()"><div class="actinoid" style="--kb:var(--k2000)"><div class="nm"><span>Einsteinium</span><span style="display:none" lang="es">Einsteinio</span><span style="display:none" lang="it">Einsteinio</span><span style="display:none" lang="ru">Эйнштейний</span></div><a><div class="sb">Es</div></a><div class="an">99</div></div></td>
+        <td onclick="handleClick()"><div class="actinoid" style="--kb:var(--k2000)"><div class="nm"><span>Fermium</span><span style="display:none" lang="es">Fermio</span><span style="display:none" lang="it">Fermio</span><span style="display:none" lang="ru">Фермий</span></div><a><div class="sb">Fm</div></a><div class="an">100</div></div></td>
+        <td onclick="handleClick()"><div class="actinoid" style="--kb:var(--k2000)"><div class="nm"><span>Mendelevium</span><span style="display:none" lang="es">Mendelevio</span><span style="display:none" lang="fr">Mendelévium</span><span style="display:none" lang="it">Mendelevio</span><span style="display:none" lang="ru">Менделевий</span></div><a><div class="sb">Md</div></a><div class="an">101</div></div></td>
+        <td onclick="handleClick()"><div class="actinoid" style="--kb:var(--k2000)"><div class="nm"><span>Nobelium</span><span style="display:none" lang="es">Nobelio</span><span style="display:none" lang="fr">Nobélium</span><span style="display:none" lang="it">Nobelio</span><span style="display:none" lang="ru">Нобелий</span></div><a><div class="sb">No</div></a><div class="an">102</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k2000)"><div class="nm"><span>Lawrencium</span><span style="display:none" lang="es">Laurencio</span><span style="display:none" lang="it">Laurenzio</span><span style="display:none" lang="ru">Лоуренсий</span></div><a><div class="sb">Lr</div></a><div class="an">103</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb: var(--k2000)"><div class="nm"><span>Rutherfordium</span><span style="display:none" lang="es">Rutherfordio</span><span style="display:none" lang="it">Rutherfordio</span><span style="display:none" lang="ru">Резерфордий</span></div><a><div class="sb">Rf</div></a><div class="an">104</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb: var(--k2000)"><div class="nm"><span>Dubnium</span><span style="display:none" lang="es">Dubnio</span><span style="display:none" lang="it">Dubnio</span><span style="display:none" lang="ru">Дубний</span></div><a><div class="sb">Db</div></a><div class="an">105</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb: var(--k2000)"><div class="nm"><span>Seaborgium</span><span style="display:none" lang="es">Seaborgio</span><span style="display:none" lang="it">Seaborgio</span><span style="display:none" lang="ru">Сиборгий</span></div><a><div class="sb">Sg</div></a><div class="an">106</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb: var(--k2000)"><div class="nm"><span>Bohrium</span><span style="display:none" lang="es">Bohrio</span><span style="display:none" lang="it">Bohrio</span><span style="display:none" lang="ru">Борий</span></div><a><div class="sb">Bh</div></a><div class="an">107</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb: var(--k2000)"><div class="nm"><span>Hassium</span><span style="display:none" lang="es">Hassio</span><span style="display:none" lang="it">Hassio</span><span style="display:none" lang="ru">Хассий</span></div><a><div class="sb">Hs</div></a><div class="an">108</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb: var(--k2000)"><div class="nm"><span>Meitnerium</span><span style="display:none" lang="es">Meitnerio</span><span style="display:none" lang="fr">Meitnérium</span><span style="display:none" lang="it">Meitnerio</span><span style="display:none" lang="ru">Мейтнерий</span></div><a><div class="sb">Mt</div></a><div class="an">109</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb: var(--k2000)"><div class="nm"><span>Darmstadtium</span><span style="display:none" lang="es">Darmstadtio</span><span style="display:none" lang="it">Darmstadtio</span><span style="display:none" lang="ru">Дармштадтий</span></div><a><div class="sb">Ds</div></a><div class="an">110</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb: var(--k2000)"><div class="nm"><span>Roentgenium</span><span style="display:none" lang="es">Roentgenio</span><span style="display:none" lang="it">Roentgenio</span><span style="display:none" lang="ru">Рентгений</span></div><a><div class="sb">Rg</div></a><div class="an">111</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb: var(--k2000)"><div class="nm"><span>Copernicium</span><span style="display:none" lang="es">Copernicio</span><span style="display:none" lang="it">Copernicio</span><span style="display:none" lang="ru">Коперниций</span></div><a><div class="sb">Cn</div></a><div class="an">112</div></div></td>
+        <td onclick="handleClick()"><div class="ptmetal" style="--kb: var(--k2012)"><div class="nm"><span>Nihonium</span><span style="display:none" lang="es">Nihonio</span><span style="display:none" lang="it">Nihonio</span><span style="display:none" lang="ru">Нихоний</span></div><a><div class="sb">Nh</div></a><div class="an">113</div></div></td>
+        <td onclick="handleClick()"><div class="ptmetal" style="--kb: var(--k2000)"><div class="nm"><span>Flerovium</span><span style="display:none" lang="es">Flerovio</span><span style="display:none" lang="fr">Flérovium</span><span style="display:none" lang="it">Flerovio</span><span style="display:none" lang="ru">Флеровий</span></div><a><div class="sb">Fl</div></a><div class="an">114</div></div></td>
+        <td onclick="handleClick()"><div class="ptmetal" style="--kb: var(--k2012)"><div class="nm"><span>Moscovium</span><span style="display:none" lang="es">Moscovio</span><span style="display:none" lang="it">Moscovio</span><span style="display:none" lang="ru">Московий</span></div><a><div class="sb">Mc</div></a><div class="an">115</div></div></td>
+        <td onclick="handleClick()"><div class="ptmetal" style="--kb: var(--k2000)"><div class="nm"><span>Livermorium</span><span style="display:none" lang="es">Livermorio</span><span style="display:none" lang="it">Livermorio</span><span style="display:none" lang="ru">Ливерморий</span></div><a><div class="sb">Lv</div></a><div class="an">116</div></div></td>
+        <td onclick="handleClick()"><div class="halogen" style="--kb: var(--k2012)"><div class="nm"><span>Tennessine</span><span style="display:none" lang="es">Teneso</span><span style="display:none" lang="fr">Tennesse</span><span style="display:none" lang="it">Tennesso</span><span style="display:none" lang="ru">Теннессин</span></div><a><div class="sb">Ts</div></a><div class="an">117</div></div></td>
+        <td onclick="handleClick()"><div class="noblegas" style="--kb: var(--k2012)"><div class="nm"><span>Organesson</span><span style="display:none" lang="es">Oganesón</span><span style="display:none" lang="ru">Оганесон</span></div><a><div class="sb">Og</div></a><div class="an">118</div></div></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div id="t18-id">
+  <table class="toe">
+    <caption class="maincap textXL">
+      <span>Periodic Table of the Elements</span>
+      <span style="display:none" lang="de">Periodensystem der Elemente</span>
+      <span style="display:none" lang="es">Tabla periódica de los elementos</span>
+      <span style="display:none" lang="fr">Tableau périodique des éléments</span>
+      <span style="display:none" lang="it">Tavola periodica degli elementi</span>
+      <span style="display:none" lang="ru">Периодическая система химических элементов</span>
+    </caption>
+    <colgroup>
+      <col class="yAxis0">
+    </colgroup>
+    <thead>
+      <tr>
+        <th class="yAxis1"><span class="textXL"><span>Group&rarr;</span><span lang="de">Gruppe&rarr;</span><span lang="es">Grupo&rarr;</span><span lang="fr">Groupe&rarr;</span><span lang="it">Gruppo&rarr;</span><span lang="ru">Группа&rarr;</span></span></th>
+        <th>1</th><th>2</th><th></th><th>3</th><th>4</th><th>5</th><th>6</th>
+        <th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th>
+        <th>13</th><th>14</th><th>15</th><th>16</th><th>17</th><th>18</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="yAxis1"><span class="textXL"><span>Period&nbsp;&darr;</span><span lang="de">Periode&nbsp;&darr;</span><span lang="es">Periodo&nbsp;&darr;</span><span lang="fr">Période&nbsp;&darr;</span><span lang="it">Periodo&nbsp;&darr;</span><span lang="ru">Период&nbsp;&darr;</span></span><br/>1</td>
+        <td onclick="handleClick()">
+          <div class="nonmetal" style="--kb:var(--k1789)">
+            <div class="nm">
+              <span>Hydrogen</span>
+              <span style="display:none" lang="de">Wasserstoff</span>
+              <span style="display:none" lang="es">Hidrógeno</span>
+              <span style="display:none" lang="fr">Hydrogène</span>
+              <span style="display:none" lang="it">Idrogeno</span>
+              <span style="display:none" lang="ru">Водород</span>
+            </div>
+            <a class="sb">H</a>
+            <div class="an">1</div>
+          </div>
+        </td>
+        <td colspan="17"></td>
+        <td onclick="handleClick()"><div class="noblegas" style="--kb:var(--k1923)"><div class="nm"><span>Helium</span><span style="display:none" lang="es">Helio</span><span style="display:none" lang="fr">Hélium</span><span style="display:none" lang="it">Elio</span><span style="display:none" lang="ru">Гелий</span></div><a class="sb">He</a><div class="an">2</div></div></td>
+      </tr>
+      <tr>
+        <td class="yAxis1">2</td>
+        <td onclick="handleClick()"><div class="alkali" style="--kb:var(--k1869)"><div class="nm"><span>Lithium</span><span style="display:none" lang="es">Litio</span><span style="display:none" lang="it">Litio</span><span style="display:none" lang="ru">Литий</span></div><a><div class="sb">Li</div></a><div class="an">3</div></div></td>
+        <td onclick="handleClick()"><div class="aearth" style="--kb:var(--k1869)"><div class="nm"><span>Beryllium</span><span style="display:none" lang="es">Berilio</span><span style="display:none" lang="fr">Béryllium</span><span style="display:none" lang="it">Berillio</span><span style="display:none" lang="ru">Бериллий</span></div><a><div class="sb">Be</div></a><div class="an">4</div></div></td>
+        <td colspan="11"></td>
+        <td onclick="handleClick()"><div class="metaloid" style="--kb:var(--k1789)"><div class="nm"><span>Boron</span><span style="display:none" lang="de">Bor</span><span style="display:none" lang="es">Boro</span><span style="display:none" lang="fr">Bore</span><span style="display:none" lang="it">Boro</span><span style="display:none" lang="ru">Бор</span></div><a><div class="sb">B</div></a><div class="an">5</div></div></td>
+        <td onclick="handleClick()"><div class="nonmetal" style="--kb:var(--k0000)"><div class="nm"><span>Carbon</span><span style="display:none" lang="de">Kohlensto</span><span style="display:none" lang="es">Carbono</span><span style="display:none" lang="fr">Carbone</span><span style="display:none" lang="it">Carbonio</span><span style="display:none" lang="ru">Углерод</span></div><a><div class="sb">C</div></a><div class="an">6</div></div></td>
+        <td onclick="handleClick()"><div class="nonmetal" style="--kb:var(--k1789)"><div class="nm"><span>Nitrogen</span><span style="display:none" lang="de">Stickstoff</span><span style="display:none" lang="es">Nitrógeno</span><span style="display:none" lang="fr">Azote</span><span style="display:none" lang="it">Azoto</span><span style="display:none" lang="ru">Азот</span></div><a><div class="sb">N</div></a><div class="an">7</div></div></td>
+        <td onclick="handleClick()"><div class="nonmetal" style="--kb:var(--k1789)"><div class="nm"><span>Oxygen</span><span style="display:none" lang="de">Sauerstoff</span><span style="display:none" lang="es">Oxígeno</span><span style="display:none" lang="fr">Oxygène</span><span style="display:none" lang="it">Ossigeno</span><span style="display:none" lang="ru">Кислород</span></div><a><div class="sb">O</div></a><div class="an">8</div></div></td>
+        <td onclick="handleClick()"><div class="halogen" style="--kb:var(--k1869)"><div class="nm"><span>Fluorine</span><span style="display:none" lang="de">Fluor</span><span style="display:none" lang="es">Fluor</span><span style="display:none" lang="fr">Fluor</span><span style="display:none" lang="it">Fluoro</span><span style="display:none" lang="ru">Фтор</span></div><a><div class="sb">F</div></a><div class="an">9</div></div></td>
+        <td onclick="handleClick()"><div class="noblegas" style="--kb:var(--k1923)"><div class="nm"><span>Neon</span><span style="display:none" lang="es">Neón</span><span style="display:none" lang="fr">Néon</span><span style="display:none" lang="ru">Неон</span></div><a><div class="sb">Ne</div></a><div class="an">10</div></div></td>
+      </tr>
+      <tr>
+        <td class="yAxis1">3</td>
+        <td onclick="handleClick()"><div class="alkali" style="--kb:var(--k1869)"><div class="nm"><span>Sodium</span><span style="display:none" lang="de">Natrium</span><span style="display:none" lang="es">Sodio</span><span style="display:none" lang="it">Sodio</span><span style="display:none" lang="ru">Натрий</span></div><a><div class="sb">Na</div></a><div class="an">11</div></div></td>
+        <td onclick="handleClick()"><div class="aearth" style="--kb:var(--k1789)"><div class="nm"><span>Magnesium</span><span style="display:none" lang="es">Magnesio</span><span style="display:none" lang="fr">Magnésium</span><span style="display:none" lang="it">Magnesio</span><span style="display:none" lang="ru">Калий</span></div><a><div class="sb">Mg</div></a><div class="an">12</div></div></td>
+        <td colspan="11"></td>
+        <td onclick="handleClick()"><div class="ptmetal" style="--kb:var(--k1869)"><div class="nm"><span>Aluminium</span><span style="display:none" lang="en-us">Aluminum</span><span style="display:none" lang="es">Aluminio</span><span style="display:none" lang="it">Alluminio</span><span style="display:none" lang="ru">Алюминий</span></div><a><div class="sb">Al</div></a><div class="an">13</div></div></td>
+        <td onclick="handleClick()"><div class="metaloid" style="--kb:var(--k1869)"><div class="nm"><span>Silicon</span><span style="display:none" lang="de">Silicium</span><span style="display:none" lang="es">Silicio</span><span style="display:none" lang="fr">Silicium</span><span style="display:none" lang="it">Silicio</span><span style="display:none" lang="ru">Кремний</span></div><a><div class="sb">Si</div></a><div class="an">14</div></div></td>
+        <td onclick="handleClick()"><div class="nonmetal" style="--kb:var(--k1789)"><div class="nm"><span>Phosphorus</span><span style="display:none" lang="de">Phosphor</span><span style="display:none" lang="es">Fósforo</span><span style="display:none" lang="fr">Phosphore</span><span style="display:none" lang="it">Fosforo</span><span style="display:none" lang="ru">Фосфор</span></div><a><div class="sb">P</div></a><div class="an">15</div></div></td>
+        <td onclick="handleClick()"><div class="nonmetal" style="--kb:var(--k0000)"><div class="nm"><span>Sulfur</span><span style="display:none" lang="de">Schwefel</span><span style="display:none" lang="es">Azufre</span><span style="display:none" lang="en-gb">Sulphur</span><span style="display:none" lang="fr">Soufre</span><span style="display:none" lang="it">Zolfo</span><span style="display:none" lang="ru">Сера</span></div><a><div class="sb">S</div></a><div class="an">16</div></div></td>
+        <td onclick="handleClick()"><div class="halogen" style="--kb:var(--k1789)"><div class="nm"><span>Chlorine</span><span style="display:none" lang="de">Chlor</span><span style="display:none" lang="es">Cloro</span><span style="display:none" lang="fr">Chlore</span><span style="display:none" lang="it">Cloro</span><span style="display:none" lang="ru">Хлор</span></div><a><div class="sb">Cl</div></a><div class="an">17</div></div></td>
+        <td onclick="handleClick()"><div class="noblegas" style="--kb:var(--k1923)"><div class="nm"><span>Argon</span><span style="display:none" lang="es">Argón</span><span style="display:none" lang="ru">Аргон</span></div><a><div class="sb">Ar</div></a><div class="an">18</div></div></td>
+      </tr>
+      <tr>
+        <td class="yAxis1">4</td>
+        <td onclick="handleClick()"><div class="alkali" style="--kb:var(--k1869)"><div class="nm"><span>Potassium</span><span style="display:none" lang="de">Kalium</span><span style="display:none" lang="es">Potasio</span><span style="display:none" lang="it">Potassio</span><span style="display:none" lang="ru">Калий</span></div><a><div class="sb">K</div></a><div class="an">19</div></div></td>
+        <td onclick="handleClick()"><div class="aearth" style="--kb:var(--k1869)"><div class="nm"><span>Calcium</span><span style="display:none" lang="es">Calcio</span><span style="display:none" lang="it">Calcio</span><span style="display:none" lang="ru">Кальций</span></div><a><div class="sb">Ca</div></a><div class="an">20</div></div></td>
+        <td></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1923)"><div class="nm"><span>Scandium</span><span style="display:none" lang="es">Escandio</span><span style="display:none" lang="it">Scandio</span><span style="display:none" lang="ru">Скандий</span></div><a><div class="sb">Sc</div></a><div class="an">21</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1869)"><div class="nm"><span>Titanium</span><span style="display:none" lang="de">Titan</span><span style="display:none" lang="es">Titanio</span><span style="display:none" lang="fr">Titane</span><span style="display:none" lang="it">Titanio</span><span style="display:none" lang="ru">Титан</span></div><a><div class="sb">Ti</div></a><div class="an">22</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1869)"><div class="nm"><span>Vanadium</span><span style="display:none" lang="es">Vanadio</span><span style="display:none" lang="it">Vanadio</span><span style="display:none" lang="ru">Ванадий</span></div><a><div class="sb">V</div></a><div class="an">23</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1869)"><div class="nm"><span>Chromium</span><span style="display:none" lang="de">Chrom</span><span style="display:none" lang="es">Cromo</span><span style="display:none" lang="fr">Chrome</span><span style="display:none" lang="it">Cromo</span><span style="display:none" lang="ru">Хром</span></div><a><div class="sb">Ch</div></a><div class="an">24</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1789)"><div class="nm"><span>Manganese</span><span style="display:none" lang="de">Mangan</span><span style="display:none" lang="es">Manganeso</span><span style="display:none" lang="fr">Manganèse</span><span style="display:none" lang="ru">Марганец</span></div><a><div class="sb">Mn</div></a><div class="an">25</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k0000)"><div class="nm"><span>Iron</span><span style="display:none" lang="de">Eisen</span><span style="display:none" lang="es">Hierro</span><span style="display:none" lang="fr">Fer</span><span style="display:none" lang="it">Ferro</span><span style="display:none" lang="ru">Железо</span></div><a><div class="sb">Fe</div></a><div class="an">26</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1789)"><div class="nm"><span>Cobolt</span><span style="display:none" lang="es">Cobalto</span><span style="display:none" lang="it">Cobalto</span><span style="display:none" lang="ru">Кобальт</span></div><a><div class="sb">Co</div></a><div class="an">27</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1789)"><div class="nm"><span>Nickel</span><span style="display:none" lang="es">Niquel</span><span style="display:none" lang="it">Nichel</span><span style="display:none" lang="ru">Никель</span></div><a><div class="sb">Ni</div></a><div class="an">28</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k0000)"><div class="nm"><span>Copper</span><span style="display:none" lang="de">Kupfer</span><span style="display:none" lang="es">Cobre</span><span style="display:none" lang="fr">Cuivre</span><span style="display:none" lang="fr">Cuivre</span><span style="display:none" lang="it">Rame</span><span style="display:none" lang="ru">Медь</span></div><a><div class="sb">Cu</div></a><div class="an">29</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1789)"><div class="nm"><span>Zinc</span><span style="display:none" lang="de">Zink</span><span style="display:none" lang="it">Zinco</span><span style="display:none" lang="ru">Цинк</span></div><a><div class="sb">Zn</div></a><div class="an">30</div></div></td>
+        <td onclick="handleClick()"><div class="ptmetal" style="--kb:var(--k1923)"><div class="nm"><span>Gallium</span><span style="display:none" lang="es">Galio</span><span style="display:none" lang="it">Gallio</span><span style="display:none" lang="ru">Галлий</span></div><a><div class="sb">Ga</div></a><div class="an">31</div></div></td>
+        <td onclick="handleClick()"><div class="metaloid" style="--kb:var(--k1923)"><div class="nm"><span>Germanium</span><span style="display:none" lang="es">Germanio</span><span style="display:none" lang="it">Germanio</span><span style="display:none" lang="ru">Германий</span></div><a><div class="sb">Ge</div></a><div class="an">32</div></div></td>
+        <td onclick="handleClick()"><div class="metaloid" style="--kb:var(--k1923)"><div class="nm"><span>Arsenic</span><span style="display:none" lang="de">Arsen</span><span style="display:none" lang="es">Arsénico</span><span style="display:none" lang="it">Arsenico</span><span style="display:none" lang="ru">Мышьяк</span></div><a><div class="sb">As</div></a><div class="an">33</div></div></td>
+        <td onclick="handleClick()"><div class="nonmetal" style="--kb:var(--k1869)"><div class="nm"><span>Selenium</span><span style="display:none" lang="de">Selen</span><span style="display:none" lang="es">Selenio</span><span style="display:none" lang="fr">Sélénium</span><span style="display:none" lang="it">Selenio</span><span style="display:none" lang="ru">Селен</span></div><a><div class="sb">Se</div></a><div class="an">34</div></div></td>
+        <td onclick="handleClick()"><div class="halogen" style="--kb:var(--k1869)"><div class="nm"><span>Bromine</span><span style="display:none" lang="de">Brom</span><span style="display:none" lang="es">Bromo</span><span style="display:none" lang="fr">Brome</span><span style="display:none" lang="it">Bromo</span><span style="display:none" lang="ru">Бром</span></div><a><div class="sb">Br</div></a><div class="an">35</div></div></td>
+        <td onclick="handleClick()"><div class="noblegas" style="--kb:var(--k1923)"><div class="nm"><span>Krypton</span><span style="display:none" lang="es">Kriptón</span><span style="display:none" lang="it">Kripton</span><span style="display:none" lang="ru">Криптон</span></div><a><div class="sb">Kr</div></a><div class="an">36</div></div></td>
+      </tr>
+      <tr>
+        <td class="yAxis1">5</td>
+        <td onclick="handleClick()"><div class="alkali" style="--kb:var(--k1869)"><div class="nm"><span>Rubidium</span><span style="display:none" lang="es">Rubidoo</span><span style="display:none" lang="it">Rubidoo</span><span style="display:none" lang="ru">Рубидий</span></div><a><div class="sb">Rb</div></a><div class="an">37</div></div></td>
+        <td onclick="handleClick()"><div class="aearth" style="--kb:var(--k1789)"><div class="nm"><span>Strontium</span><span style="display:none" lang="es">Estronzio</span><span style="display:none" lang="it">Stronzio</span><span style="display:none" lang="ru">Стронций</span></div><a><div class="sb">Sr</div></a><div class="an">38</div></div></td>
+        <td></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1869)"><div class="nm"><span>Yttrium</span><span style="display:none" lang="es">Itrio</span><span style="display:none" lang="it">Ittrio</span><span style="display:none" lang="ru">Иттрий</span></div><a><div class="sb">Y</div></a><div class="an">39</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1869)"><div class="nm"><span>Zirconium</span><span style="display:none" lang="es">Zirconio</span><span style="display:none" lang="it">Zirconio</span><span style="display:none" lang="ru">Цирконий</span></div><a><div class="sb">Zr</div></a><div class="an">40</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1869)"><div class="nm"><span>Niobium</span><span style="display:none" lang="de">Niob</span><span style="display:none" lang="es">Niobo</span><span style="display:none" lang="it">Niobio</span><span style="display:none" lang="ru">Ниобий</span></div><a><div class="sb">Nb</div></a><div class="an">41</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1789)"><div class="nm"><span>Molybdenum</span><span style="display:none" lang="de">Molybdän</span><span style="display:none" lang="es">Molibdeno</span><span style="display:none" lang="fr">Molybdène</span><span style="display:none" lang="it">Molibdeno</span><span style="display:none" lang="ru">Молибден</span></div><a><div class="sb">Mo</div></a><div class="an">42</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1945)"><div class="nm"><span>Technetium</span><span style="display:none" lang="fr">Technétium</span><span style="display:none" lang="es">Tecnecio</span><span style="display:none" lang="it">Tecnezio</span><span style="display:none" lang="ru">Технеций</span></div><a><div class="sb">Tc</div></a><div class="an">43</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1869)"><div class="nm"><span>Ruthenium</span><span style="display:none" lang="fr">Ruthénium</span><span style="display:none" lang="es">Rutenio</span><span style="display:none" lang="it">Rutenio</span><span style="display:none" lang="ru">Рутений</span></div><a><div class="sb">Ru</div></a><div class="an">44</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1869)"><div class="nm"><span>Rhodium</span><span style="display:none" lang="es">Rodio</span><span style="display:none" lang="it">Rodio</span><span style="display:none" lang="ru">Родий</span></div><a><div class="sb">Rh</div></a><div class="an">45</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1869)"><div class="nm"><span>Palladium</span><span style="display:none" lang="es">Paladio</span><span style="display:none" lang="it">Palladio</span><span style="display:none" lang="ru">Палладий</span></div><a><div class="sb">Pd</div></a><div class="an">46</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k0000)"><div class="nm"><span>Silver</span><span style="display:none" lang="de">Silber</span><span style="display:none" lang="es">Plata</span><span style="display:none" lang="fr">Argent</span><span style="display:none" lang="it">Argento</span><span style="display:none" lang="ru">Серебро</span></div><a><div class="sb">Ag</div></a><div class="an">47</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1869)"><div class="nm"><span>Cadmium</span><span style="display:none" lang="es">Cadmio</span><span style="display:none" lang="it">Cadmio</span><span style="display:none" lang="ru">Кадмий</span></div><a><div class="sb">Cd</div></a><div class="an">48</div></div></td>
+        <td onclick="handleClick()"><div class="ptmetal" style="--kb:var(--k1869)"><div class="nm"><span>Indium</span><span style="display:none" lang="es">Indio</span><span style="display:none" lang="it">Indio</span><span style="display:none" lang="ru">Индий</span></div><a><div class="sb">In</div></a><div class="an">49</div></div></td>
+        <td onclick="handleClick()"><div class="ptmetal" style="--kb:var(--k0000)"><div class="nm"><span>Tin</span><span style="display:none" lang="de">Zinn</span><span style="display:none" lang="es">Estaño</span><span style="display:none" lang="fr">Etain</span><span style="display:none" lang="it">Stagno</span><span style="display:none" lang="ru">Олово</span></div><a><div class="sb">Sn</div></a><div class="an">50</div></div></td>
+        <td onclick="handleClick()"><div class="metaloid" style="--kb:var(--k0000)"><div class="nm"><span>Antimony</span><span style="display:none" lang="de">Antimon</span><span style="display:none" lang="es">Antimonio</span><span style="display:none" lang="fr">Antimoine</span><span style="display:none" lang="it">Antimonio</span><span style="display:none" lang="ru">Сурьма</span></div><a><div class="sb">Sb</div></a><div class="an">51</div></div></td>
+        <td onclick="handleClick()"><div class="metaloid" style="--kb:var(--k1789)"><div class="nm"><span>Tellurium</span><span style="display:none" lang="de">Tellur</span><span style="display:none" lang="es">Teluro</span><span style="display:none" lang="fr">Tellure</span><span style="display:none" lang="it">Tellurio</span><span style="display:none" lang="ru">Теллур</span></div><a><div class="sb">Te</div></a><div class="an">52</div></div></td>
+        <td onclick="handleClick()"><div class="halogen" style="--kb:var(--k1869)"><div class="nm"><span>Iodine</span><span style="display:none" lang="de">Iod</span><span style="display:none" lang="es">Yodo</span><span style="display:none" lang="fr">Iode</span><span style="display:none" lang="it">Iodio</span><span style="display:none" lang="ru">Иод</span></div><a><div class="sb">I</div></a><div class="an">53</div></div></td>
+        <td onclick="handleClick()"><div class="noblegas" style="--kb:var(--k1923)"><div class="nm"><span>Xenon</span><span style="display:none" lang="es">Xénon</span><span style="display:none" lang="fr">Xénon</span><span style="display:none" lang="ru">Ксенон</span></div><a><div class="sb">Xe</div></a><div class="an">54</div></div></td>
+      </tr>
+      <tr>
+        <td class="yAxis1">6</td>
+        <td onclick="handleClick()"><div class="alkali" style="--kb:var(--k1869)"><div class="nm"><span>Ceasium</span><span style="display:none" lang="en-us">Cesium</span><span style="display:none" lang="de">Cäsium</span><span style="display:none" lang="es">Cesio</span><span style="display:none" lang="fr">Césium</span><span style="display:none" lang="it">Cesio</span><span style="display:none" lang="ru">Цезий</span></div><a><div class="sb">Cs</div></a><div class="an">55</div></div></td>
+        <td onclick="handleClick()"><div class="aearth" style="--kb:var(--k1789)"><div class="nm"><span>Barium</span><span style="display:none" lang="es">Bario</span><span style="display:none" lang="fr">Baryum</span><span style="display:none" lang="it">Bario</span><span style="display:none" lang="ru">Барий</span></div><a><div class="sb">Ba</div></a><div class="an">56</div></div></td>
+        <td><div id="t18-lr-id" class="lanrange">57-<br/>70</div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1923)"><div class="nm"><span>Lutetium</span><span style="display:none" lang="es">Lutecio</span><span style="display:none" lang="fr">Lutétium</span><span style="display:none" lang="it">Lutezio</span><span style="display:none" lang="ru">Лютеций</span></div><a><div class="sb">Lu</div></a><div class="an">71</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1923)"><div class="nm"><span>Hafnium</span><span style="display:none" lang="es">Hafnio</span><span style="display:none" lang="it">Afnio</span><span style="display:none" lang="ru">Гафний</span></div><a><div class="sb">Hf</div></a><div class="an">72</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1869)"><div class="nm"><span>Tantalum</span><span style="display:none" lang="de">Tantal</span><span style="display:none" lang="es">Tantalio</span><span style="display:none" lang="fr">Tantale</span><span style="display:none" lang="it">Tantalio</span><span style="display:none" lang="ru">Тантал</span></div><a><div class="sb">Ta</div></a><div class="an">73</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1789)"><div class="nm"><span>Tungsten</span><span style="display:none" lang="de">Wolfram</span><span style="display:none" lang="es">Wolframio</span><span style="display:none" lang="fr">Tungstène</span><span style="display:none" lang="it">Tunsteno</span><span style="display:none" lang="ru">Вольфрам</span></div><a><div class="sb">W</div></a><div class="an">74</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1945)"><div class="nm"><span>Rhenium</span><span style="display:none" lang="de">Rhénium</span><span style="display:none" lang="es">Renio</span><span style="display:none" lang="it">Renio</span><span style="display:none" lang="ru">Рений</span></div><a><div class="sb">Re</div></a><div class="an">75</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1869)"><div class="nm"><span>Osmium</span><span style="display:none" lang="es">Osmio</span><span style="display:none" lang="it">Osmio</span><span style="display:none" lang="ru">Осмий</span></div><a><div class="sb">Os</div></a><div class="an">76</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1869)"><div class="nm"><span>Iridium</span><span style="display:none" lang="es">Iridio</span><span style="display:none" lang="it">Iridio</span><span style="display:none" lang="ru">Иридий</span></div><a><div class="sb">Ir</div></a><div class="an">77</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k1789)"><div class="nm"><span>Platinum</span><span style="display:none" lang="de">Platin</span><span style="display:none" lang="es">Platino</span><span style="display:none" lang="fr">Platine</span><span style="display:none" lang="it">Platino</span><span style="display:none" lang="ru">Платина</span></div><a><div class="sb">Pt</div></a><div class="an">78</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k0000)"><div class="nm"><span>Gold</span><span style="display:none" lang="es">Oro</span><span style="display:none" lang="fr">Or</span><span style="display:none" lang="it">Oro</span><span style="display:none" lang="ru">Золото</span></div><a><div class="sb">Au</div></a><div class="an">79</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k0000)"><div class="nm"><span>Mercury</span><span style="display:none" lang="de">Quecksilber</span><span style="display:none" lang="es">Mercurio</span><span style="display:none" lang="fr">Mercure</span><span style="display:none" lang="it">Mercurio</span><span style="display:none" lang="ru">Ртуть</span></div><a><div class="sb">Hg</div></a><div class="an">80</div></div></td>
+        <td onclick="handleClick()"><div class="ptmetal" style="--kb:var(--k1869)"><div class="nm"><span>Thallium</span><span style="display:none" lang="es">Talio</span><span style="display:none" lang="it">Tallio</span><span style="display:none" lang="ru">Таллий</span></div><a><div class="sb">Tl</div></a><div class="an">81</div></div></td>
+        <td onclick="handleClick()"><div class="ptmetal" style="--kb:var(--k0000)"><div class="nm"><span>Lead</span><span style="display:none" lang="de">Blei</span><span style="display:none" lang="es">Plomo</span><span style="display:none" lang="fr">Plomb</span><span style="display:none" lang="it">Piombo</span><span style="display:none" lang="ru">Свинец</span></div><a><div class="sb">Pb</div></a><div class="an">82</div></div></td>
+        <td onclick="handleClick()"><div class="ptmetal" style="--kb:var(--k1789)"><div class="nm"><span>Bismuth</span><span style="display:none" lang="de">Bismut</span><span style="display:none" lang="es">Bismuto</span><span style="display:none" lang="it">Bismuto</span><span style="display:none" lang="ru">Висмут</span></div><a><div class="sb">Bi</div></a><div class="an">83</div></div></td>
+        <td onclick="handleClick()"><div class="ptmetal" style="--kb:var(--k1923)"><div class="nm"><span>Polonium</span><span style="display:none" lang="de">Polonium</span><span style="display:none" lang="es">Polono</span><span style="display:none" lang="it">Polonio</span><span style="display:none" lang="ru">Полоний</span></div><a><div class="sb">Po</div></a><div class="an">84</div></div></td>
+        <td onclick="handleClick()"><div class="halogen" style="--kb:var(--k1945)"><div class="nm"><span>Astatine</span><span style="display:none" lang="de">Astat</span><span style="display:none" lang="es">Astato</span><span style="display:none" lang="fr">Astate</span><span style="display:none" lang="it">Astato</span><span style="display:none" lang="ru">Астат</span></div><a><div class="sb">At</div></a><div class="an">85</div></div></td>
+        <td onclick="handleClick()"><div class="noblegas" style="--kb:var(--k1923)"><div class="nm"><span>Radon</span><span style="display:none" lang="es">Radón</span><span style="display:none" lang="ru">Радон</span></div><a><div class="sb">Rn</div></a><div class="an">86</div></div></td>
+      </tr>
+      <tr>
+        <td class="yAxis1">7</td>
+        <td onclick="handleClick()"><div class="alkali" style="--kb: var(--k1945)"><div class="nm"><span>Francium</span><span style="display:none" lang="es">Francio</span><span style="display:none" lang="it">Francio</span><span style="display:none" lang="ru">Франций</span></div><a><div class="sb">Fr</div></a><div class="an">87</div></div></td>
+        <td onclick="handleClick()"><div class="aearth" style="--kb: var(--k1923)"><div class="nm"><span>Radium</span><span style="display:none" lang="es">Radio</span><span style="display:none" lang="it">Radio</span><span style="display:none" lang="ru">Радий</span></div><a><div class="sb">Ra</div></a><div class="an">88</div></div></td>
+        <td><div id="t18-ar-id" class="actrange">89-<br/>102</div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb:var(--k2000)"><div class="nm"><span>Lawrencium</span><span style="display:none" lang="es">Laurencio</span><span style="display:none" lang="it">Laurenzio</span><span style="display:none" lang="ru">Лоуренсий</span></div><a><div class="sb">Lr</div></a><div class="an">103</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb: var(--k2000)"><div class="nm"><span>Rutherfordium</span><span style="display:none" lang="es">Rutherfordio</span><span style="display:none" lang="it">Rutherfordio</span><span style="display:none" lang="ru">Резерфордий</span></div><a><div class="sb">Rf</div></a><div class="an">104</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb: var(--k2000)"><div class="nm"><span>Dubnium</span><span style="display:none" lang="es">Dubnio</span><span style="display:none" lang="it">Dubnio</span><span style="display:none" lang="ru">Дубний</span></div><a><div class="sb">Db</div></a><div class="an">105</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb: var(--k2000)"><div class="nm"><span>Seaborgium</span><span style="display:none" lang="es">Seaborgio</span><span style="display:none" lang="it">Seaborgio</span><span style="display:none" lang="ru">Сиборгий</span></div><a><div class="sb">Sg</div></a><div class="an">106</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb: var(--k2000)"><div class="nm"><span>Bohrium</span><span style="display:none" lang="es">Bohrio</span><span style="display:none" lang="it">Bohrio</span><span style="display:none" lang="ru">Борий</span></div><a><div class="sb">Bh</div></a><div class="an">107</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb: var(--k2000)"><div class="nm"><span>Hassium</span><span style="display:none" lang="es">Hassio</span><span style="display:none" lang="it">Hassio</span><span style="display:none" lang="ru">Хассий</span></div><a><div class="sb">Hs</div></a><div class="an">108</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb: var(--k2000)"><div class="nm"><span>Meitnerium</span><span style="display:none" lang="es">Meitnerio</span><span style="display:none" lang="fr">Meitnérium</span><span style="display:none" lang="it">Meitnerio</span><span style="display:none" lang="ru">Мейтнерий</span></div><a><div class="sb">Mt</div></a><div class="an">109</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb: var(--k2000)"><div class="nm"><span>Darmstadtium</span><span style="display:none" lang="es">Darmstadtio</span><span style="display:none" lang="it">Darmstadtio</span><span style="display:none" lang="ru">Дармштадтий</span></div><a><div class="sb">Ds</div></a><div class="an">110</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb: var(--k2000)"><div class="nm"><span>Roentgenium</span><span style="display:none" lang="es">Roentgenio</span><span style="display:none" lang="it">Roentgenio</span><span style="display:none" lang="ru">Рентгений</span></div><a><div class="sb">Rg</div></a><div class="an">111</div></div></td>
+        <td onclick="handleClick()"><div class="tmetal" style="--kb: var(--k2000)"><div class="nm"><span>Copernicium</span><span style="display:none" lang="es">Copernicio</span><span style="display:none" lang="it">Copernicio</span><span style="display:none" lang="ru">Коперниций</span></div><a><div class="sb">Cn</div></a><div class="an">112</div></div></td>
+        <td onclick="handleClick()"><div class="ptmetal" style="--kb: var(--k2012)"><div class="nm"><span>Nihonium</span><span style="display:none" lang="es">Nihonio</span><span style="display:none" lang="it">Nihonio</span><span style="display:none" lang="ru">Нихоний</span></div><a><div class="sb">Nh</div></a><div class="an">113</div></div></td>
+        <td onclick="handleClick()"><div class="ptmetal" style="--kb: var(--k2000)"><div class="nm"><span>Flerovium</span><span style="display:none" lang="es">Flerovio</span><span style="display:none" lang="fr">Flérovium</span><span style="display:none" lang="it">Flerovio</span><span style="display:none" lang="ru">Флеровий</span></div><a><div class="sb">Fl</div></a><div class="an">114</div></div></td>
+        <td onclick="handleClick()"><div class="ptmetal" style="--kb: var(--k2012)"><div class="nm"><span>Moscovium</span><span style="display:none" lang="es">Moscovio</span><span style="display:none" lang="it">Moscovio</span><span style="display:none" lang="ru">Московий</span></div><a><div class="sb">Mc</div></a><div class="an">115</div></div></td>
+        <td onclick="handleClick()"><div class="ptmetal" style="--kb: var(--k2000)"><div class="nm"><span>Livermorium</span><span style="display:none" lang="es">Livermorio</span><span style="display:none" lang="it">Livermorio</span><span style="display:none" lang="ru">Ливерморий</span></div><a><div class="sb">Lv</div></a><div class="an">116</div></div></td>
+        <td onclick="handleClick()"><div class="halogen" style="--kb: var(--k2012)"><div class="nm"><span>Tennessine</span><span style="display:none" lang="es">Teneso</span><span style="display:none" lang="fr">Tennesse</span><span style="display:none" lang="it">Tennesso</span><span style="display:none" lang="ru">Теннессин</span></div><a><div class="sb">Ts</div></a><div class="an">117</div></div></td>
+        <td onclick="handleClick()"><div class="noblegas" style="--kb: var(--k2012)"><div class="nm"><span>Organesson</span><span style="display:none" lang="es">Oganesón</span><span style="display:none" lang="ru">Оганесон</span></div><a><div class="sb">Og</div></a><div class="an">118</div></div></td>
+      </tr>
+      <tr style="height:1em"></tr>
+      <tr>
+        <td class="yAxis1"></td><td colspan="2"></td>
+        <td onclick="handleClick()"><div class="lanthanoid" style="--kb:var(--k1869)"><div class="nm"><span>Lanthanum</span><span style="display:none" lang="de">Lanthan</span><span style="display:none" lang="es">Lantano</span><span style="display:none" lang="fr";>Lanthane</span><span style="display:none" lang="it">Lantanio</span><span style="display:none" lang="ru">Лантан</span></div><a><div class="sb">La</div></a><div class="an">57</div></div></td>
+        <td onclick="handleClick()"><div class="lanthanoid" style="--kb:var(--k1869)"><div class="nm"><span>Cerium</span><span style="display:none" lang="de">Cer</span><span style="display:none" lang="es">Cerio</span><span style="display:none" lang="fr">Cérium</span><span style="display:none" lang="it">Cerio</span><span style="display:none" lang="ru">Церий</span></div><a><div class="sb">Ce</div></a><div class="an">58</div></div></td>
+        <td onclick="handleClick()"><div class="lanthanoid" style="--kb:var(--k1923)"><div class="nm"><span>Praseodymium</span><span style="display:none" lang="de">Praseodym</span><span style="display:none" lang="es">Praseodimio</span><span style="display:none" lang="fr">Raséodyme</span><span style="display:none" lang="it">Praseodimio</span><span style="display:none" lang="ru">Празеодим</span></div><a><div class="sb">Pr</div></a><div class="an">59</div></div></td>
+        <td onclick="handleClick()"><div class="lanthanoid" style="--kb:var(--k1923)"><div class="nm"><span>Neodymium</span><span style="display:none" lang="de">Neodym</span><span style="display:none" lang="es">Neodimio</span><span style="display:none" lang="fr">Néodyme</span><span style="display:none" lang="it">Neodimio</span><span style="display:none" lang="ru">Неодим</span></div><a><div class="sb">Nd</div></a><div class="an">60</div></div></td>
+        <td onclick="handleClick()"><div class="lanthanoid" style="--kb:var(--k1945)"><div class="nm"><span>Promethium</span><span style="display:none" lang="es">Prometio</span><span style="display:none" lang="fr">Prométhium</span><span style="display:none" lang="it">Promezio</span><span style="display:none" lang="ru">Прометий</span></div><a><div class="sb">Pm</div></a><div class="an">61</div></div></td>
+        <td onclick="handleClick()"><div class="lanthanoid" style="--kb:var(--k1923)"><div class="nm"><span>Samarium</span><span style="display:none" lang="es">Samario</span><span style="display:none" lang="it">Samario</span><span style="display:none" lang="ru">Самарий</span></div><a><div class="sb">Sm</div></a><div class="an">62</div></div></td>
+        <td onclick="handleClick()"><div class="lanthanoid" style="--kb:var(--k1923)"><div class="nm"><span>Europium</span><span style="display:none" lang="es">Europio</span><span style="display:none" lang="it">Europio</span><span style="display:none" lang="ru">Европий</span></div><a><div class="sb">Eu</div></a><div class="an">63</div></div></td>
+        <td onclick="handleClick()"><div class="lanthanoid" style="--kb:var(--k1923)"><div class="nm"><span>Gadolinium</span><span style="display:none" lang="es">Gadolinio</span><span style="display:none" lang="it">Gadolinio</span><span style="display:none" lang="ru">Гадолиний</span></div><a><div class="sb">Gd</div></a><div class="an">64</div></div></td>
+        <td onclick="handleClick()"><div class="lanthanoid" style="--kb:var(--k1869)"><div class="nm"><span>Terbium</span><span style="display:none" lang="es">Terbio</span><span style="display:none" lang="it">Terbio</span><span style="display:none" lang="ru">Тербий</span></div><a><div class="sb">Tb</div></a><div class="an">65</div></div></td>
+        <td onclick="handleClick()"><div class="lanthanoid" style="--kb:var(--k1923)"><div class="nm"><span>Dysprosium</span><span style="display:none" lang="es">Disprosio</span><span style="display:none" lang="it">Disprosio</span><span style="display:none" lang="ru">Диспрозий</span></div><a><div class="sb">Dy</div></a><div class="an">66</div></div></td>
+        <td onclick="handleClick()"><div class="lanthanoid" style="--kb:var(--k1923)"><div class="nm"><span>Holmium</span><span style="display:none" lang="es">Holmio</span><span style="display:none" lang="it">Olmio</span><span style="display:none" lang="ru">Гольмий</span></div><a><div class="sb">Ho</div></a><div class="an">67</div></div></td>
+        <td onclick="handleClick()"><div class="lanthanoid" style="--kb:var(--k1869)"><div class="nm"><span>Erbium</span><span style="display:none" lang="es">Erbio</span><span style="display:none" lang="it">Erbio</span><span style="display:none" lang="ru">Эрбий</span></div><a><div class="sb">Er</div></a><div class="an">68</div></div></td>
+        <td onclick="handleClick()"><div class="lanthanoid" style="--kb:var(--k1923)"><div class="nm"><span>Thulium</span><span style="display:none" lang="es">Tulio</span><span style="display:none" lang="it">Tulio</span><span style="display:none" lang="ru">Тулий</span></div><a><div class="sb">Tm</div></a><div class="an">69</div></div></td>
+        <td onclick="handleClick()"><div class="lanthanoid" style="--kb:var(--k1923)"><div class="nm"><span>Ytterbium</span><span style="display:none" lang="es">Iterbio</span><span style="display:none" lang="it">Itterbio</span><span style="display:none" lang="ru">Иттербий</span></div><a><div class="sb">Yb</div></a><div class="an">70</div></div></td>
+      </tr>
+      <tr>
+        <td class="yAxis1"></td>
+        <td colspan="2"></td>
+        <td onclick="handleClick()"><div class="actinoid" style="--kb:var(--k1923)"><div class="nm"><span>Actinium</span><span style="display:none" lang="es">Actinio</span><span style="display:none" lang="it">Attinio</span><span style="display:none" lang="ru">Актиний</span></div><a><div class="sb">Ac</div></a><div class="an">89</div></div></td>
+        <td onclick="handleClick()"><div class="actinoid" style="--kb:var(--k1869)"><div class="nm"><span>Thorium</span><span style="display:none" lang="es">Torio</span><span style="display:none" lang="it">Torio</span><span style="display:none" lang="ru">Торий</span></div><a><div class="sb">Th</div></a><div class="an">90</div></div></td>
+        <td onclick="handleClick()"><div class="actinoid" style="--kb:var(--k1923)"><div class="nm"><span>Protactinium</span><span style="display:none" lang="de">Protaktinium</span><span style="display:none" lang="es">Protactinio</span><span style="display:none" lang="it">Protoattinio</span><span style="display:none" lang="ru">Протактиний</span></div><a><div class="sb">Pa</div></a><div class="an">91</div></div></td>
+        <td onclick="handleClick()"><div class="actinoid" style="--kb:var(--k1789)"><div class="nm"><span>Uranium</span><span style="display:none" lang="de">Uran</span><span style="display:none" lang="es">Uranio</span><span style="display:none" lang="it">Uranio</span><span style="display:none" lang="ru">Уран</span></div><a><div class="sb">U</div></a><div class="an">92</div></div></td>
+        <td onclick="handleClick()"><div class="actinoid" style="--kb:var(--k1945)"><div class="nm"><span>Neptunium</span><span style="display:none" lang="es">Neptunio</span><span style="display:none" lang="it">Nettunio</span><span style="display:none" lang="ru">Нептуний</span></div><a><div class="sb">Np</div></a><div class="an">93</div></div></td>
+        <td onclick="handleClick()"><div class="actinoid" style="--kb:var(--k1945)"><div class="nm"><span>Plutonium</span><span style="display:none" lang="es">Plutonio</span><span style="display:none" lang="it">Plutonio</span><span style="display:none" lang="ru">Плутоний</span></div><a><div class="sb">Pu</div></a><div class="an">94</div></div></td>
+        <td onclick="handleClick()"><div class="actinoid" style="--kb:var(--k1945)"><div class="nm"><span>Americium</span><span style="display:none" lang="es">Americio</span><span style="display:none" lang="fr">Américium</span><span style="display:none" lang="it">Americio</span><span style="display:none" lang="ru">Америций</span></div><a><div class="sb">Am</div></a><div class="an">95</div></div></td>
+        <td onclick="handleClick()"><div class="actinoid" style="--kb:var(--k1945)"><div class="nm"><span>Curium</span><span style="display:none" lang="es">Curio</span><span style="display:none" lang="it">Curio</span><span style="display:none" lang="ru">Кюрий</span></div><a><div class="sb">Cm</div></a><div class="an">96</div></div></td>
+        <td onclick="handleClick()"><div class="actinoid" style="--kb:var(--k2000)"><div class="nm"><span>Berkelium</span><span style="display:none" lang="es">Berkelio</span><span style="display:none" lang="fr">Berkélium</span><span style="display:none" lang="it">Berkelio</span><span style="display:none" lang="ru">Берклий</span></div><a><div class="sb">Bk</div></a><div class="an">97</div></div></td>
+        <td onclick="handleClick()"><div class="actinoid" style="--kb:var(--k2000)"><div class="nm"><span>Californium</span><span style="display:none" lang="es">Californio</span><span style="display:none" lang="it">Californio</span><span style="display:none" lang="ru">Калифорний</span></div><a><div class="sb">Cf</div></a><div class="an">98</div></div></td>
+        <td onclick="handleClick()"><div class="actinoid" style="--kb:var(--k2000)"><div class="nm"><span>Einsteinium</span><span style="display:none" lang="es">Einsteinio</span><span style="display:none" lang="it">Einsteinio</span><span style="display:none" lang="ru">Эйнштейний</span></div><a><div class="sb">Es</div></a><div class="an">99</div></div></td>
+        <td onclick="handleClick()"><div class="actinoid" style="--kb:var(--k2000)"><div class="nm"><span>Fermium</span><span style="display:none" lang="es">Fermio</span><span style="display:none" lang="it">Fermio</span><span style="display:none" lang="ru">Фермий</span></div><a><div class="sb">Fm</div></a><div class="an">100</div></div></td>
+        <td onclick="handleClick()"><div class="actinoid" style="--kb:var(--k2000)"><div class="nm"><span>Mendelevium</span><span style="display:none" lang="es">Mendelevio</span><span style="display:none" lang="fr">Mendelévium</span><span style="display:none" lang="it">Mendelevio</span><span style="display:none" lang="ru">Менделевий</span></div><a><div class="sb">Md</div></a><div class="an">101</div></div></td>
+        <td onclick="handleClick()"><div class="actinoid" style="--kb:var(--k2000)"><div class="nm"><span>Nobelium</span><span style="display:none" lang="es">Nobelio</span><span style="display:none" lang="fr">Nobélium</span><span style="display:none" lang="it">Nobelio</span><span style="display:none" lang="ru">Нобелий</span></div><a><div class="sb">No</div></a><div class="an">102</div></div></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div id="cats-leg-id" class="themeLeg" style="display:inline-block">
+  <br />
+  <div class="yPadSmall"></div>
+  <table style="display:inline-block">
+    <thead>
+      <tr>
+        <th colspan="6" class="textXL"><span>Metals</span><span style="display:none" lang="de">Metalle</span><span style="display:none" lang="es">Metales</span><span style="display:none" lang="fr">Métal</span><span style="display:none" lang="it">Metalli</span><span style="display:none" lang="ru">Металлы</span></th>
+        <th width="8px"></th>
+        <th class="textXL"><span>Metalloid</span><span style="display:none" lang="de">Metalloiden</span><span style="display:none" lang="es">Metaloide</span><span style="display:none" lang="fr">Métalloïde</span><span style="display:none" lang="it">Metalloide</span><span style="display:none" lang="ru">Металлоид</span></th>
+        <th width="8px"></th>
+        <th colspan="3" class="textXL"><span>Nonmetals</span><span style="display:none" lang="de">Nichtmetalle</span><span style="display:none" lang="es">No metales</span><span style="display:none" lang="fr">Non-métal</span><span style="display:none" lang="it">Nonmetalli</span><span style="display:none" lang="ru">Неметаллы</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><div class="alkaliLeg"></div></td>
+        <td><div class="aearthLeg"></div></td>
+        <td><div class="lanthanoidLeg"></div></td>
+        <td><div class="actinoidLeg"></div></td>
+        <td><div class="tmetalLeg"></div></td>
+        <td><div class="ptmetalLeg"></div></td>
+        <td style="width:0px; padding-left: 13px; border-right:2px solid #222" rowspan="2"></td>
+        <td><div style="padding-left: 13px; padding-right: 13px"><span class="metaloidLeg"></span></div></td>
+        <td style="width:0px; padding-right: 13px; border-left:2px solid #222" rowspan="2"></td>
+        <td><div class="nonmetalLeg"></div></td>
+        <td><div class="halogenLeg"></div></td>
+        <td><div class="nobleLeg"></div></td>
+      </tr>
+      <tr class="catsleg">
+        <td class="textXL"><span>Alkali</span><span style="display:none" lang="de">Alkali</span><span style="display:none" lang="es">Alcalino</span><span style="display:none" lang="fr">Alcalin</span><span style="display:none" lang="it">Metalli<br/>Alcalini</span><span style="display:none" lang="ru">Щелочные</span></td>
+        <td class="textXL"><span>Alkali<br/>Earth</span><span style="display:none" lang="de">Erdalkali</span><span style="display:none" lang="es">Alcalino-<br/>térreo</span><span style="display:none" lang="fr">Alcalino-<br/>terreux</span><span style="display:none" lang="it">Metalli<br/>alcalini<br/>terrosi</span><span style="display:none" lang="ru">Щёлочнозе-<br/>мельные</span></td>
+        <td class="textXL"><span>Lanthanoid</span><span style="display:none" lang="de">Lanthanoide</span><span style="display:none" lang="es">Lantánido</span><span style="display:none" lang="fr">Lanthanide</span><span style="display:none" lang="it">Lantanidi</span><span style="display:none" lang="ru">Лантаноид</span></td>
+        <td class="textXL"><span>Actinoid</span><span style="display:none" lang="de">Actinoide</span><span style="display:none" lang="es">Actínido</span><span style="display:none" lang="fr">Actinide</span><span style="display:none" lang="it">Attinidi</span><span style="display:none" lang="ru">Актинид</span></td>
+        <td class="textXL"><span>Transition</span><span style="display:none" lang="de">Übergangs</span><span style="display:none" lang="es">Metal de<br/>transición</span><span style="display:none" lang="fr">Métaux de<br/>transition</span><span style="display:none" lang="it">Metalli<br/>di<br/>transizione</span><span style="display:none" lang="ru">Переходные</span></td>
+        <td class="textXL"><span>Post-<br/>transition</span><span style="display:none" lang="de">Halb</span><span style="display:none" lang="es">Otros<br/>metal</span><span style="display:none" lang="fr">Métaux<br/>pauvres</span><span style="display:none" lang="it">Post-metalli<br/>di<br/>transizione</span><span style="display:none" lang="ru">Постпе-<br/>реходные</span></td>
+        <td></td>
+        <td class="textXL"><span>Reactive</span><span style="display:none" lang="de">Nichtmetalle</span><span style="display:none" lang="es">Otros<br/>no metal</span><span style="display:none" lang="fr">Autres<br/>non-métal</span><span style="display:none" lang="it">Poliatomici</span><span style="display:none" lang="ru">Другие<br/>неметаллы</span></td>
+        <td class="textXL"><span>Halogen</span><span style="display:none" lang="de">Halogene</span><span style="display:none" lang="es">Halógeno</span><span style="display:none" lang="fr">Halogène</span><span style="display:none" lang="it">Diatomici</span><span style="display:none" lang="ru">Галогены</span></td>
+        <td class="textXL"><span>Noble<br/>Gas</span><span style="display:none" lang="de">Edelgas</span><span style="display:none" lang="es">Gas<br/>noble</span><span style="display:none" lang="fr">Gaz<br/>noble</span><span style="display:none" lang="it">Gas<br/>nobili</span><span style="display:none" lang="ru">Благородные<br/>газы</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div id="blok-leg-id" class="themeLeg"; style="display:none; margin-left:4px">
+  <br />
+  <div class="yPadBig"></div>
+  <fieldset style="display:inline-block">
+    <legend class="textXL"><span>Block</span><span style="display:none" lang="es">Bloque</span><span style="display:none" lang="fr">Bloc</span><span style="display:none" lang="it">Blocco</span><span style="display:none" lang="ru">Блок</span></legend>
+    <div style="display:flex">
+      <div style="display:inline-flex; align-items:center; margin-right:1em">
+        <div class="legBox" style="background-color:var(--c-pal1-3)"></div>
+        <div class="textXL"><span>s-block</span><span style="display:none" lang="de">s-Block</span><span style="display:none" lang="es">s-bloque</span><span style="display:none" lang="fr">Bloc s</span><span style="display:none" lang="it">blocco s</span><span style="display:none" lang="ru">s-блок</span></div>
+      </div>
+      <div style="display:inline-flex; align-items:center; margin-right:1em">
+        <div class="legBox" style="background-color:var(--c-pal1-2)"></div>
+        <div class="textXL"><span>p-block</span><span style="display:none" lang="de">p-Block</span><span style="display:none" lang="es">p-bloque</span><span style="display:none" lang="fr">Bloc p</span><span style="display:none" lang="it">blocco p</span><span style="display:none" lang="ru">p-блок</span></div>
+      </div>
+      <div style="display:inline-flex; align-items:center; margin-right:1em">
+        <div class="legBox" style="background-color:var(--c-pal1-0)"></div>
+        <div class="textXL"><span>d-block</span><span style="display:none" lang="de">d-Block</span><span style="display:none" lang="es">d-bloque</span><span style="display:none" lang="fr">Bloc d</span><span style="display:none" lang="it">blocco d</span><span style="display:none" lang="ru">d-блок</span></div>
+      </div>
+      <div style="display:inline-flex; align-items:center">
+        <div class="legBox" style="background-color:var(--c-pal1-1)"></div>
+        <div class="textXL"><span>f-block</span><span style="display:none" lang="de">f-Block</span><span style="display:none" lang="es">f-bloque</span><span style="display:none" lang="fr">Bloc f</span><span style="display:none" lang="it">blocco f</span><span style="display:none" lang="ru">f-блок</span></div>
+      </div>
+    </div>
+  </fieldset>
+</div>
+<div id="diff-leg-id" class="themeLeg" style="display:none">
+  <br />
+  <div class="yPadBig"></div>
+  <fieldset style="display:inline-block">
+    <legend>
+      <span class="textXL"><span>Versus </span><span style="display:none" lang="de">Gegen </span><span style="display:none" lang="es">Contre </span><span style="display:none" lang="fr">Contre </span><span style="display:none" lang="it">Contro </span><span style="display:none" lang="ru">Против </span></span>
+      <span class="diffLangXL">PL</span>
+    </legend>
+    <div style="display:flex">
+      <div style="display:inline-flex; align-items:center; margin-right:1em">
+        <div class="legBox" style="background-color:var(--c-neutral)"></div>
+        <div class="textXL"><span>Same</span><span style="display:none" lang="de">Gleich</span><span style="display:none" lang="es">Mismo</span><span style="display:none" lang="fr">Même</span><span style="display:none" lang="it">Stesso</span><span style="display:none" lang="ru">Одна и та же</span></div>
+      </div>
+      <div style="display:inline-flex; align-items:center">
+        <div class="legBox" style="background-color:var(--c-pal1-2)"></div>
+        <div class="textXL"><span>Different</span><span style="display:none" lang="de">Anders</span><span style="display:none" lang="es">Diferente</span><span style="display:none" lang="fr">Différent</span><span style="display:none" lang="it">Diverso</span><span style="display:none" lang="ru">Другой</span></div>
+      </div>
+    </div>
+  </fieldset>
+</div>
+<div id="hist-leg-id" class="themeLeg" style="display:none">
+  <br />
+  <div class="yPadSmall"></div>
+  <fieldset style="display:inline-block">
+    <legend class="textXL"><span>History</span><span style="display:none" lang="de">Geschichte</span><span style="display:none" lang="es">Historia</span><span style="display:none" lang="fr">L'histoire</span><span style="display:none" lang="it">Storia</span><span style="display:none" lang="ru">История</span></legend>
+    <div style="display:flex; flex-direction:row">
+      <div style="display:inline-flex; flex-direction:column; margin-right:1em; justify-content:center">
+        <div style="display:inline-flex; align-items:center">
+          <div class="legBox" style="background-color:var(--k0000)"></div>
+          <div class="textXL"><span>Known in antiquity</span><span style="display:none" lang="de">In der Antike bekannt</span><span style="display:none" lang="es">Conocido en la antigüedad</span><span style="display:none" lang="fr">Connu dans l'antiquité</span><span style="display:none" lang="it">Conosciuta nell'antichità</span><span style="display:none" lang="ru">Известный в древности</span></div>
+        </div>
+      </div>
+      <div style="display:inline-flex; flex-direction:column; margin-right:1em">
+        <div style="display:inline-flex; align-items:center; margin-bottom:3px">
+          <div class="legBox" style="background-color:var(--k1789)"></div>
+          <div class="textXL"><span>Known by 1789</span><span style="display:none" lang="de">Bis 1789 bekannt</span><span style="display:none" lang="es">Conocida por 1789</span><span style="display:none" lang="fr">Connu en 1789</span><span style="display:none" lang="it">Conosciuto nel 1789</span><span style="display:none" lang="ru">Известен к 1789 г.</span></div>
+        </div>
+        <div style="display:inline-flex; align-items:center">
+          <div class="legBox" style="background-color:var(--k1869)"></div>
+          <div class="textXL"><span>Known by 1869</span><span style="display:none" lang="de">Bis 1869 bekannt</span><span style="display:none" lang="es">Conocida por 1869</span><span style="display:none" lang="fr">Connu en 1869</span><span style="display:none" lang="it">Conosciuto nel 1869</span><span style="display:none" lang="ru">Известен к 1869 г.</span></div>
+        </div>
+      </div>
+      <div style="display:inline-flex; flex-direction:column; margin-right:1em">
+        <div style="display:inline-flex; align-items:center; margin-bottom:3px">
+          <div class="legBox" style="background-color:var(--k1923)"></div>
+          <div class="textXL"><span>Known by 1923</span><span style="display:none" lang="de">Bis 1923 bekannt</span><span style="display:none" lang="es">Conocida por 1923</span><span style="display:none" lang="fr">Connu en 1923</span><span style="display:none" lang="it">Conosciuto nel 1923</span><span style="display:none" lang="ru">Известен к 1923 г.</span></div>
+        </div>
+        <div style="display:inline-flex; align-items:center">
+          <div class="legBox" style="background-color:var(--k1945)"></div>
+          <div class="textXL"><span>Known by 1945</span><span style="display:none" lang="de">Bis 1945 bekannt</span><span style="display:none" lang="es">Conocida por 1945</span><span style="display:none" lang="fr">Connu en 1945</span><span style="display:none" lang="it">Conosciuto nel 1945</span><span style="display:none" lang="ru">Известен к 1945 г.</span></div>
+        </div>
+      </div>
+      <div style="display:inline-flex; flex-direction:column">
+        <div style="display:inline-flex; align-items:center; margin-bottom:3px">
+          <div class="legBox" style="background-color:var(--k2000)"></div>
+          <div class="textXL"><span>Known by 2000</span><span style="display:none" lang="de">Bis 2000 bekannt</span><span style="display:none" lang="es">Conocida por 2000</span><span style="display:none" lang="fr">Connu en 2000</span><span style="display:none" lang="it">Conosciuto nel 2000</span><span style="display:none" lang="ru">Известен к 2000 г.</span></div>
+        </div>
+        <div style="display:inline-flex; align-items:center">
+          <div class="legBox" style="background-color:var(--k2012)"></div>
+          <div class="textXL"><span>Known by 2012</span><span style="display:none" lang="de">Bis 2012 bekannt</span><span style="display:none" lang="es">Conocida por 2012</span><span style="display:none" lang="fr">Connu en 2012</span><span style="display:none" lang="it">Conosciuto nel 2012</span><span style="display:none" lang="ru">Известен к 2012 г.</span></div>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+</div>
+<div id="stab-leg-id" class="themeLeg" style="display:none">
+  <br />
+  <div class="yPadBig"></div>
+  <fieldset style="display:inline-block">
+    <legend class="textXL"><span>Half-life of most stable isotope</span><span style="display:none" lang="de">Halbwertszeit des stabilsten Isotops</span><span style="display:none" lang="es">Vida media del isótopo más estable</span><span style="display:none" lang="fr">Demi-vie de l'isotope le plus stable</span><span style="display:none" lang="it">Emivita dell'isotopo più stabile</span><span style="display:none" lang="ru">Период полураспада наиболее стабильного изотопа</span></legend>
+    <div style="display:flex; flex-direction:row">
+      <div style="display:inline-flex; flex-direction:column; margin-right:1em">
+        <div style="display:inline-flex; align-items:center; margin-bottom:3px">
+          <div class="legBox" style="background-color:var(--c-pal1-0)"></div>
+          <div class="textXL"><span>Stable</span><span style="display:none" lang="de">Stabil</span><span style="display:none" lang="es">Estable</span><span style="display:none" lang="it">Stabile</span><span style="display:none" lang="ru">Стабильный</span></div>
+        </div>
+        <div style="display:inline-flex; align-items:center; margin-bottom:3px">
+          <div class="legBox" style="background-color:var(--c-pal1-1)"></div>
+          <div class="textXL"><span>Slightly radioactive</span><span style="display:none" lang="de">Leicht radioaktiv</span><span style="display:none" lang="es">Ligeramente radiactivo</span><span style="display:none" lang="fr">Légèrement radioactif</span><span style="display:none" lang="it">Leggermente radioattivo</span><span style="display:none" lang="ru">Слабо радиоактивный</span></div>
+        </div>
+        <div style="display:inline-flex; align-items:center">
+          <div class="legBox" style="background-color:var(--c-pal1-2)"></div>
+          <div class="textXL"><span>Somewhat radioactive</span><span style="display:none" lang="de">Etwas radioaktiv</span><span style="display:none" lang="es">Algo radiactivo</span><span style="display:none" lang="fr">Un peu radioactif</span><span style="display:none" lang="it">Un po 'radioattivo</span><span style="display:none" lang="ru">Немного радиоактивный</span></div>
+        </div>
+      </div>
+      <div style="display:inline-flex; flex-direction:column">
+        <div style="display:inline-flex; align-items:center; margin-bottom:3px">
+          <div class="legBox" style="background-color:var(--c-pal1-3)"></div>
+          <div class="textXL"><span>Significantly radioactive</span><span style="display:none" lang="de">Deutlich radioaktiv</span><span style="display:none" lang="es">Significativamente radiactivo</span><span style="display:none" lang="fr">Significativement radioactif</span><span style="display:none" lang="it">Significativamente radioattivo</span><span style="display:none" lang="ru">Значительно радиоактивный</span></div>
+        </div>
+        <div style="display:inline-flex; align-items:center; margin-bottom:3px">
+          <div class="legBox" style="background-color:var(--c-pal1-4)"></div>
+          <div class="textXL"><span>Highly radioactive</span><span style="display:none" lang="de">Hochradioaktiv</span><span style="display:none" lang="es">Altamente radiactivo</span><span style="display:none" lang="fr">Très radioactif</span><span style="display:none" lang="it">Altamente radioattivo</span><span style="display:none" lang="ru">Очень радиоактивный</span></div>
+        </div>
+        <div style="display:inline-flex; align-items:center">
+          <div class="legBox" style="background-color:var(--c-pal1-5)"></div>
+          <div class="textXL"><span>Extremely radioactive</span><span style="display:none" lang="de">Extrem radioaktiv</span><span style="display:none" lang="es">Extremadamente radiactivo</span><span style="display:none" lang="fr">Extrêmement radioactif</span><span style="display:none" lang="it">Estremamente radioattivo</span><span style="display:none" lang="ru">Чрезвычайно радиоактивный</span></div>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+</div>
+<div id="stat-leg-id" class="themeLeg" style="display:none">
+  <br />
+  <div class="yPadBig"></div>
+  <fieldset style="display:inline-block">
+    <legend class="textXL"><span>State at 0° C, 1 atm</span><span style="display:none" lang="de">Zustand bei 0 ° C, 1 atm</span><span style="display:none" lang="es">Estado a 0 ° C, 1 atm</span><span style="display:none" lang="fr">État à 0 ° C, 1 atm</span><span style="display:none" lang="it">Estado a 0 ° C, 1 atm</span><span style="display:none" lang="ru">Состояние при 0 ° С, 1 атм.</span></legend>
+    <div style="display:flex; flex-direction:row">
+      <div style="display:inline-flex; align-items:center; margin-right:1em">
+        <div class="legBox" style="background-color:var(--c-pal1-3)"></div>
+        <div class="textXL"><span>Solid</span><span style="display:none" lang="de">Solide</span><span style="display:none" lang="es">Sólido</span><span style="display:none" lang="fr">Solide</span><span style="display:none" lang="it">Solido</span><span style="display:none" lang="ru">Твердый</span></div>
+      </div>
+      <div style="display:inline-flex; align-items:center; margin-right:1em">
+        <div class="legBox" style="background-color:var(--c-pal1-1)"></div>
+        <div class="textXL"><span>Liquid</span><span style="display:none" lang="de">Flüssigkeit</span><span style="display:none" lang="es">Líquida</span><span style="display:none" lang="fr">Liquide</span><span style="display:none" lang="it">Liquido</span><span style="display:none" lang="ru">жидкость</span></div>
+      </div>
+      <div style="display:inline-flex; align-items:center; margin-right:1em">
+        <div class="legBox" style="background-color:var(--c-pal1-0)"></div>
+        <div class="textXL"><span>Gas</span><span style="display:none" lang="fr">Gaz</span><span style="display:none" lang="ru">Газ</span></div>
+      </div>
+      <div style="display:inline-flex; align-items:center">
+        <div class="legBox" style="background-color:var(--c-neutral)"></div>
+        <div class="textXL"><span>Unknown</span><span style="display:none" lang="de">Unbekannt</span><span style="display:none" lang="es">Desconocido</span><span style="display:none" lang="fr">Inconnue</span><span style="display:none" lang="it">Sconosciuto</span><span style="display:none" lang="ru">Неизвестно</span></div>
+      </div>
+    </div>
+  </fieldset>
+</div>
+<div id="dets-id" style="display:none">
+  <br />
+  <h3 style="display:inline">
+    <span class="textXL" style="display:inline-block"><span>Element:&nbsp;</span><span style="display:none" lang="es">Elemento: </span><span style="display:none" lang="fr">Élément: </span><span style="display:none" lang="it">Elemento: </span><span style="display:none" lang="ru">Элемент: </span></span>
+    <span id="dets-nm-id" style="display:inline-block">E</span>
+    <span id="dets-box-id" class="legMinibox"></span>
+  </h3>
+  <h3><span class="textXL"><span>Symbol: </span><span style="display:none" lang="es">Símbolo: </span><span style="display:none" lang="fr">Symbole: </span><span style="display:none" lang="it">Simbolo: </span><span style="display:none" lang="ru">символ: </span></span><span id="dets-sb-id">S</span></h3>
+  <h3><span class="textXL"><span>Number: </span><span style="display:none" lang="de">Zahl: </span><span style="display:none" lang="es">Número: </span><span style="display:none" lang="fr">Nombre: </span><span style="display:none" lang="it">Numero: </span><span style="display:none" lang="ru">номер: </span></span><span id="dets-z-id">Z</span></h3>
+  <h3><span class="textXL">Wiki: </span><a id="dets-wiki-id" href="#">W</a></h3>
+</div>
+<br />
+<div id="lang-id" style="display:inline-block">
+  <fieldset id="lang-set-id">
+    <legend class="textXL"><span>Language</span><span style="display:none" lang="de">Sprache</span><span style="display:none" lang="es">Idioma</span><span style="display:none" lang="fr">Langue</span><span style="display:none" lang="it">Linguaggio</span><span style="display:none" lang="ru">язык</span></legend>
+    <input type="radio" id="de-id" name="langBox" onclick="langCB('de')">
+    <label for="de-id" title="German">Deutsch</label>
+    <input type="radio" id="en-us-id" name="langBox" onclick="langCB('en-us')">
+    <label for="en-us-id">English-US</label>
+    <input type="radio" id="en-gb-id" name="langBox" onclick="langCB('en-gb')">
+    <label for="en-gb-id">English-GB</label>
+    <input type="radio" id="en-id" name="langBox" onclick="langDefaultCB()" checked="checked">
+    <label for="en-id">English-World</label>
+    <input type="radio" id="es-id" name="langBox" onclick="langCB('es')">
+    <label for="es-id" title="Spanish">Español</label>
+    <input type="radio" id="fr-id" name="langBox" onclick="langCB('fr')">
+    <label for="fr-id" title="French">Français</label>
+    <input type="radio" id="it-id" name="langBox" onclick="langCB('it')">
+    <label for="it-id" title="Italian">Italiano</label>
+    <input type="radio" id="ru-id" name="langBox" onclick="langCB('ru')">
+    <label for="ru-id" title="Russian">Русский</label>
+  </fieldset>
+</div>
+<div id="theme-id" style="display:inline-block">
+  <fieldset>
+    <legend class="textXL"><span>Theme</span><span style="display:none" lang="de">Thema</span><span style="display:none" lang="es">Tema</span><span style="display:none" lang="fr">Thème</span><span style="display:none" lang="it">Teme</span><span style="display:none" lang="ru">Тема</span></legend>
+    <input type="radio" id="theme-cats-id" name="viewBox" onclick="catsCB()">
+    <label class="textXL" for="theme-cats-id"><span>Categories</span><span style="display:none" lang="de">Kategorisierungen</span><span style="display:none" lang="es">Categorías</span><span style="display:none" lang="fr">Familles</span><span style="display:none" lang="it">Categorie</span><span style="display:none" lang="ru">Категории</span></label>
+    <input type="radio" id="theme-blok-id" name="viewBox" onclick="blokCB()">
+    <label class="textXL" for="theme-blok-id"><span>Blocks</span><span style="display:none" lang="de">Blöcke</span><span style="display:none" lang="es">Bloques</span><span style="display:none" lang="fr">Blocs</span><span style="display:none" lang="it">Blocchi</span><span style="display:none" lang="ru">блоки</span></label>
+    <input type="radio" id="theme-hist-id" name="viewBox" onclick="histCB()">
+    <label class="textXL" for="theme-hist-id"><span>History</span><span style="display:none" lang="de">Geschichte</span><span style="display:none" lang="es">Historia</span><span style="display:none" lang="fr">Historique</span><span style="display:none" lang="it">Storia</span><span style="display:none" lang="ru">История</span></label>
+    <input type="radio" id="theme-diff-id" name="viewBox" onclick="diffCB()">
+    <label class="textXL" for="theme-diff-id"><span>Differences</span><span style="display:none" lang="de">Unterschiede</span><span style="display:none" lang="es">Diferencias</span><span style="display:none" lang="fr">Différences</span><span style="display:none" lang="it">Differenze</span><span style="display:none" lang="ru">Отличия</span></label>
+    <input type="radio" id="theme-stab-id" name="viewBox" onclick="stabCB()">
+    <label class="textXL" for="theme-stab-id"><span>Stability</span><span style="display:none" lang="de">Stabilität</span><span style="display:none" lang="es">Estabilidad</span><span style="display:none" lang="fr">La stabilité</span><span style="display:none" lang="it">Stabilità</span><span style="display:none" lang="ru">Стабильность</span></label>
+    <input type="radio" id="theme-stat-id" name="viewBox" onclick="statCB()">
+    <label class="textXL" for="theme-stat-id"><span>States</span><span style="display:none" lang="de">Zustand</span><span style="display:none" lang="es">Estado</span><span style="display:none" lang="fr">État</span><span style="display:none" lang="it">Lo stato</span><span style="display:none" lang="ru">состояние</span></label>
+    <input type="radio" id="theme-mono-id" name="viewBox" onclick="monoCB()">
+    <label class="textXL" for="theme-mono-id"><span>Monochrome</span><span style="display:none" lang="de">Einfarbig</span><span style="display:none" lang="es">Monocromo</span><span style="display:none" lang="it">Monocromo</span><span style="display:none" lang="ru">Монохромный</span></label>
+  </fieldset>
+</div>
+<div id="settings-id" style="display:inline-block">
+  <fieldset>
+    <legend class="textXL"><span>Links</span><span style="display:none" lang="es">Enlaces</span><span style="display:none" lang="fr">Liens</span><span style="display:none" lang="it">Collegamento</span><span style="display:none" lang="ru">ссылки</span></legend>
+    <input type="checkbox" id="set-links-id" name="setBox" onclick="setsCB()">
+    <label class="textXL" for="set-links-id"><span>Enable</span><span style="display:none" lang="de">Aktivieren</span><span style="display:none" lang="es">Habilitar</span><span style="display:none" lang="fr">Activer</span><span style="display:none" lang="it">Abilitare</span><span style="display:none" lang="ru">включить</span></label>
+  </fieldset>
+</div>
+<script>
+"use strict";
+function wikify() {
+  var prefix = getComputedStyle(document.documentElement,null).getPropertyValue("--lang").toLowerCase();
+  if (prefix.length > 2)
+    prefix = prefix.substr(0,2);
+  var nx = document.getElementsByClassName("nm");
+  for (var i = 0; i < nx.length; i++)
+    nx[i].parentElement.children[1].href = "https://"+prefix+".wikipedia.org/wiki/" + nx[i].parentElement.title;
+}
+function clearLinks() {
+  var nx = document.getElementsByClassName("nm");
+  for (var i = 0; i < nx.length; i++)
+    nx[i].parentElement.children[1].removeAttribute("href");
+}
+var detsCell=null;
+function setDets() {
+  if (detsCell) {
+    var lg = getComputedStyle(document.documentElement,null).getPropertyValue("--lang").substring(0,2);
+    document.getElementById("dets-nm-id").innerHTML = detsCell.title;
+    document.getElementById("dets-sb-id").innerHTML = detsCell.children[1].innerText;
+    document.getElementById("dets-z-id").innerHTML = detsCell.children[2].innerText;
+    document.getElementById("dets-wiki-id").href = "https://"+lg+".wikipedia.org/wiki/"+detsCell.title;
+    document.getElementById("dets-wiki-id").innerHTML = lg+".wikipedia.org/wiki/"+detsCell.title;
+    document.getElementById("dets-box-id").style.backgroundColor = window.getComputedStyle(detsCell,"").getPropertyValue("background-color");
+    document.getElementById("dets-box-id").style.display = document.getElementById("theme-mono-id").checked ? "none" : "inline-block";
+  }
+}
+function handleClick() {
+  var cell = event.srcElement;
+  while (cell.localName != "td")
+    cell = cell.parentElement;
+  cell = cell.children[0];
+  detsCell = cell;
+  setDets();
+  document.getElementById("dets-id").style.display = "block";
+}
+function enableTab(themeId) {
+  var nx = document.getElementsByClassName("themeLeg");
+  for (var i = 0; i < nx.length; i++)
+    document.getElementById(nx[i].id).style.display = themeId==nx[i].id ? "inline-block" : "none";
+  if (isLinksOn)
+    wikify();
+  if (detsCell)
+    document.getElementById("dets-box-id").style.backgroundColor = window.getComputedStyle(detsCell,"").getPropertyValue("background-color");
+  document.getElementById("dets-box-id").style.display = document.getElementById("theme-mono-id").checked ? "none" : "inline-block";
+}
+function setRangeBackground() {
+  var rl=0, gl=0, bl=0, kl=0;
+  var ra=0, ga=0, ba=0, ka=0;
+  var nx = document.getElementsByClassName("nm");
+  for (var i = 0; i < nx.length; i++) {
+    var z = parseInt(nx[i].parentElement.children[2].innerText);
+    if (z>56 && z<72) {
+      var c = nx[i].parentElement.style.backgroundColor;
+      var ca = c.substring(4,c.length-1).replace(/ /g, "").split(",");
+      rl = rl+parseInt(ca[0]); gl = gl+parseInt(ca[1]); bl = bl+parseInt(ca[2]);
+      ++kl;
+    }
+    else if (z>88 && z<104) {
+      var c = nx[i].parentElement.style.backgroundColor;
+      var ca = c.substring(4,c.length-1).replace(/ /g, "").split(",");
+      ra = ra+parseInt(ca[0]); ga = ga+parseInt(ca[1]); ba = ba+parseInt(ca[2]);
+      ++ka;
+    }
+  }
+  document.getElementById("t18-lr-id").style.backgroundColor = "rgb("+Math.floor(rl/kl)+","+Math.floor(gl/kl)+","+Math.floor(bl/kl)+")";
+  document.getElementById("t18-ar-id").style.backgroundColor = "rgb("+Math.floor(ra/ka)+","+Math.floor(ga/ka)+","+Math.floor(ba/ka)+")";
+}
+function catsCB() {
+  var nx = document.getElementsByClassName("nm");
+  for (var i = 0; i < nx.length; i++)
+    nx[i].parentElement.style.backgroundColor = "";
+  document.getElementById("t18-lr-id").style.backgroundColor = "";
+  document.getElementById("t18-ar-id").style.backgroundColor = "";
+  enableTab("cats-leg-id");
+}
+function histCB() {
+  var nx = document.getElementsByClassName("nm");
+  for (var i = 0; i < nx.length; i++) {
+    var p = nx[i].parentElement;
+    p.style.backgroundColor = getComputedStyle(p,null).getPropertyValue("--kb");
+  }
+  setRangeBackground();
+  enableTab("hist-leg-id");
+}
+var oldLang = getLangName("en-id");
+function diffCB() {
+  var diffColor = getComputedStyle(document.documentElement,null).getPropertyValue("--c-pal1-2");
+  var sameColor = getComputedStyle(document.documentElement,null).getPropertyValue("--c-neutral");
+  var nx = document.getElementsByClassName("nm");
+  for (var i = 0; i < nx.length; i++) {
+    var p = nx[i].parentElement;
+    p.style.backgroundColor = getComputedStyle(p,null).getPropertyValue("--df")!=0 ? diffColor : sameColor;
+  }
+  var lx = document.getElementsByClassName("diffLangXL");
+  for (var i = 0; i < lx.length; i++)
+    lx[i].innerHTML = oldLang;
+  setRangeBackground();
+  enableTab("diff-leg-id");
+}
+var isLinksOn=true;
+function setsCB() {
+  isLinksOn = ! isLinksOn;
+  if (isLinksOn)
+    wikify();
+  else
+    clearLinks();
+}
+function stabCB() {
+  var nx = document.getElementsByClassName("nm");
+  for (var i = 0; i < nx.length; i++) {
+    var p = nx[i].parentElement;
+    var z = parseInt(p.children[2].innerText);
+    if (z==43)
+      p.style.backgroundColor = getComputedStyle(document.documentElement,null).getPropertyValue("--c-pal1-1");
+    else if (z==61)
+      p.style.backgroundColor = getComputedStyle(document.documentElement,null).getPropertyValue("--c-pal1-4");
+    else if (z<83)
+      p.style.backgroundColor = getComputedStyle(document.documentElement,null).getPropertyValue("--c-pal1-0");
+    else if (z==88 || z==91 || z==95 || z==97 || z==98)
+      p.style.backgroundColor = getComputedStyle(document.documentElement,null).getPropertyValue("--c-pal1-2");
+    else if (z==84 || z==86 || z==89 || z==99 || z==100 || z==101 || z==105)
+      p.style.backgroundColor = getComputedStyle(document.documentElement,null).getPropertyValue("--c-pal1-3");
+    else if (z==83 || z==90 || z==92 || z==93 ||z==94 || z==96)
+      p.style.backgroundColor = getComputedStyle(document.documentElement,null).getPropertyValue("--c-pal1-1");
+    else if (z<109)
+      p.style.backgroundColor = getComputedStyle(document.documentElement,null).getPropertyValue("--c-pal1-4");
+    else
+      p.style.backgroundColor = getComputedStyle(document.documentElement,null).getPropertyValue("--c-pal1-5");
+  }
+  setRangeBackground();
+  enableTab("stab-leg-id");
+}
+function statCB() {
+  var nx = document.getElementsByClassName("nm");
+  for (var i = 0; i < nx.length; i++) {
+    var p = nx[i].parentElement;
+    var z = parseInt(p.children[2].innerText);
+    if (z>99)
+      p.style.backgroundColor = getComputedStyle(document.documentElement,null).getPropertyValue("--c-neutral");
+    else if (z==35 || z==80)
+      p.style.backgroundColor = getComputedStyle(document.documentElement,null).getPropertyValue("--c-pal1-1");
+    else if (z==1 || z==2 || z==7 || z==8 || z==9 || z==10 || z==18 || z==36 || z==54 || z==86)
+      p.style.backgroundColor = getComputedStyle(document.documentElement,null).getPropertyValue("--c-pal1-0");
+    else
+      p.style.backgroundColor = getComputedStyle(document.documentElement,null).getPropertyValue("--c-pal1-3");
+  }
+  setRangeBackground();
+  enableTab("stat-leg-id");
+}
+var bmap = [[4,3],[10,2],[12,3],[18,2],[20,3],[30,0],[36,2],[38,3],[48,0],[54,2],[56,3],[70,1],[80,0],[86,2],[88,3],[102,1],[112,0],[999,2]];
+function blokCB() {
+  var nx = document.getElementsByClassName("nm");
+  for (var i = 0; i < nx.length; i++) {
+    var p = nx[i].parentElement;
+    var z = parseInt(p.children[2].innerText);
+    for (var j = 0; j < bmap.length; ++j)
+      if (z <= bmap[j][0]) {
+        p.style.backgroundColor = getComputedStyle(document.documentElement,null).getPropertyValue("--c-pal1-"+bmap[j][1]);
+        break;
+      }
+  }
+  setRangeBackground();
+  enableTab("blok-leg-id");
+}
+function monoCB() {
+  var nx = document.getElementsByClassName("nm");
+  for (var i = 0; i < nx.length; i++)
+    nx[i].parentElement.style.backgroundColor = "transparent";
+  clearLinks();
+  document.getElementById("t18-lr-id").style.backgroundColor = "transparent";
+  document.getElementById("t18-ar-id").style.backgroundColor = "transparent";
+  document.getElementById("dets-id").style.display = "none";
+  document.getElementById("dets-box-id").style.display = "none";
+  enableTab("theme-mono-id");
+}
+function langDefaultCB() {
+  var nx = document.getElementsByClassName("nm");
+  for (var i = 0; i < nx.length; i++) {
+    var n = nx[i];
+    if (n.children.length > 1) {
+      for (var j = 1; j < n.children.length; ++j)
+        n.children[j].style.display = "none";
+      n.children[0].style.display = "";
+      var t = n.children[0].innerText;
+      n.parentElement.style.setProperty("--df",n.parentElement.title.toUpperCase()==t.toUpperCase() ? 0 : 1);
+      n.parentElement.title = t;
+    }
+  }
+  setLang("en");
+}
+function xlate(element,newLang) {
+  if (element.children.length > 1) {
+    var j0 = -1;
+    for (var j = 0; j < element.children.length; j++)
+      if (element.children[j].lang != newLang)
+        element.children[j].style.display = "none";
+      else {
+        element.children[j].style.display = "inline";
+        j0 = j;
+      }
+    if (j0 < 0)
+      element.children[0].style.display = "";
+  }
+}
+function getLangName(langId) {
+  var px = document.getElementById("lang-set-id").children;
+  for (var i = 0; i < px.length; ++i)
+    if (px[i].htmlFor==langId)
+      return px[i].textContent;
+}
+function setLang(newLang) {
+  oldLang = getLangName(getComputedStyle(document.documentElement,null).getPropertyValue("--lang")+"-id");
+  document.documentElement.style.setProperty("--lang",newLang);
+  if (document.getElementById("theme-diff-id").checked) 
+    diffCB();
+  var tx = document.getElementsByClassName("textXL");
+  for (var i = 0; i < tx.length; ++i)
+    xlate(tx[i],newLang);
+  if (isLinksOn)
+    wikify();
+  setDets();
+}
+function langCB(newLang) {
+  var nx = document.getElementsByClassName("nm");
+  for (var i = 0; i < nx.length; i++) {
+    var n = nx[i], j0 = 0;
+    for (var j = 0; j < n.children.length; j++)
+      if (n.children[j].lang==newLang)
+        j0 = j;
+      else
+        n.children[j].style.display = "none";
+    n.children[j0].style.display = "block";
+    var tx = n.children[j0].innerText;
+    n.parentElement.style.setProperty("--df",n.parentElement.title.toUpperCase()==tx.toUpperCase() ? 0 : 1);
+    n.parentElement.title = tx;
+  }
+  setLang(newLang);
+}
+function getUserLangCode(lang) {
+  var result = "";
+  var nx = navigator.languages;
+  var lx = document.getElementsByName("langBox");
+  for (var i = 0; i < nx.length; i++) {
+    var userLang = nx[i].toLowerCase();
+    for (var j = 0; j < lx.length; j++)
+      if (lx[j].id==userLang+"-id")
+        return userLang;
+      else if (result=="" && lx[j].id==userLang.substr(0,3)+"id")
+        result = lx[j].id.substr(0,2);
+  }
+  return result;      
+}
+function getMatchingLangCode(tryLang) {
+  tryLang=tryLang.toLowerCase();
+  var lx = document.getElementsByName("langBox");
+  for (var i = 0; i < lx.length; ++i)
+    if (lx[i].id==tryLang+"-id")
+      return tryLang;
+  return "";
+}
+//
+document.getElementById("theme-cats-id").checked = true;
+document.getElementById("set-links-id").checked = true;
+var nx = document.getElementsByClassName("nm");
+for (var i = 0; i < nx.length; i++)
+  nx[i].parentElement.title = nx[i].children[0].innerText;
+var langCode="";
+if (window.location.search.substr(0,6)=="?lang=")
+  langCode = getMatchingLangCode(window.location.search.substr(6));
+if (langCode=="")
+  langCode = getUserLangCode();
+if (langCode!="")
+  langCB(langCode);
+else {
+  wikify();
+  langCode = getComputedStyle(document.documentElement,null).getPropertyValue("--lang").toLowerCase();
+}
+document.getElementById(langCode+"-id").checked = true;
+</script>
+<noscript>[enable JavaScript for more]</noscript>
+</body>
+</html>
