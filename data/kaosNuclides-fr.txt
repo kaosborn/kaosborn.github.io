@@ -1,66 +1,66 @@
 ; z,symbol,name,period,group,category,discoveryYear,discoveryIndex,stableCount,stabilityIndex,block,occurrenceCode,lifeCode,stateCode,melt,boil,weight
   0 n  Neutron       0  0 Nonmetal 1932 4  0 4   C                          1.000
-  1 H  Hydrogen      1  1 Nonmetal 1766 1  2 0 s P EB G   13.990   20.271   1.008
-  2 He Helium        1 18 NobleGas 1868 2  2 0 s P    G    0.950    4.222   4.003
+  1 H  Hydrogène     1  1 Nonmetal 1766 1  2 0 s P EB G   13.990   20.271   1.008
+  2 He Hélium        1 18 NobleGas 1868 2  2 0 s P    G    0.950    4.222   4.003
   3 Li Lithium       2  1 AlMetal  1817 2  2 0 s P ET S  453.650 1603.000   6.940
-  4 Be Beryllium     2  2 AlEMetal 1798 2  1 0 s P    S 1560.000 2742.000   9.012
-  5 B  Boron         2 13 Metaloid 1808 2  2 0 p P BT S 2349.000 4200.000  10.810
-  6 C  Carbon        2 14 Nonmetal 1789 1  2 0 p P EB S 3915.000 3915.000  12.011
-  7 N  Nitrogen      2 15 Nonmetal 1772 1  2 0 p P EB G   63.230   77.355  14.007
-  8 O  Oxygen        2 16 Nonmetal 1771 1  3 0 p P EB G   54.360   90.188  15.999
-  9 F  Fluorine      2 17 Halogen  1810 2  1 0 p P BT G   53.480   85.030  18.998
- 10 Ne Neon          2 18 NobleGas 1898 3  3 0 p P    G   24.560   27.104  20.180
+  4 Be Béryllium     2  2 AlEMetal 1798 2  1 0 s P    S 1560.000 2742.000   9.012
+  5 B  Bore          2 13 Metaloid 1808 2  2 0 p P BT S 2349.000 4200.000  10.810
+  6 C  Carbone       2 14 Nonmetal 1789 1  2 0 p P EB S 3915.000 3915.000  12.011
+  7 N  Azote         2 15 Nonmetal 1772 1  2 0 p P EB G   63.230   77.355  14.007
+  8 O  Oxygène       2 16 Nonmetal 1771 1  3 0 p P EB G   54.360   90.188  15.999
+  9 F  Fluor         2 17 Halogen  1810 2  1 0 p P BT G   53.480   85.030  18.998
+ 10 Ne Néon          2 18 NobleGas 1898 3  3 0 p P    G   24.560   27.104  20.180
  11 Na Sodium        3  1 AlMetal  1807 2  1 0 s P EB S  370.944 1156.090  22.990
- 12 Mg Magnesium     3  2 AlEMetal 1755 1  3 0 s P EB S  923.000 1363.000  24.305
- 13 Al Aluminum      3 13 PtMetal  1824 2  1 0 p P A  S  933.470 2743.000  26.982
- 14 Si Silicon       3 14 Metaloid 1823 2  3 0 p P BT S 1687.000 3538.000  28.085
- 15 P  Phosphorus    3 15 Nonmetal 1669 1  1 0 p P EB S  317.300  553.700  30.974
- 16 S  Sulfur        3 16 Nonmetal    0 0  4 0 p P EB S  388.360  717.800  32.060
- 17 Cl Chlorine      3 17 Halogen  1774 1  2 0 p P EB G  171.600  239.110  35.450
+ 12 Mg Magnésium     3  2 AlEMetal 1755 1  3 0 s P EB S  923.000 1363.000  24.305
+ 13 Al Aluminium     3 13 PtMetal  1824 2  1 0 p P A  S  933.470 2743.000  26.982
+ 14 Si Silicium      3 14 Metaloid 1823 2  3 0 p P BT S 1687.000 3538.000  28.085
+ 15 P  Phosphore     3 15 Nonmetal 1669 1  1 0 p P EB S  317.300  553.700  30.974
+ 16 S  Soufre        3 16 Nonmetal    0 0  4 0 p P EB S  388.360  717.800  32.060
+ 17 Cl Chlore        3 17 Halogen  1774 1  2 0 p P EB G  171.600  239.110  35.450
  18 Ar Argon         3 18 NobleGas 1894 3  3 0 p P    G   83.810   87.302  39.950
  19 K  Potassium     4  1 AlMetal  1807 2  2 0 s P EB S  336.700 1032.000  39.098
  20 Ca Calcium       4  2 AlEMetal 1808 2  5 0 s P EB S 1115.000 1757.000  40.078
  21 Sc Scandium      4  3 TMetal   1879 3  1 0 d P    S 1814.000 3109.000  44.956
- 22 Ti Titanium      4  4 TMetal   1791 2  5 0 d P    S 1941.000 3560.000  47.867
+ 22 Ti Titane        4  4 TMetal   1791 2  5 0 d P    S 1941.000 3560.000  47.867
  23 V  Vanadium      4  5 TMetal   1867 2  1 0 d P BT S 2183.000 3680.000  50.942
- 24 Cr Chromium      4  6 TMetal   1797 2  4 0 d P A  S 2180.000 2944.000  51.996
- 25 Mn Manganese     4  7 TMetal   1774 1  1 0 d P ET S 1519.000 2334.000  54.938
- 26 Fe Iron          4  8 TMetal      0 0  4 0 d P ET S 1811.000 3134.000  55.845
+ 24 Cr Chrome        4  6 TMetal   1797 2  4 0 d P A  S 2180.000 2944.000  51.996
+ 25 Mn Manganèse     4  7 TMetal   1774 1  1 0 d P ET S 1519.000 2334.000  54.938
+ 26 Fe Fer           4  8 TMetal      0 0  4 0 d P ET S 1811.000 3134.000  55.845
  27 Co Cobalt        4  9 TMetal   1735 1  1 0 d P ET S 1768.000 2723.000  58.933
  28 Ni Nickel        4 10 TMetal   1751 1  5 0 d P A  S 1728.000 3003.000  58.693
- 29 Cu Copper        4 11 TMetal      0 0  2 0 d P ET S 1357.770 2835.000  63.546
+ 29 Cu Cuivre        4 11 TMetal      0 0  2 0 d P ET S 1357.770 2835.000  63.546
  30 Zn Zinc          4 12 TMetal   1746 1  5 0 d P ET S  692.680 1180.000  65.380
  31 Ga Gallium       4 13 PtMetal  1875 3  2 0 p P    S  302.915 2673.000  69.723
  32 Ge Germanium     4 14 Metaloid 1886 3  4 0 p P    S 1211.400 3106.000  72.630
  33 As Arsenic       4 15 Metaloid    0 0  1 0 p P A  S  887.000  887.000  74.922
- 34 Se Selenium      4 16 Nonmetal 1817 2  5 0 p P ET S  494.000  958.000  78.971
- 35 Br Bromine       4 17 Halogen  1825 2  2 0 p P A  L  265.800  332.000  79.904
+ 34 Se Sélénium      4 16 Nonmetal 1817 2  5 0 p P ET S  494.000  958.000  78.971
+ 35 Br Brome         4 17 Halogen  1825 2  2 0 p P A  L  265.800  332.000  79.904
  36 Kr Krypton       4 18 NobleGas 1898 3  5 0 p P    G  115.780  119.930  83.798
  37 Rb Rubidium      5  1 AlMetal  1861 2  1 0 s P A  S  312.450  961.000  85.468
  38 Sr Strontium     5  2 AlEMetal 1787 1  4 0 s P A  S 1050.000 1650.000  87.620
  39 Y  Yttrium       5  3 TMetal   1794 2  1 0 d P    S 1799.000 3203.000  88.906
  40 Zr Zirconium     5  4 TMetal   1789 1  4 0 d P    S 2128.000 4650.000  91.224
  41 Nb Niobium       5  5 TMetal   1801 2  1 0 d P    S 2750.000 5017.000  92.906
- 42 Mo Molybdenum    5  6 TMetal   1778 1  6 0 d P ET S 2896.000 4912.000  95.950
- 43 Tc Technetium    5  7 TMetal   1937 4  0 1 d D    S 2430.000 4538.000  97.000
- 44 Ru Ruthenium     5  8 TMetal   1844 2  7 0 d P    S 2607.000 4423.000 101.070
+ 42 Mo Molybdène     5  6 TMetal   1778 1  6 0 d P ET S 2896.000 4912.000  95.950
+ 43 Tc Technétium    5  7 TMetal   1937 4  0 1 d D    S 2430.000 4538.000  97.000
+ 44 Ru Ruthénium     5  8 TMetal   1844 2  7 0 d P    S 2607.000 4423.000 101.070
  45 Rh Rhodium       5  9 TMetal   1804 2  1 0 d P    S 2237.000 3968.000 102.910
  46 Pd Palladium     5 10 TMetal   1802 2  6 0 d P    S 1828.050 3236.000 106.420
- 47 Ag Silver        5 11 TMetal      0 0  2 0 d P    S 1234.930 2435.000 107.870
+ 47 Ag Argent        5 11 TMetal      0 0  2 0 d P    S 1234.930 2435.000 107.870
  48 Cd Cadmium       5 12 TMetal   1817 2  6 0 d P    S  594.220 1040.000 112.410
  49 In Indium        5 13 PtMetal  1863 2  1 0 p P    S  429.748 2345.000 114.820
- 50 Sn Tin           5 14 PtMetal     0 0 10 0 p P A  S  505.080 2875.000 118.710
- 51 Sb Antimony      5 15 Metaloid    0 0  2 0 p P    S  903.780 1908.000 121.760
- 52 Te Tellurium     5 16 Metaloid 1782 1  6 0 p P    S  722.660 1261.000 127.600
- 53 I  Iodine        5 17 Halogen  1811 2  1 0 p P ET S  386.850  457.400 126.900
- 54 Xe Xenon         5 18 NobleGas 1898 3  7 0 p P    G  161.400  165.051 131.290
- 55 Cs Cesium        6  1 AlMetal  1860 2  1 0 s P    S  301.700  944.000 132.910
- 56 Ba Barium        6  2 AlEMetal 1772 1  6 0 s P    S 1000.000 2118.000 137.330
- 57 La Lanthanum     6  0 Lanthan  1838 2  1 0 f P    S 1193.000 3737.000 138.910
- 58 Ce Cerium        6  0 Lanthan  1803 2  4 0 f P    S 1068.000 3716.000 140.120
- 59 Pr Praseodymium  6  0 Lanthan  1885 3  1 0 f P    S 1208.000 3403.000 140.910
- 60 Nd Neodymium     6  0 Lanthan  1885 3  4 0 f P    S 1297.000 3347.000 144.240
- 61 Pm Promethium    6  0 Lanthan  1942 4  0 3 f D    S 1315.000 3273.000 145.000
+ 50 Sn Etain         5 14 PtMetal     0 0 10 0 p P A  S  505.080 2875.000 118.710
+ 51 Sb Antimoine     5 15 Metaloid    0 0  2 0 p P    S  903.780 1908.000 121.760
+ 52 Te Tellure       5 16 Metaloid 1782 1  6 0 p P    S  722.660 1261.000 127.600
+ 53 I  Iode          5 17 Halogen  1811 2  1 0 p P ET S  386.850  457.400 126.900
+ 54 Xe Xénon         5 18 NobleGas 1898 3  7 0 p P    G  161.400  165.051 131.290
+ 55 Cs Césium        6  1 AlMetal  1860 2  1 0 s P    S  301.700  944.000 132.910
+ 56 Ba Baryum        6  2 AlEMetal 1772 1  6 0 s P    S 1000.000 2118.000 137.330
+ 57 La Lanthane      6  0 Lanthan  1838 2  1 0 f P    S 1193.000 3737.000 138.910
+ 58 Ce Cérium        6  0 Lanthan  1803 2  4 0 f P    S 1068.000 3716.000 140.120
+ 59 Pr Raséodyme     6  0 Lanthan  1885 3  1 0 f P    S 1208.000 3403.000 140.910
+ 60 Nd Néodyme       6  0 Lanthan  1885 3  4 0 f P    S 1297.000 3347.000 144.240
+ 61 Pm Prométhium    6  0 Lanthan  1942 4  0 3 f D    S 1315.000 3273.000 145.000
  62 Sm Samarium      6  0 Lanthan  1879 3  5 0 f P    S 1345.000 2173.000 150.360
  63 Eu Europium      6  0 Lanthan  1896 3  1 0 f P    S 1099.000 1802.000 151.960
  64 Gd Gadolinium    6  0 Lanthan  1880 3  6 0 f P    S 1585.000 3273.000 157.250
@@ -70,21 +70,21 @@
  68 Er Erbium        6  0 Lanthan  1843 2  6 0 f P    S 1802.000 3141.000 167.260
  69 Tm Thulium       6  0 Lanthan  1879 3  1 0 f P    S 1818.000 2223.000 168.930
  70 Yb Ytterbium     6  0 Lanthan  1878 3  7 0 f P    S 1097.000 1469.000 173.050
- 71 Lu Lutetium      6  3 TMetal   1906 3  1 0 d P    S 1925.000 3675.000 174.970
+ 71 Lu Lutétium      6  3 TMetal   1906 3  1 0 d P    S 1925.000 3675.000 174.970
  72 Hf Hafnium       6  4 TMetal   1922 3  5 0 d P    S 2506.000 4876.000 178.490
- 73 Ta Tantalum      6  5 TMetal   1844 2  2 0 d P    S 3290.000 5731.000 180.950
- 74 W  Tungsten      6  6 TMetal   1783 1  4 0 d P    S 3695.000 6203.000 183.840
+ 73 Ta Tantale       6  5 TMetal   1844 2  2 0 d P    S 3290.000 5731.000 180.950
+ 74 W  Tungstène     6  6 TMetal   1783 1  4 0 d P    S 3695.000 6203.000 183.840
  75 Re Rhenium       6  7 TMetal   1908 3  1 0 d P    S 3459.000 5903.000 186.210
  76 Os Osmium        6  8 TMetal   1803 2  6 0 d P    S 3306.000 5285.000 190.230
  77 Ir Iridium       6  9 TMetal   1803 2  2 0 d P    S 2719.000 4403.000 192.220
- 78 Pt Platinum      6 10 TMetal   1735 1  5 0 d P    S 2041.400 4098.000 195.080
- 79 Au Gold          6 11 TMetal      0 0  1 0 d P    S 1337.330 3243.000 196.970
- 80 Hg Mercury       6 12 TMetal      0 0  7 0 d P    L  234.321  629.880 200.590
+ 78 Pt Platine       6 10 TMetal   1735 1  5 0 d P    S 2041.400 4098.000 195.080
+ 79 Au Or            6 11 TMetal      0 0  1 0 d P    S 1337.330 3243.000 196.970
+ 80 Hg Mercure       6 12 TMetal      0 0  7 0 d P    L  234.321  629.880 200.590
  81 Tl Thallium      6 13 PtMetal  1861 2  2 0 p P    S  577.000 1746.000 204.380
- 82 Pb Lead          6 14 PtMetal     0 0  4 0 p P A  S  600.610 2022.000 207.200
+ 82 Pb Plomb         6 14 PtMetal     0 0  4 0 p P A  S  600.610 2022.000 207.200
  83 Bi Bismuth       6 15 PtMetal     0 0  0 1 p P    S  544.700 1837.000 208.980
  84 Po Polonium      6 16 PtMetal  1898 3  0 3 p D    S  527.000 1235.000 209.000
- 85 At Astatine      6 17 Halogen  1940 4  0 4 p S    S  503.000  503.000 210.000
+ 85 At Astate        6 17 Halogen  1940 4  0 4 p S    S  503.000  503.000 210.000
  86 Rn Radon         6 18 NobleGas 1899 3  0 3 p D    G  202.000  211.500 222.000
  87 Fr Francium      7  1 AlMetal  1939 4  0 4 s D    S  281.000  890.000 223.000
  88 Ra Radium        7  2 AlEMetal 1898 3  0 2 s D    S  973.000 2010.000 226.000
@@ -94,43 +94,43 @@
  92 U  Uranium       7  0 Actin    1789 1  0 1 f P    S 1405.300 4404.000 238.029
  93 Np Neptunium     7  0 Actin    1940 4  0 1 f D    S  912.000 4447.000 237.000
  94 Pu Plutonium     7  0 Actin    1940 4  0 1 f D    S  912.500 3505.000 244.000
- 95 Am Americium     7  0 Actin    1944 4  0 2 f S    S 1449.000 2880.000 243.000
+ 95 Am Américium     7  0 Actin    1944 4  0 2 f S    S 1449.000 2880.000 243.000
  96 Cm Curium        7  0 Actin    1944 4  0 1 f S    S 1613.000 3383.000 247.000
- 97 Bk Berkelium     7  0 Actin    1949 5  0 2 f S    S 1259.000 2900.000 247.000
+ 97 Bk Berkélium     7  0 Actin    1949 5  0 2 f S    S 1259.000 2900.000 247.000
  98 Cf Californium   7  0 Actin    1950 5  0 2 f S    S 1173.000 1743.000 251.000
  99 Es Einsteinium   7  0 Actin    1952 5  0 3 f S    S 1133.000 1269.000 252.000
 100 Fm Fermium       7  0 Actin    1952 5  0 3 f S    S 1800.000          257.000
-101 Md Mendelevium   7  0 Actin    1955 5  0 3 f S    S 1100.000          258.000
-102 No Nobelium      7  0 Actin    1966 5  0 4 f S    S 1100.000          259.000
+101 Md Mendelévium   7  0 Actin    1955 5  0 3 f S    S 1100.000          258.000
+102 No Nobélium      7  0 Actin    1966 5  0 4 f S    S 1100.000          259.000
 103 Lr Lawrencium    7  3 TMetal   1961 5  0 4 d S    S 1900.000          266.000
 104 Rf Rutherfordium 7  4 TMetal   1964 5  0 4 d S    S 2400.000          267.000
 105 Db Dubnium       7  5 TMetal   1970 5  0 3 d S                        268.000
 106 Sg Seaborgium    7  6 TMetal   1974 5  0 4 d S                        269.000
 107 Bh Bohrium       7  7 TMetal   1981 5  0 5 d S                        270.000
 108 Hs Hassium       7  8 TMetal   1984 5  0 5 d S                        269.000
-109 Mt Meitnerium    7  9 TMetal   1982 5  0 5 d S                        278.000
+109 Mt Meitnérium    7  9 TMetal   1982 5  0 5 d S                        278.000
 110 Ds Darmstadtium  7 10 TMetal   1994 5  0 5 d S                        281.000
 111 Rg Roentgenium   7 11 TMetal   1994 5  0 5 d S                        282.000
 112 Cn Copernicium   7 12 TMetal   1996 5  0 5 d S                        285.000
 113 Nh Nihonium      7 13 PtMetal  2003 6  0 5 p S    S  700.000 1430.000 286.000
-114 Fl Flerovium     7 14 PtMetal  1999 5  0 5 p S    G           210.000 289.000
+114 Fl Flérovium     7 14 PtMetal  1999 5  0 5 p S    G           210.000 289.000
 115 Mc Moscovium     7 15 PtMetal  2003 6  0 5 p S    S  670.000 1400.000 290.000
 116 Lv Livermorium   7 16 PtMetal  2000 5  0 5 p S    S  673.000 1035.000 293.000
-117 Ts Tennessine    7 17 Halogen  2009 6  0 5 p S    S  623.000  883.000 294.000
+117 Ts Tennesse      7 17 Halogen  2009 6  0 5 p S    S  623.000  883.000 294.000
 118 Og Oganesson     7 18 NobleGas 2002 6  0 5 p S    S  325.000  350.000 294.000
 
 ; decayModeCode,decayModeSymbol,decayModeName
-a α    Alpha decay
-p β+   Beta plus decay
-b β−   Beta minus decay
-B β−β− Double beta minus decay
-e ε    Electron capture
-E εε   Double electron capture
-n n    Neutron emission
-g γ    Gamma decay
-T IT   Internal Conversion
-C IC   Isomeric transition
-F SF   Spontaneous fission
+a α    Radioactivité α
+p β+   Émission de positron
+b β−   Rayonnement β-
+B β−β− Double désintégration bêta
+e ε    Capture électronique
+E εε   Double capture électronique
+n n    Émission de neutron
+g γ    Rayonnement γ
+T IT   Conversion interne
+C IC   Isomérie nucléaire
+F SF   Fission spontanée
 
 ; z,symbol,z,occurrenceCode,stabilityIndex,decayModeCode,productZ,productSymbol,productA
   0 n    1 C4b   1 H    1
