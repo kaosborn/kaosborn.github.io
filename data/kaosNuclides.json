@@ -28,7 +28,18 @@
     "ru": ["Альфа распад", "Бета плюс распад", "Бета минус распад", "Двойной бета минус распад", "Электронный захват", "Двойной электронный захват", "Нейтронная эмиссия", "Гамма-распад", "Внутренняя конверсия", "Изомерия атомных ядер", "Спонтанное деление" ]
   },
 
-  "decayModeSymbols": [ "α", "β+", "β−", "β−β−", "ε", "εε", "n", "γ", "IT", "IC", "SF" ],
+  "decayModeSymbols": [ "α",
+, "β+",
+, "β−",
+, "β−β−",
+, "ε",
+, "εε",
+, "n",
+, "γ",
+, "IT",
+, "IC",
+, "SF",
+ ],
 
   "isotopesHeadings": {
     "de": ["Isotop", "NH", ",5t", "ZA", "Zerfallsprodukt" ],
@@ -39,7 +50,12 @@
     "ru": ["Изотоп", "Распространенность", "Период полураспада", "Режим распада", "Продукт" ]
   },
 
-  "lifeCodes": [ "", "EB", "ET", "BT", "A" ],
+  "lifeCodes": [ "",
+, "EB",
+, "ET",
+, "BT",
+, "A",
+ ],
 
   "lifeDescriptions": {
     "de": ["Wesentliches Element (> ,1 Massenprozent)", "Wesentliches Element (< ,1 Massenprozent)", "Nützliches Spurenelement", "Element absorbiert, aber nicht verwendet", "Nicht absorbiert" ],
@@ -79,6 +95,15 @@
     "fr": ["Inconnue", "Solide", "Liquide", "Gaz" ],
     "it": ["Sconosciuto", "Solido", "Liquido", "Gas" ],
     "ru": ["Неизвестно", "Твердый", "жидкость", "Газ" ]
+  },
+
+  "tapPhrases": {
+    "de": "Tippen Sie für das Menü",
+    "en": "Tap for menu",
+    "es": "Toque para el menú",
+    "fr": "Appuyez pour accéder au menu",
+    "it": "Tocca per il menu",
+    "ru": "Нажмите для меню"
   },
 
   "themeNames": {
